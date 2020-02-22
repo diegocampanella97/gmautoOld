@@ -1,16 +1,17 @@
 <?php
 
+use App\Car;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class CarsTableSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      *
      * @return void
      */
     public function run()
     {
-        $this->call(CarsTableSeeder::class);
+        factory(Car::class, 45)->create();
     }
 }

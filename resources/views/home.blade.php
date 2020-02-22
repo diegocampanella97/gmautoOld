@@ -34,17 +34,12 @@
             <form action="#" class="request-form ftco-animate bg-primary fadeInUp ftco-animated">
               <h2>Trova la tua auto</h2>
               <div class="row">
-                  <div class="col-lg-7 col-md-5 col-sm-12 col-xs-12">
+                  <div class="col-lg-11 col-md-5 col-sm-12 col-xs-12">
                     <div class="car-field">
-                      <input type="text" placeholder="Inserisci marca auto">
+                      <input type="text" placeholder="Cosa stai cercando?">
                     </div>
                   </div>
-                  <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
-                    <div class="car-field">
-                      <input type="text" placeholder="Canone mensile">
-                    </div>
-                  </div>
-                  <div class="col-lg-1 col-md-2 col-sm-12 col-xs-12">
+                  <div class="col-lg-1 col-md-2 col-sm-12 col-xs-12 py-2 py-md-0">
                     <button class="btn btn-secondary py-3 px-4" type="submit"><i class="icon ion-md-search"></i></button>
                   </div>
                 </div>
@@ -59,7 +54,7 @@
     <div class="row justify-content-center">
       <div class="col-md-12 heading-section text-center ftco-animate mb-5">
         <span class="subheading">Le nostre offerte</span>
-        <h2 class="mb-2">Configura la tua nuova auto</h2>
+        <h2 class="mb-2">Cosa stai cercando?</h2>
       </div>
     </div>
     <div class="row">
