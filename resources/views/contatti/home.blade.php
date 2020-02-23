@@ -16,22 +16,22 @@
   <section class="ftco-section contact-section">
     <div class="container">
       <div class="row d-flex mb-5 contact-info">
-          <div class="col-md-4">
+          <div class="col-md-4 d-flex align-items-center bg-primary">
               <div class="info row mb-5">
                 <div class="col-md-12">
                     <div class="w-100 p-4 rounded mb-2 d-flex">
                         <div class="icon mr-3">
                             <span class="icon-map-o"></span>
-                </div>
+                        </div>
                       <p><span>Indirizzo:</span> <a href="https://goo.gl/maps/NrB4rJb2Cu7UY7c9A">S.p 215, 70010 - Turi (BA)</a></p>
                     </div>
                 </div>
                 <div class="col-md-12">
                     <div class="w-100 p-4 rounded mb-2 d-flex">
                         <div class="icon mr-3">
-                            <span class="icon-mobile-phone"></span>
+                            <span class="icon icon-phone"></span>
                         </div>
-                      <p><span>Telefono:</span> <a href="tel://1234567920">808 891 6567</a></p>
+                        <p><span>Telefono:</span> <a href="tel://1234567920">808 891 6567</a></p>
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -68,11 +68,6 @@
             </div>
           </form>
         </div>
-      </div>
-      <div class="row justify-content-center">
-          <div class="col-md-12">
-              <div id="map" class="bg-white"></div>
-          </div>
       </div>
     </div>
   </section>

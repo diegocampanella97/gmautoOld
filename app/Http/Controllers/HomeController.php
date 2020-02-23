@@ -32,9 +32,6 @@ class HomeController extends Controller
     public function servizi(){
         return view('servizi.home');
     }
-    public function contatti(){
-        return view('contatti.home');
-    }
 
 
 }

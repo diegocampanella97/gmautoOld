@@ -74,48 +74,6 @@
               </div>
             </div>
           </div>
-          <div class="item">
-            <div class="car-wrap rounded ftco-animate">
-              <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-2.jpg);">
-              </div>
-              <div class="text">
-                <h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
-                <div class="d-flex mb-3">
-                  <span class="cat">Cheverolet</span>
-                  <p class="price ml-auto">$500 <span>/day</span></p>
-                </div>
-                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Prenota</a> <a href="#" class="btn btn-secondary py-2 ml-1">Scopri</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="car-wrap rounded ftco-animate">
-              <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-3.jpg);">
-              </div>
-              <div class="text">
-                <h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
-                <div class="d-flex mb-3">
-                  <span class="cat">Cheverolet</span>
-                  <p class="price ml-auto">$500 <span>/day</span></p>
-                </div>
-                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Prenota</a> <a href="#" class="btn btn-secondary py-2 ml-1">Scopri</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="car-wrap rounded ftco-animate">
-              <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-4.jpg);">
-              </div>
-              <div class="text">
-                <h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
-                <div class="d-flex mb-3">
-                  <span class="cat">Cheverolet</span>
-                  <p class="price ml-auto">$500 <span>/day</span></p>
-                </div>
-                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Prenota</a> <a href="#" class="btn btn-secondary py-2 ml-1">Scopri</a></p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -193,7 +151,7 @@
     <div class="row justify-content-center">
       <div class="col-12 heading-section heading-section-white ftco-animate">
         <h2 class="mb-3">Scopri le nostre offerte per il noleggio di furgoni</h2>
-        <a href="#" class="btn-prev btn-primary btn-lg">Richiedi preventivo</a>
+      <a href="{{route('contatti')}}" class="btn-prev btn-primary btn-lg">Richiedi preventivo</a>
       </div>
     </div>
   </div>
