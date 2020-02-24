@@ -29,12 +29,14 @@ class AdminController extends Controller
 
         $car = new Car();
         $car->name= $request->input("titoloAnnuncio");
+
         $car->category_id = $request->input("categoriaVeicolo");
         $car->targa = $request->input("targaVeicolo");
         $car->exemplar_id= $request->input("produttoreVeicolo");
         $car->mounting= $request->input("allestimentoVeicolo");
         $car->km = $request->input("kmVeicolo");
         $car->description = $request->input("testoAnnuncio");
+        
         $car->price = $request->input("prezzoVeicolo");
         $car->color_id = $request->input("coloreVeicolo");
         $car->vid = $request->input("vinVeicolo");
@@ -50,37 +52,37 @@ class AdminController extends Controller
         $car->save();
 
 
-        $unique = $request->input('uniqueSecret');
+        // $unique = $request->input('uniqueSecret');
 
-        $images= session() -> get("images.{$unique}", []);
-        $removedImages = session() -> get("removedimages.{$unique}", []);
+        // $images= session() -> get("images.{$unique}", []);
+        // $removedImages = session() -> get("removedimages.{$unique}", []);
 
-        $images = array_diff($images, $removedImages);
+        // $images = array_diff($images, $removedImages);
 
-        foreach ($images as $image) {
-            $i= new CarImage();
-            $fileName = basename($image);
-            $newFileName= "public/car/{$car -> id}/{$fileName}";
+        // foreach ($images as $image) {
+        //     $i= new CarImage();
+        //     $fileName = basename($image);
+        //     $newFileName= "public/car/{$car -> id}/{$fileName}";
             
-            Storage::move($image, $newFileName);          
+        //     Storage::move($image, $newFileName);          
             
-            $i->filePath = $newFileName;
-            $i->car_id = $car->id;
+        //     $i->filePath = $newFileName;
+        //     $i->car_id = $car->id;
 
-            $i->save();
+        //     $i->save();
 
-            // GoogleVisionSafeSearchImage::withChain([
-            //     new GoogleVisionLabelImage($i->id),
-            //     new GoogleVisionRemoveFace($i->id),
-            //     new ResizeImage($newFileName, 870, 530)
-            // ])->dispatch($i->id);
+        //     // GoogleVisionSafeSearchImage::withChain([
+        //     //     new GoogleVisionLabelImage($i->id),
+        //     //     new GoogleVisionRemoveFace($i->id),
+        //     //     new ResizeImage($newFileName, 870, 530)
+        //     // ])->dispatch($i->id);
 
-        }
+        // }
 
-        File::deleteDirectory(storage_path("/app/public/temp/{$unique}"));
+        // File::deleteDirectory(storage_path("/app/public/temp/{$unique}"));
 
 
-        // return redirect(route("auto.usato"));
+        return redirect(route("admin.areaRiservata"));
     }
 
 

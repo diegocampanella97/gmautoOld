@@ -40,6 +40,11 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+  .bootstrap-select>.dropdown-toggle {
+    height: 50px;
+  }
+
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
