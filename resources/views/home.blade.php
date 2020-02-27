@@ -64,7 +64,7 @@
           @foreach (\App\Car::getLastCar() as $item)
             <div class="item">
               <div class="car-wrap rounded ftco-animate">
-                <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-1.jpg);">
+                <div class="img rounded d-flex align-items-end" style="background-image: url({{Storage::url($item->images[0]->filePath)}});">
                 </div>
                 <div class="text">
                 <h2 class="mb-0"><a href="#">{{$item->name}}</a></h2>
@@ -116,7 +116,7 @@
     <div class="row">
       <div class="col-md-3">
         <div class="services services-2 w-100 text-center">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-wedding-car"></span></div>
+          <div class="icon d-flex align-items-center justify-content-center"><i class="fas fa-car"></i></div>
           <div class="text w-100">
             <h3 class="heading mb-2">Lorem ipsum</h3>
             <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>

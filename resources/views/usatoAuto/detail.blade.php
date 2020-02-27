@@ -21,24 +21,15 @@
         <div class="row justify-content-left">
             <div class="col-md-8">
                 <div class="carousel-car2 owl-carousel">
-                    <div class="item">
-                        <div class="car-wrap2 rounded ftco-animate">
-                          <div class="img rounded d-flex align-items-end" style="background-image: url(/images/car-1.jpg);">
-                          </div>
-                        </div>   
-                    </div>
-                    <div class="item">
-                        <div class="car-wrap2 rounded ftco-animate">
-                          <div class="img rounded d-flex align-items-end" style="background-image: url(/images/car-2.jpg);">
-                          </div>
-                        </div>   
-                    </div>
-                    <div class="item">
-                        <div class="car-wrap2 rounded ftco-animate">
-                          <div class="img rounded d-flex align-items-end" style="background-image: url(/images/car-3.jpg);">
-                          </div>
-                        </div>   
-                    </div>
+                  @foreach ($car->images as $item)
+                  
+                  <div class="item">
+                    <div class="car-wrap2 rounded ftco-animate">
+                        <img class="img-fluid rounded d-flex align-items-end" src="{{Storage::url($item->filePath)}}" alt="">
+                    </div>   
+                  </div>
+                  @endforeach
+                  
                 </div>
             </div>
             
@@ -46,10 +37,9 @@
               <div class="infocar rounded ftco-animate">
                   <div class="text">
                       <h2 class="pricecar mb-0">
-                          <a href="car-single.html">{{$car->price}} €</a></h2>
+                          <a href="#">{{$car->price}} €</a></h2>
                       <p class="d-flex mb-0 d-block">
-                          <a href="#" class="btn btn-primary py-2 mr-1">Prenota</a> 
-                          <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Scopri</a>
+                          <a href="#" class="btn btn-secondary py-2 ml-1">Scopri </a>
                       </p>
                       {{-- <p class="offer">Offerta valida fino al <span class="data">25-02-2020</span></p>	 --}}
                   </div>

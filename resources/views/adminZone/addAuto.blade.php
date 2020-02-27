@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url(' ');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
@@ -14,6 +14,7 @@
     </section>
     <form method="POST" action="{{route('admin.aggiungiAutoRichiesta')}}">
         @csrf
+    <input type="hidden" name="uniqueSecret" value="{{$uniqueSecret}}">
         <section class="ftco-section">
             <div class="container">
                 <div class="row justify-content-center mb-5">
@@ -23,6 +24,10 @@
                     </div>
                 </div>
                 <div class="row justify-content-center mb-5">
+                    <div class="col-12 py-4">
+                        <h4 class="text-center">Immagini Auto</h4>
+                        <div id="dropzone" class="dropzone"></div>
+                    </div>
                     <div class="col-12 col-md-6 order-1 order-md-0">
                         <div class="card">
                             <div class="card-body">
@@ -171,3 +176,7 @@
         </section>
     </form>
 @endsection
+
+@push('jsCustom')
+ 
+@endpush

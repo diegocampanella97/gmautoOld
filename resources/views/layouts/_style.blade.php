@@ -14,8 +14,11 @@
 
 <link rel="stylesheet" href="/css/bootstrap-datepicker.css">
 <link rel="stylesheet" href="/css/jquery.timepicker.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css">
 
 
 <link rel="stylesheet" href="/css/flaticon.css">
 <link rel="stylesheet" href="/css/icomoon.css">
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">

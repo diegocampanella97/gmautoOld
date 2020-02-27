@@ -17,6 +17,7 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/noleggio', 'HomeController@noleggio')->name('noleggio');
+Route::view('/noleggio/trasporto-disabili-in-carrozzina', 'noleggio.disabile')->name('disabile');
 // Route::get('/servizi', 'HomeController@servizi')->name('servizi');
 Route::get('/contatti', 'HomeController@contatti')->name('contatti');
 Route::get('/home', 'HomeController@contatti')->name('contatti');

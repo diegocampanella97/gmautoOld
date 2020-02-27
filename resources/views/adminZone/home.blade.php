@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
@@ -25,18 +25,18 @@
                 <div class="col-12 col-md-6">
                     <div class="card">
                         <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="">
-                        <div class="card-body">
-                          <h5 class="card-title">Aggiungi Auto</h5>
-                        <a href="{{route('admin.aggiungiAuto')}}" class="btn btn-primary">Go somewhere</a>
+                        <div class="card-body text-center">
+                          <h3 class="card-title">Aggiungi Auto</h3>
+                        <a href="{{route('admin.aggiungiAuto')}}" class="btn btn-primary">Aggiungi</a>
                         </div>
                       </div>
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="card">
                         <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="">
-                        <div class="card-body">
-                          <h5 class="card-title">Modifica Auto</h5>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="card-body text-center">
+                          <h3 class="card-title">Modifica Auto</h3>
+                          <a href="#" class="btn btn-primary">Modifica</a>
                         </div>
                       </div>
                 </div>

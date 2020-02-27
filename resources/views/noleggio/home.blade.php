@@ -89,7 +89,7 @@
           <span class="subheading">Le nostre offerte</span>
           <h2 class="mb-2">Cosa stai cercando?</h2>
         </div>
-        <div class="col-md-2">
+        <div class="col-6 col-md-2">
           <div class="services services-2 w-100 text-center">
             <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-wedding-car"></span></div>
             <div class="text w-100">
@@ -97,7 +97,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-6 col-md-2">
           <div class="services services-2 w-100 text-center">
             <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
             <div class="text w-100">
@@ -105,7 +105,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-6 col-md-2">
           <div class="services services-2 w-100 text-center">
             <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-car"></span></div>
             <div class="text w-100">
@@ -113,7 +113,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-6 col-md-2">
           <div class="services services-2 w-100 text-center">
             <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
             <div class="text w-100">
@@ -121,7 +121,15 @@
             </div>
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-6 col-md-2">
+          <div class="services services-2 w-100 text-center">
+            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
+            <div class="text w-100">
+              <h3 class="heading mb-2">Lorem ipsum</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
           <div class="services services-2 w-100 text-center">
             <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
             <div class="text w-100">
@@ -212,7 +220,7 @@
             <div class="row justify-content-center">
                 <div class="col-12 heading-section heading-section-white ftco-animate">
         <h2 class="mb-3">Frase furgone Carrozzina</h2>
-        <a href="#" class="btn-prev btn-primary btn-lg">Richiedi informazioni</a>
+        <a href="{{route('disabile')}}" class="btn-prev btn-primary btn-lg">Richiedi informazioni</a>
       </div>
             </div>
         </div>

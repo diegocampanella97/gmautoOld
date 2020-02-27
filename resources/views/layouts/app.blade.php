@@ -28,6 +28,7 @@
             @yield('content')
         </main>
     </div>
+    @stack('jsCustom')
     @include('layouts._footer')
 </body>
 
