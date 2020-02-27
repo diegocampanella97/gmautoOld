@@ -19,15 +19,8 @@
                 <div class="row no-gutters">
                       <div class="col-md-4 d-flex align-items-center">
                           <form action="#" class="request-form ftco-animate bg-primary">
-                      <h2>Trova la tua auto</h2>
-                            <div class="form-group">
-                                <label for="" class="label">Località di ritiro</label>
-                                <input type="text" class="form-control" placeholder="Città, aeroporto, stazione etc..">
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="label">Località di consegna</label>
-                                <input type="text" class="form-control" placeholder="Città, aeroporto, stazione etc..">
-                            </div>
+                      <h2>Noleggia la tua auto</h2>
+
                             <div class="d-flex">
                                 <div class="form-group mr-2">
                         <label for="" class="label">Data di ritiro</label>
@@ -42,10 +35,14 @@
                     <label for="" class="label">Orario di ritiro</label>
                     <input type="text" class="form-control" id="time_pick" placeholder="Orario">
               </div>
+                  <div class="form-group">
+                    <label for="" class="label">Messaggio</label>
+                    <textarea class="form-control" name="Messaggio" rows="3"></textarea>
+                  </div>
               
 
                     <div class="form-group">
-                      <input type="submit" value="Cerca" class="btn btn-secondary py-3 px-4">
+                      <input type="submit" value="Invia Messaggio" class="btn btn-secondary py-3 px-4">
                     </div>
                         </form>
                       </div>
@@ -87,207 +84,141 @@
 
 <section class="ftco-section bg-light">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="car-wrap rounded ftco-animate">
-                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-1.jpg);">
-                    </div>
-                    <div class="text">
-                        <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-                        <div class="d-flex mb-3">
-                            <span class="cat">Cheverolet</span>
-                            <p class="price ml-auto">$500 <span>/day</span></p>
-                        </div>
-                        <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Prenota</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Scopri</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="car-wrap rounded ftco-animate">
-                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-2.jpg);">
-                    </div>
-                    <div class="text">
-                        <h2 class="mb-0"><a href="car-single.html">Range Rover</a></h2>
-                        <div class="d-flex mb-3">
-                            <span class="cat">Subaru</span>
-                            <p class="price ml-auto">$500 <span>/day</span></p>
-                        </div>
-                        <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Prenota</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Scopri</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="car-wrap rounded ftco-animate">
-                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-3.jpg);">
-                    </div>
-                    <div class="text">
-                        <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-                        <div class="d-flex mb-3">
-                            <span class="cat">Cheverolet</span>
-                            <p class="price ml-auto">$500 <span>/day</span></p>
-                        </div>
-                        <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Prenota</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Scopri</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="car-wrap rounded ftco-animate">
-                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-4.jpg);">
-                    </div>
-                    <div class="text">
-                        <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-                        <div class="d-flex mb-3">
-                            <span class="cat">Cheverolet</span>
-                            <p class="price ml-auto">$500 <span>/day</span></p>
-                        </div>
-                        <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Prenota</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Scopri</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="car-wrap rounded ftco-animate">
-                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-5.jpg);">
-                    </div>
-                    <div class="text">
-                        <h2 class="mb-0"><a href="car-single.html">Range Rover</a></h2>
-                        <div class="d-flex mb-3">
-                            <span class="cat">Subaru</span>
-                            <p class="price ml-auto">$500 <span>/day</span></p>
-                        </div>
-                        <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Prenota</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Scopri</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="car-wrap rounded ftco-animate">
-                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-6.jpg);">
-                    </div>
-                    <div class="text">
-                        <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-                        <div class="d-flex mb-3">
-                            <span class="cat">Cheverolet</span>
-                            <p class="price ml-auto">$500 <span>/day</span></p>
-                        </div>
-                        <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Prenota</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Scopri</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="car-wrap rounded ftco-animate">
-                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-7.jpg);">
-                    </div>
-                    <div class="text">
-                        <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-                        <div class="d-flex mb-3">
-                            <span class="cat">Cheverolet</span>
-                            <p class="price ml-auto">$500 <span>/day</span></p>
-                        </div>
-                        <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Prenota</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Scopri</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="car-wrap rounded ftco-animate">
-                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-8.jpg);">
-                    </div>
-                    <div class="text">
-                        <h2 class="mb-0"><a href="car-single.html">Range Rover</a></h2>
-                        <div class="d-flex mb-3">
-                            <span class="cat">Subaru</span>
-                            <p class="price ml-auto">$500 <span>/day</span></p>
-                        </div>
-                        <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Prenota</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Scopri</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="car-wrap rounded ftco-animate">
-                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-9.jpg);">
-                    </div>
-                    <div class="text">
-                        <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-                        <div class="d-flex mb-3">
-                            <span class="cat">Cheverolet</span>
-                            <p class="price ml-auto">$500 <span>/day</span></p>
-                        </div>
-                        <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Prenota</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Scopri</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="car-wrap rounded ftco-animate">
-                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-10.jpg);">
-                    </div>
-                    <div class="text">
-                        <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-                        <div class="d-flex mb-3">
-                            <span class="cat">Cheverolet</span>
-                            <p class="price ml-auto">$500 <span>/day</span></p>
-                        </div>
-                        <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Prenota</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Scopri</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="car-wrap rounded ftco-animate">
-                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-11.jpg);">
-                    </div>
-                    <div class="text">
-                        <h2 class="mb-0"><a href="car-single.html">Range Rover</a></h2>
-                        <div class="d-flex mb-3">
-                            <span class="cat">Subaru</span>
-                            <p class="price ml-auto">$500 <span>/day</span></p>
-                        </div>
-                        <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Prenota</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Scopri</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="car-wrap rounded ftco-animate">
-                    <div class="img rounded d-flex align-items-end" style="background-image: url(images/car-12.jpg);">
-                    </div>
-                    <div class="text">
-                        <h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
-                        <div class="d-flex mb-3">
-                            <span class="cat">Cheverolet</span>
-                            <p class="price ml-auto">$500 <span>/day</span></p>
-                        </div>
-                        <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Prenota</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Scopri</a></p>
-                    </div>
-                </div>
-            </div>
+      <div class="row d-flex justify-content-between">
+        <div class="col-md-12 heading-section text-center ftco-animate mb-5 fadeInUp ftco-animated">
+          <span class="subheading">Le nostre offerte</span>
+          <h2 class="mb-2">Cosa stai cercando?</h2>
         </div>
-        <div class="row mt-5">
-      <div class="col text-center">
-        <div class="block-27">
-          <ul>
-            <li><a href="#">&lt;</a></li>
-            <li class="active"><span>1</span></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">&gt;</a></li>
-          </ul>
+        <div class="col-md-2">
+          <div class="services services-2 w-100 text-center">
+            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-wedding-car"></span></div>
+            <div class="text w-100">
+              <h3 class="heading mb-2">Lorem ipsum</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="services services-2 w-100 text-center">
+            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
+            <div class="text w-100">
+              <h3 class="heading mb-2">Lorem ipsum</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="services services-2 w-100 text-center">
+            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-car"></span></div>
+            <div class="text w-100">
+              <h3 class="heading mb-2">Lorem ipsum</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="services services-2 w-100 text-center">
+            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
+            <div class="text w-100">
+              <h3 class="heading mb-2">Lorem ipsum</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="services services-2 w-100 text-center">
+            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
+            <div class="text w-100">
+              <h3 class="heading mb-2">Lorem ipsum</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    </div>
 </section>
+
+<section class="ftco-section ftco-intro" style="background-image: url(images/bg_3.jpg);">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-12 heading-section heading-section-white ftco-animate">
+  <h2 class="mb-3">Scopri le nostre offerte per il noleggio di furgoni</h2>
+  <a href="#" class="btn-prev btn-primary btn-lg">Richiedi informazioni</a>
+</div>
+      </div>
+  </div>
+</section>
+
+<section>
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-12 col-md-6">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="single-feature">
+                <img src="img/feature/f1.png" alt="">
+                <h4>Shipment Tracking</h4>
+                <p>
+                The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="single-feature">
+                <img src="img/feature/f1.png" alt="">
+                <h4>Shipment Tracking</h4>
+                <p>
+                The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="single-feature">
+                <img src="img/feature/f1.png" alt="">
+                <h4>Shipment Tracking</h4>
+                <p>
+                The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="single-feature">
+                <img src="img/feature/f1.png" alt="">
+                <h4>Shipment Tracking</h4>
+                <p>
+                The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="heading-section ftco-animate fadeInUp ftco-animated">
+          <div class="single-feature">
+            <img src="img/feature/f1.png" alt="">
+            <h2>Shipment Tracking</h2>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod modi tempore minus odio laboriosam exercitationem, possimus non? Nam error praesentium laudantium corporis tempore quidem, quos quasi ab, vel delectus minus.
+            </p>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod modi tempore minus odio laboriosam exercitationem, possimus non? Nam error praesentium laudantium corporis tempore quidem, quos quasi ab, vel delectus minus.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section class="ftco-section ftco-intro" style="background-image: url(images/bg_3.jpg);">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 heading-section heading-section-white ftco-animate">
-        <h2 class="mb-3">Scopri le nostre offerte per il noleggio di furgoni</h2>
-        <a href="#" class="btn-prev btn-primary btn-lg">Richiedi preventivo</a>
+        <h2 class="mb-3">Frase furgone Carrozzina</h2>
+        <a href="#" class="btn-prev btn-primary btn-lg">Richiedi informazioni</a>
       </div>
             </div>
         </div>
-    </section>
+</section>
+
+
 
 <section class="ftco-section testimony-section bg-light">
   <div class="container">

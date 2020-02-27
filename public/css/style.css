@@ -8700,6 +8700,11 @@ h1, h2, h3, h4, h5,
   .car-wrap .img {
     width: 100%;
     height: 220px; }
+
+    .car-wrap2 .img {
+      width: 100%;
+      height: 360px; }
+
   .car-wrap .text {
     border-top: none;
     padding: 20px 30px 30px; }
@@ -8777,6 +8782,8 @@ h1, h2, h3, h4, h5,
   width: 100%;
   height: 600px;
   margin-bottom: 40px; }
+
+
 
 .car-details span.subheading {
   font-size: 12px;

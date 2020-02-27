@@ -9,9 +9,8 @@
             <p class="breadcrumbs">
                 <span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span>
                 <span class="mr-2">Auto Usate <i class="ion-ios-arrow-forward"></i></span>
-                <span class="mr-2">{{$car->name}}</span>
             </p>
-          <h1 class="mb-3 bread">Contatti</h1>
+          <h1 class="mb-3 bread">{{$car->name}}</h1>
         </div>
       </div>
     </div>
@@ -21,8 +20,25 @@
     <div class="container">
         <div class="row justify-content-left">
             <div class="col-md-8">
-                <div class="car-details">
-                    <div class="img rounded" style="background-image: url(/images/bg_1.jpg);"></div>
+                <div class="carousel-car2 owl-carousel">
+                    <div class="item">
+                        <div class="car-wrap2 rounded ftco-animate">
+                          <div class="img rounded d-flex align-items-end" style="background-image: url(/images/car-1.jpg);">
+                          </div>
+                        </div>   
+                    </div>
+                    <div class="item">
+                        <div class="car-wrap2 rounded ftco-animate">
+                          <div class="img rounded d-flex align-items-end" style="background-image: url(/images/car-2.jpg);">
+                          </div>
+                        </div>   
+                    </div>
+                    <div class="item">
+                        <div class="car-wrap2 rounded ftco-animate">
+                          <div class="img rounded d-flex align-items-end" style="background-image: url(/images/car-3.jpg);">
+                          </div>
+                        </div>   
+                    </div>
                 </div>
             </div>
             
@@ -35,41 +51,16 @@
                           <a href="#" class="btn btn-primary py-2 mr-1">Prenota</a> 
                           <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Scopri</a>
                       </p>
-                      <p class="offer">Offerta valida fino al <span class="data">25-02-2020</span></p>	
-
-                      <div class="d-flex mb-3">
-                          <span class="cat">Subaru</span>
-                          <p class="price ml-auto">$500 <span>/day</span></p>
-                      </div>
-
-                      <div class="d-flex mb-3">
-                          <span class="cat">Subaru</span>
-                          <p class="price ml-auto">$500 <span>/day</span></p>
-                      </div>
-
-                      <div class="d-flex mb-3">
-                          <span class="cat">Subaru</span>
-                          <p class="price ml-auto">$500 <span>/day</span></p>
-                      </div>
+                      {{-- <p class="offer">Offerta valida fino al <span class="data">25-02-2020</span></p>	 --}}
                   </div>
               </div>
-
-              <div class="single-sidebar">
-                  <h3>Resta connesso con Noi</h3>
-                  <div class="sidebar-body">
-                  <div class="social-icons text-center">
-                  <a href="#" target="_blank"><i class="icon ion-logo-facebook ion-2x"></i></a>
-                  <a href="#" target="_blank"><i class="icon ion-logo-instagram ion-2x"></i></i></a>
-                  <a href="#" target="_blank"><i class="icon ion-logo-twitter ion-2x"></i></i></a>
-                  </div>
-                  </div>
-              </div>
+              @include('module.social')
           </div>
   </div>
           
       <div class="text text-center">
-          <span class="subheading">Cheverolet</span>
-          <h2>Mercedes Grand Sedan</h2>
+      <span class="subheading">{{$car->exemplar->name}}</span>
+          <h2>{{$car->name}}</h2>
       </div>
 
         <div class="row">
@@ -176,9 +167,6 @@
                               <li class="nav-item">
                                 <a class="nav-link" id="pills-manufacturer-tab" data-toggle="pill" href="#pills-manufacturer" role="tab" aria-controls="pills-manufacturer" aria-expanded="true">Descrizione</a>
                               </li>
-                              <li class="nav-item">
-                                <a class="nav-link" id="pills-review-tab" data-toggle="pill" href="#pills-review" role="tab" aria-controls="pills-review" aria-expanded="true">Recensioni</a>
-                              </li>
                             </ul>
                           </div>
 
@@ -216,139 +204,9 @@
                           </div>
 
                           <div class="tab-pane fade" id="pills-manufacturer" role="tabpanel" aria-labelledby="pills-manufacturer-tab">
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                                  <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+                          <p>{{$car->description}}</p>
                           </div>
 
-                          <div class="tab-pane fade" id="pills-review" role="tabpanel" aria-labelledby="pills-review-tab">
-                            <div class="row">
-                                     <div class="col-md-7">
-                                         <h3 class="head">23 Reviews</h3>
-                                         <div class="review d-flex">
-                                             <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-                                             <div class="desc">
-                                                 <h4>
-                                                     <span class="text-left">Jacob Webb</span>
-                                                     <span class="text-right">14 March 2018</span>
-                                                 </h4>
-                                                 <p class="star">
-                                                     <span>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                     </span>
-                                                     <span class="text-right"><a href="#" class="reply"><i class="icon-reply"></i></a></span>
-                                                 </p>
-                                                 <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrov</p>
-                                             </div>
-                                         </div>
-                                         <div class="review d-flex">
-                                             <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-                                             <div class="desc">
-                                                 <h4>
-                                                     <span class="text-left">Jacob Webb</span>
-                                                     <span class="text-right">14 March 2018</span>
-                                                 </h4>
-                                                 <p class="star">
-                                                     <span>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                     </span>
-                                                     <span class="text-right"><a href="#" class="reply"><i class="icon-reply"></i></a></span>
-                                                 </p>
-                                                 <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrov</p>
-                                             </div>
-                                         </div>
-                                         <div class="review d-flex">
-                                             <div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
-                                             <div class="desc">
-                                                 <h4>
-                                                     <span class="text-left">Jacob Webb</span>
-                                                     <span class="text-right">14 March 2018</span>
-                                                 </h4>
-                                                 <p class="star">
-                                                     <span>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                     </span>
-                                                     <span class="text-right"><a href="#" class="reply"><i class="icon-reply"></i></a></span>
-                                                 </p>
-                                                 <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrov</p>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <div class="col-md-5">
-                                         <div class="rating-wrap">
-                                             <h3 class="head">Give a Review</h3>
-                                             <div class="wrap">
-                                                 <p class="star">
-                                                     <span>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         (98%)
-                                                     </span>
-                                                     <span>20 Reviews</span>
-                                                 </p>
-                                                 <p class="star">
-                                                     <span>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         (85%)
-                                                     </span>
-                                                     <span>10 Reviews</span>
-                                                 </p>
-                                                 <p class="star">
-                                                     <span>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         (70%)
-                                                     </span>
-                                                     <span>5 Reviews</span>
-                                                 </p>
-                                                 <p class="star">
-                                                     <span>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         (10%)
-                                                     </span>
-                                                     <span>0 Reviews</span>
-                                                 </p>
-                                                 <p class="star">
-                                                     <span>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         <i class="ion-ios-star"></i>
-                                                         (0%)
-                                                     </span>
-                                                     <span>0 Reviews</span>
-                                                 </p>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
-                          </div>
                         </div>
                       </div>
             </div>

@@ -213,7 +213,7 @@
   <p class="con-text pb-5">Per richieste di informazioni o assistenza per la tua auto. Siamo a tua disposizione.</p>
   
   <div class="contactus_btn">
-  <a href="contatti.html" class="con-link" target="" rel="follow"><i class="icon ion-ios-arrow-forward"></i> Entra in contatto con noi</a>
+  <a href="{{route('contatti')}}" class="con-link" target="" rel="follow"><i class="icon ion-ios-arrow-forward"></i> Entra in contatto con noi</a>
   </div>
 </section>
 
