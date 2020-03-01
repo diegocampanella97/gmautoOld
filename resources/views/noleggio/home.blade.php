@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+<section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
   <div class="overlay"></div>
   <div class="container">
     <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
@@ -45,6 +45,7 @@
                       <input type="submit" value="Invia Messaggio" class="btn btn-secondary py-3 px-4">
                     </div>
                         </form>
+                        
                       </div>
                       <div class="col-md-8 d-flex align-items-center">
                           <div class="services-wrap rounded-right w-100">
@@ -141,18 +142,7 @@
     </div>
 </section>
 
-<section class="ftco-section ftco-intro" style="background-image: url(images/bg_3.jpg);">
-  <div class="container">
-      <div class="row justify-content-center">
-          <div class="col-12 heading-section heading-section-white ftco-animate">
-  <h2 class="mb-3">Scopri le nostre offerte per il noleggio di furgoni</h2>
-  <a href="#" class="btn-prev btn-primary btn-lg">Richiedi informazioni</a>
-</div>
-      </div>
-  </div>
-</section>
-
-<section>
+{{-- <section>
   <div class="container py-4">
     <div class="row">
       <div class="col-12 col-md-6">
@@ -212,10 +202,26 @@
       </div>
     </div>
   </div>
-</section>
+</section> --}}
 
+<section class="ftco-section ftco-about py-4">
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(/images/about.jpg);">
+      </div>
+      <div class="col-md-6 wrap-about ftco-animate fadeInUp ftco-animated">
+        <div class="heading-section heading-section-white pl-md-5">
+          <span class="subheading">About us</span>
+          <h2 class="mb-4">Welcome to Carbook</h2>
+          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+          <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
 
-<section class="ftco-section ftco-intro" style="background-image: url(images/bg_3.jpg);">
+<section class="ftco-section ftco-intro" style="background-image: url(/images/bg_3.jpg);">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 heading-section heading-section-white ftco-animate">
@@ -240,8 +246,6 @@
         <div class="carousel-testimony owl-carousel ftco-owl">
           <div class="item">
             <div class="testimony-wrap rounded text-center py-4 pb-5">
-              <div class="user-img mb-2" style="background-image: url(images/person_1.jpg)">
-              </div>
               <div class="text pt-4">
                 <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                 <p class="name">Roger Scott</p>
@@ -251,8 +255,6 @@
           </div>
           <div class="item">
             <div class="testimony-wrap rounded text-center py-4 pb-5">
-              <div class="user-img mb-2" style="background-image: url(images/person_2.jpg)">
-              </div>
               <div class="text pt-4">
                 <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                 <p class="name">Roger Scott</p>
@@ -262,8 +264,6 @@
           </div>
           <div class="item">
             <div class="testimony-wrap rounded text-center py-4 pb-5">
-              <div class="user-img mb-2" style="background-image: url(images/person_3.jpg)">
-              </div>
               <div class="text pt-4">
                 <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                 <p class="name">Roger Scott</p>
@@ -273,8 +273,6 @@
           </div>
           <div class="item">
             <div class="testimony-wrap rounded text-center py-4 pb-5">
-              <div class="user-img mb-2" style="background-image: url(images/person_1.jpg)">
-              </div>
               <div class="text pt-4">
                 <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                 <p class="name">Roger Scott</p>
@@ -284,8 +282,6 @@
           </div>
           <div class="item">
             <div class="testimony-wrap rounded text-center py-4 pb-5">
-              <div class="user-img mb-2" style="background-image: url(images/person_1.jpg)">
-              </div>
               <div class="text pt-4">
                 <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                 <p class="name">Roger Scott</p>

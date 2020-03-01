@@ -16,8 +16,7 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/noleggio', 'HomeController@noleggio')->name('noleggio');
-Route::view('/noleggio/trasporto-disabili-in-carrozzina', 'noleggio.disabile')->name('disabile');
+
 // Route::get('/servizi', 'HomeController@servizi')->name('servizi');
 Route::get('/contatti', 'HomeController@contatti')->name('contatti');
 Route::get('/home', 'HomeController@contatti')->name('contatti');
@@ -35,3 +34,11 @@ Route::get('/auto/usate/{id}','FrontendController@goUsatoDettaglio')->name('auto
 Route::post('/aggiungiAuto/img/upload','AdminController@uploadPhoto')->name('admin.img.upload');
 Route::delete('/aggiungiAuto/img/remove','AdminController@removePhoto')->name('admin.img.remove');
 Route::get('/aggiungiAuto/img','AdminController@getImages')->name('admin.img');
+
+
+
+Route::view('/noleggio/trasporto-disabili-in-carrozzina', 'noleggio.disabile')->name('disabile');
+Route::view('/noleggio/grazie', 'noleggio.thanks')->name('noleggio.thanks');
+
+Route::get('/noleggio', 'HomeController@noleggio')->name('noleggio');
+Route::post('/noleggio/inviaMessaggio', 'HomeController@noleggio')->name('noleggio.invia');
