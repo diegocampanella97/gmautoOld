@@ -49,27 +49,30 @@
                       </div>
                       <div class="col-md-8 d-flex align-items-center">
                           <div class="services-wrap rounded-right w-100">
-                              <h3 class="heading-section mb-4">Il modo migliore di noleggiare l'auto</h3>
+                              <h3 class="heading-section mb-4">Guidare senza pensieri si può</h3>
                               <div class="row d-flex mb-4">
                           <div class="col-md-4 d-flex align-self-stretch ftco-animate">
                             <div class="services w-100 text-center">
-                              <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
+                              <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="flaticon-seat-belt"></span></div>
                               <div class="text w-100">
-                                <h3 class="heading mb-2">Trova l'auto ideale</h3>
+                                <h3 class="heading mb-2">Pianifica una vacanza</h3>
                             </div>
                             </div>      
                           </div>
                           <div class="col-md-4 d-flex align-self-stretch ftco-animate">
                             <div class="services w-100 text-center">
-                              <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-handshake"></span></div>
+                              <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="flaticon-gears"></span></div>
                               <div class="text w-100">
-                                <h3 class="heading mb-2">Prenota online</h3>
+                                <h3 class="heading mb-2">Verifica le date<gli amici</h3>
                               </div>
                             </div>      
                           </div>
                           <div class="col-md-4 d-flex align-self-stretch ftco-animate">
                             <div class="services w-100 text-center">
-                              <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-rent"></span></div>
+                              <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="flaticon-car-key"></span></div>
                               <div class="text w-100">
                                 <h3 class="heading mb-2">Ritira in concessonario</h3>
                               </div>
@@ -87,56 +90,39 @@
     <div class="container">
       <div class="row d-flex justify-content-between">
         <div class="col-md-12 heading-section text-center ftco-animate mb-5 fadeInUp ftco-animated">
-          <span class="subheading">Le nostre offerte</span>
           <h2 class="mb-2">Cosa stai cercando?</h2>
+          <p>Offriamo vari modelli auto in grado di soddisfare  le tue esigenze per il noleggio a breve e lungo termine. </p>
         </div>
-        <div class="col-6 col-md-2">
+        <div class="col-12 col-md-4">
           <div class="services services-2 w-100 text-center">
-            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-wedding-car"></span></div>
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="flaticon-transportation"></span>
+            </div>
+            <div class="text w-100">
+              <h3 class="heading mb-2">Breve Termine</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="services services-2 w-100 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="flaticon-car"></span>
+            </div>
+            <div class="text w-100">
+              <h3 class="heading mb-2">Breve Termine</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="services services-2 w-100 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="flaticon-wheelchair"></span>
+            </div>
             <div class="text w-100">
               <h3 class="heading mb-2">Lorem ipsum</h3>
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-2">
-          <div class="services services-2 w-100 text-center">
-            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
-            <div class="text w-100">
-              <h3 class="heading mb-2">Lorem ipsum</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-2">
-          <div class="services services-2 w-100 text-center">
-            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-car"></span></div>
-            <div class="text w-100">
-              <h3 class="heading mb-2">Lorem ipsum</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-2">
-          <div class="services services-2 w-100 text-center">
-            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
-            <div class="text w-100">
-              <h3 class="heading mb-2">Lorem ipsum</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-2">
-          <div class="services services-2 w-100 text-center">
-            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
-            <div class="text w-100">
-              <h3 class="heading mb-2">Lorem ipsum</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-2">
-          <div class="services services-2 w-100 text-center">
-            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
-            <div class="text w-100">
-              <h3 class="heading mb-2">Lorem ipsum</h3>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -211,87 +197,37 @@
       </div>
       <div class="col-md-6 wrap-about ftco-animate fadeInUp ftco-animated">
         <div class="heading-section heading-section-white pl-md-5">
-          <span class="subheading">About us</span>
-          <h2 class="mb-4">Welcome to Carbook</h2>
-          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-          <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+          <h2 class="mb-4">NOLEGGIO <br>  A BREVE/LUNGO TERMINE</h2>
+          <p>
+            Sei pronto a guidare senza troppi pensieri? Vieni a trovarci! Offriamo vari modelli auto in grado di soddisfare  le tue esigenze per il noleggio a breve e lungo termine. 
+          </p>
+          <p>
+            Se stai pianificando una vacanza in famiglia o un weekend fuori porta con gli amici, da noi trovi pulmini 9 posti che ti permetteranno  di muoverti in totale indipendenza e sicurezza.
+          </p>
+          <p>
+
+          </p>
+          <p>
+            Devi effettuare un trasloco o trasportare merci? Vieni da noi e troverai la soluzione più adatta alle tue necessità.
+          </p>
         </div>
       </div>
     </div>
   </div>
   </section>
 
-<section class="ftco-section ftco-intro" style="background-image: url(/images/bg_3.jpg);">
+<section class="ftco-section ftco-intro " style="background-image: url(/images/bg_3.jpg);">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 heading-section heading-section-white ftco-animate">
-        <h2 class="mb-3">Frase furgone Carrozzina</h2>
-        <a href="{{route('disabile')}}" class="btn-prev btn-primary btn-lg">Richiedi informazioni</a>
-      </div>
+                  <h3 class="mb-3 text-white">Hai necessità di trasportare persone diversamente abili in carrozzina?</h3>
+                  <p> Da noi troverai un mezzo allestito e omologato che ti consentirà di farlo in totale indipendenza.</p>
+                  <a href="{{route('disabile')}}" class="btn-prev btn-primary btn-lg">Richiedi informazioni</a>
+                </div>
             </div>
         </div>
 </section>
 
+@include('module.contact')
 
-
-<section class="ftco-section testimony-section bg-light">
-  <div class="container">
-    <div class="row justify-content-center mb-5">
-      <div class="col-md-7 text-center heading-section ftco-animate">
-          <span class="subheading">Testimonianze</span>
-      </div>
-    </div>
-    <div class="row ftco-animate">
-      <div class="col-md-12">
-        <div class="carousel-testimony owl-carousel ftco-owl">
-          <div class="item">
-            <div class="testimony-wrap rounded text-center py-4 pb-5">
-              <div class="text pt-4">
-                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p class="name">Roger Scott</p>
-                <span class="position">Marketing Manager</span>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="testimony-wrap rounded text-center py-4 pb-5">
-              <div class="text pt-4">
-                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p class="name">Roger Scott</p>
-                <span class="position">Interface Designer</span>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="testimony-wrap rounded text-center py-4 pb-5">
-              <div class="text pt-4">
-                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p class="name">Roger Scott</p>
-                <span class="position">UI Designer</span>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="testimony-wrap rounded text-center py-4 pb-5">
-              <div class="text pt-4">
-                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p class="name">Roger Scott</p>
-                <span class="position">Web Developer</span>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="testimony-wrap rounded text-center py-4 pb-5">
-              <div class="text pt-4">
-                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p class="name">Roger Scott</p>
-                <span class="position">System Analyst</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 @endsection

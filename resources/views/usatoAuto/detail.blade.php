@@ -58,7 +58,7 @@
           <div class="media block-6 services">
             <div class="media-body py-md-4">
                 <div class="d-flex mb-3 align-items-center">
-                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-dashboard"></span></div>
+                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-dashboard-3"></span></div>
                     <div class="text">
                       <h3 class="heading mb-0 pl-3">
                           Kilometri
@@ -73,7 +73,7 @@
           <div class="media block-6 services">
             <div class="media-body py-md-4">
                 <div class="d-flex mb-3 align-items-center">
-                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-pistons"></span></div>
+                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-gearshift"></span></div>
                     <div class="text">
                       <h3 class="heading mb-0 pl-3">
                             Cambio

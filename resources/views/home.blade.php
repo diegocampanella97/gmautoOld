@@ -8,14 +8,14 @@
     <div class="row no-gutters slider-text justify-content-start align-items-center justify-content-center">
       <div class="col-lg-8 ftco-animate">
         <div class="text w-100 text-center mb-md-5 pb-md-5">
-          <h1 class="mb-4">Fast &amp; Easy Way To Rent A Car</h1>
-          <p style="font-size: 18px;">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts</p>
-          <a href="https://vimeo.com/45830194" class="icon-wrap popup-vimeo d-flex align-items-center mt-4 justify-content-center">
+          <h1 class="mb-4">Professionalità, cortesia e passione per le auto</h1>
+          <p style="font-size: 18px;">Attivi sul territorio da oltre 30 anni, come attività a conduzione familiare offriamo alla clientela un vasto assortimento di autovetture usate plurimarche, selezionate e garantite.</p>
+          <a href="{{ route('contatti') }}" class="icon-wrap d-flex align-items-center mt-4 justify-content-center">
             <div class="icon d-flex align-items-center justify-content-center">
-              <span class="ion-ios-play"></span>
+              <i class="fas fa-2x fa-envelope text-white"></i>
             </div>
             <div class="heading-title ml-5">
-              <span>Easy steps for renting a car</span>
+              <span>Vieni a trovarci!</span>
             </div>
           </a>
         </div>
@@ -32,7 +32,7 @@
         <div class="row no-gutters">
           <div class="searchcar col-12 align-items-center">
             <form action="#" class="request-form ftco-animate bg-primary fadeInUp ftco-animated">
-              <h2>Trova la tua auto</h2>
+              <h2 class="text-center">Trova la tua auto</h2>
               <div class="row">
                   <div class="col-lg-11 col-md-5 col-sm-12 col-xs-12">
                     <div class="car-field">
@@ -54,7 +54,7 @@
     <div class="row justify-content-center">
       <div class="col-md-12 heading-section text-center ftco-animate mb-5">
         <span class="subheading">Le nostre offerte</span>
-        <h2 class="mb-2">Cosa stai cercando?</h2>
+        <h2 class="mb-2">Le ultime novità</h2>
       </div>
     </div>
     <div class="row">
@@ -97,8 +97,7 @@
         <div class="heading-section heading-section-white pl-md-5">
           <span class="subheading">Chi siamo</span>
           <h2 class="mb-4">Benvenuti su GM Automobili</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et...</p>
-          <p><a href="#" class="btn btn-secondary py-2 ml-1">Scopri</a></p>
+          <p>GM  Autoveicoli, sita in Turi (Ba) sulla SP 215 al Km 1, si occupa della rivendita di auto usate. Attivi sul territorio da oltre 30 anni, come attività a conduzione familiare offriamo alla clientela un vasto assortimento di autovetture usate plurimarche, selezionate e garantite. La collaborazione con officine, elettrauto ed altri professionisti del settore, ci permette di soddisfare pienamente le esigenze della nostra clientela.</p>
         </div>
       </div>
     </div>
@@ -111,42 +110,39 @@
       <div class="col-md-7 text-center heading-section ftco-animate">
         <span class="subheading">Servizi</span>
         <h2 class="mb-3">I nostri servizi</h2>
+        <p>L’esperienza sviluppata dopo anni di lavoro, ci consente <br> di soddisfare le tante esigenze dei nostri clienti:</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-3 ftco-animate">
         <div class="services services-2 w-100 text-center">
-          <div class="icon d-flex align-items-center justify-content-center"><i class="fas fa-car"></i></div>
+          <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-car-5"></span></div>
           <div class="text w-100">
-            <h3 class="heading mb-2">Lorem ipsum</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            <h3 class="heading mb-2">Auto nuove e km 0</h3>
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 ftco-animate">
         <div class="services services-2 w-100 text-center">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
+          <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-car-key-2"></span></div>
           <div class="text w-100">
-            <h3 class="heading mb-2">Lorem ipsum</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            <h3 class="heading mb-2">Noleggio Veicolo <br> breve/lungo termine</h3>
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 ftco-animate">
+        <div class="services services-2 w-100 text-center">
+          <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-mechanic"></span></div>
+          <div class="text w-100">
+            <h3 class="heading mb-2">Permuta e acquisto dell’usato</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 ftco-animate">
         <div class="services services-2 w-100 text-center">
           <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-car"></span></div>
           <div class="text w-100">
-            <h3 class="heading mb-2">Lorem ipsum</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="services services-2 w-100 text-center">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-transportation"></span></div>
-          <div class="text w-100">
-            <h3 class="heading mb-2">Lorem ipsum</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            <h3 class="heading mb-2">Soccorso stradale H 24</h3>
           </div>
         </div>
       </div>
@@ -158,7 +154,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 heading-section heading-section-white ftco-animate">
-        <h2 class="mb-3">Scopri le nostre offerte per il noleggio di furgoni</h2>
+        <h2 class="mb-3">Finanziamenti personalizzati e tasso agevolato </h2>
       <a href="{{route('contatti')}}" class="btn-prev btn-primary btn-lg">Richiedi preventivo</a>
       </div>
     </div>
@@ -210,6 +206,7 @@
   <div class="row justify-content-center">
   <div class="col-12 heading-section heading-section-white ftco-animate">
   <h2 class="mb-3">Sei un nostro cliente? Contattaci.</h2>
+  <h4 class="con-text py-2">Garanzia 12 mesi sull’usato</h4>
   <p class="con-text pb-5">Per richieste di informazioni o assistenza per la tua auto. Siamo a tua disposizione.</p>
   
   <div class="contactus_btn">
