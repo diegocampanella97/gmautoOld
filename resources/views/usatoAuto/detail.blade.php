@@ -21,15 +21,22 @@
         <div class="row justify-content-left">
             <div class="col-md-8">
                 <div class="carousel-car2 owl-carousel">
-                  @foreach ($car->images as $item)
-                  
+                  @if ($car->images->count()>0)
+                    @foreach ($car->images as $item)
+                    <div class="item">
+                      <div class="car-wrap2 rounded ftco-animate">
+                          <img class="img-fluid rounded d-flex align-items-end" src="{{Storage::url($item->filePath)}}" alt="">
+                      </div>   
+                    </div>
+                    @endforeach
+                  @else
                   <div class="item">
                     <div class="car-wrap2 rounded ftco-animate">
-                        <img class="img-fluid rounded d-flex align-items-end" src="{{Storage::url($item->filePath)}}" alt="">
+                        <img class="img-fluid rounded d-flex align-items-end" src="/images/placeholder_gmautoveicoli.png" alt="">
                     </div>   
-                  </div>
-                  @endforeach
-                  
+                  </div>  
+                  @endif
+
                 </div>
             </div>
             
@@ -37,7 +44,9 @@
               <div class="infocar rounded ftco-animate">
                   <div class="text">
                       <h2 class="pricecar mb-0">
-                          <a href="#">{{$car->price}} €</a></h2>
+                          <a href="#">{{$car->price}} €</a>
+                      </h2>
+                      <p>Anno Immatricolazione: {{$car->year}}</p>
                       <p class="d-flex mb-0 d-block">
                           <a href="#" class="btn btn-secondary py-2 ml-1">Scopri </a>
                       </p>
@@ -50,7 +59,8 @@
           
       <div class="text text-center">
       <span class="subheading">{{$car->exemplar->name}}</span>
-          <h2>{{$car->name}}</h2>
+          <h4>{{$car->collection->name}}</h4>
+          <h5>{{$car->mounting}}</h5>
       </div>
 
         <div class="row">
@@ -88,11 +98,11 @@
           <div class="media block-6 services">
             <div class="media-body py-md-4">
                 <div class="d-flex mb-3 align-items-center">
-                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-car-seat"></span></div>
+                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-car-painting"></span></div>
                     <div class="text">
                       <h3 class="heading mb-0 pl-3">
-                          Posti
-                          <span>{{$car->door->name}}</span>
+                          Colore
+                          <span>{{$car->color->name}}</span>
                       </h3>
                   </div>
               </div>
@@ -103,41 +113,26 @@
           <div class="media block-6 services">
             <div class="media-body py-md-4">
                 <div class="d-flex mb-3 align-items-center">
-                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-arrow-up"></span></div>
-                    <div class="text">
-                      <h3 class="heading mb-0 pl-3">
-                          Luggage
-                          <span>4 Bags</span>
-                      </h3>
-                  </div>
-              </div>
-            </div>
-          </div>      
-        </div>
-        <div class="col-md d-flex align-self-stretch ftco-animate">
-          <div class="media block-6 services">
-            <div class="media-body py-md-4">
-                <div class="d-flex mb-3 align-items-center">
-                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-backpack"></span></div>
-                    <div class="text">
-                      <h3 class="heading mb-0 pl-3">
-                          Luggage
-                          <span>4 Bags</span>
-                      </h3>
-                  </div>
-              </div>
-            </div>
-          </div>      
-        </div>
-        <div class="col-md d-flex align-self-stretch ftco-animate">
-          <div class="media block-6 services">
-            <div class="media-body py-md-4">
-                <div class="d-flex mb-3 align-items-center">
-                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-diesel"></span></div>
+                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-gasoline"></span></div>
                     <div class="text">
                       <h3 class="heading mb-0 pl-3">
                           Carburante
                           <span>{{$car->fuel->name}}</span>
+                      </h3>
+                  </div>
+              </div>
+            </div>
+          </div>      
+        </div>
+        <div class="col-md d-flex align-self-stretch ftco-animate">
+          <div class="media block-6 services">
+            <div class="media-body py-md-4">
+                <div class="d-flex mb-3 align-items-center">
+                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-car-door"></span></div>
+                    <div class="text">
+                      <h3 class="heading mb-0 pl-3">
+                          Numero di porte  
+                          <span>4 Bags</span>
                       </h3>
                   </div>
               </div>
@@ -161,7 +156,8 @@
                           </div>
 
                         <div class="tab-content" id="pills-tabContent">
-                          <div class="tab-pane fade show active" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab">
+                          
+                          <div class="tab-pane fade show active text-centers" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab">
                               <div class="row">
                                   <div class="col-md-4">
                                       <ul class="features">

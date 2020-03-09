@@ -42,3 +42,5 @@ Route::view('/noleggio/grazie', 'noleggio.thanks')->name('noleggio.thanks');
 
 Route::get('/noleggio', 'HomeController@noleggio')->name('noleggio');
 Route::post('/noleggio/inviaMessaggio', 'HomeController@noleggio')->name('noleggio.invia');
+
+Route::get('/auto/galleria','CarController@showAll')->name('galleryAuto');

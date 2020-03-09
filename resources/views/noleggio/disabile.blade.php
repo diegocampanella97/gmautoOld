@@ -23,8 +23,7 @@
 
     <div class="fadeInUp ftco-animated row">
       <div class="col-12 col-md-6 order-0 order-md-0">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui molestiae amet voluptates ipsa ut eaque nisi reprehenderit impedit eveniet adipisci necessitatibus quas unde fugiat, vero itaque, quis cupiditate error. Qui!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptate illo consequuntur ad, deleniti quo, nulla porro ipsa animi ratione quasi facilis omnis culpa. Repudiandae nostrum cumque quia debitis omnis.</p>
+        <p>Hai necessità di trasportare persone diversamente abili in carrozzina? Da noi troverai un mezzo allestito e omologato che ti consentirà di farlo in totale indipendenza.</p>
       </div>
       <div class="col-12 col-md-6 order-1 order-md-1">
         <figure>
@@ -32,17 +31,7 @@
         </figure>
       </div>
     </div>
-    <div class="fadeInUp ftco-animated row py-4">
-      <div class="col-12 col-md-6 order-1 order-md-0">
-        <figure>
-          <img src="https://via.placeholder.com/550x340" class="img-fluid" alt="">
-        </figure>
-      </div>
-      <div class="col-12 col-md-6 order-0 order-md-1">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui molestiae amet voluptates ipsa ut eaque nisi reprehenderit impedit eveniet adipisci necessitatibus quas unde fugiat, vero itaque, quis cupiditate error. Qui!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptate illo consequuntur ad, deleniti quo, nulla porro ipsa animi ratione quasi facilis omnis culpa. Repudiandae nostrum cumque quia debitis omnis.</p>
-      </div>
-    </div>
+
     </div>
 </section>
 @endsection

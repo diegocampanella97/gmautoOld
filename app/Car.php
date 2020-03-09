@@ -5,6 +5,7 @@ namespace App;
 use App\Car;
 use App\Door;
 use App\Fuel;
+use App\Color;
 use App\CarImage;
 use App\Exemplar;
 use App\Collection;
@@ -42,6 +43,14 @@ class Car extends Model{
 
     public function fuel(){
         return $this->belongsTo(Fuel::class);
+    }
+
+    public function color(){
+        return $this->belongsTo(Color::class);
+    }
+
+    static public function getCarApproved(){
+        return Car::where('approved','=',true)->get();
     }
 
 

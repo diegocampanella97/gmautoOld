@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
 <div class="hero-wrap ftco-degree-bg" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
   <div class="overlay"></div>
   <div class="container">
@@ -23,7 +22,6 @@
       </div>
     </div>
   </div>
-</div>
 
 <section class="ftco-section ftco-no-pt bg-light">
   <div class="container">
@@ -64,7 +62,14 @@
           @foreach (\App\Car::getLastCar() as $item)
             <div class="item">
               <div class="car-wrap rounded ftco-animate">
-                <div class="img rounded d-flex align-items-end" style="background-image: url({{Storage::url($item->images[0]->filePath)}});">
+
+                @if ($item->images->count()>0)
+                <div class="img rounded d-flex align-items-end" style="background-image: url({{Storage::url($item->images[0]->filePath)}});">    
+                @else
+                <div class="img rounded d-flex align-items-end" style="background-image: url('/images/placeholder_gmautoveicoli.png');">
+                @endif
+
+
                 </div>
                 <div class="text">
                 <h2 class="mb-0"><a href="#">{{$item->name}}</a></h2>

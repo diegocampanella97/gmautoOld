@@ -193,7 +193,7 @@
 <section class="ftco-section ftco-about py-4">
   <div class="container">
     <div class="row no-gutters">
-      <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(/images/about.jpg);">
+      <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(/images/logo_noleggio.jpg);">
       </div>
       <div class="col-md-6 wrap-about ftco-animate fadeInUp ftco-animated">
         <div class="heading-section heading-section-white pl-md-5">
