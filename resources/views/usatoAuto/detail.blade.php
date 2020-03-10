@@ -131,8 +131,8 @@
                     <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-car-door"></span></div>
                     <div class="text">
                       <h3 class="heading mb-0 pl-3">
-                          Numero di porte  
-                          <span>4 Bags</span>
+                          N. di porte  
+                          <span>{{$car->door->name}} Porte</span>
                       </h3>
                   </div>
               </div>
@@ -145,19 +145,15 @@
                       <div class="bd-example bd-example-tabs">
                           <div class="d-flex justify-content-center">
                             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-
                               <li class="nav-item">
-                                <a class="nav-link active" id="pills-description-tab" data-toggle="pill" href="#pills-description" role="tab" aria-controls="pills-description" aria-expanded="true">Caratteristiche</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" id="pills-manufacturer-tab" data-toggle="pill" href="#pills-manufacturer" role="tab" aria-controls="pills-manufacturer" aria-expanded="true">Descrizione</a>
+                                <a class="nav-link active" id="pills-manufacturer-tab" data-toggle="pill" href="#pills-manufacturer" role="tab" aria-controls="pills-manufacturer" aria-expanded="true">Descrizione</a>
                               </li>
                             </ul>
                           </div>
 
                         <div class="tab-content" id="pills-tabContent">
                           
-                          <div class="tab-pane fade show active text-centers" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab">
+                          {{-- <div class="tab-pane fade show active text-centers" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab">
                               <div class="row">
                                   <div class="col-md-4">
                                       <ul class="features">
@@ -187,9 +183,9 @@
                                       </ul>
                                   </div>
                               </div>
-                          </div>
+                          </div> --}}
 
-                          <div class="tab-pane fade" id="pills-manufacturer" role="tabpanel" aria-labelledby="pills-manufacturer-tab">
+                          <div class="tab-pane fade show active" id="pills-manufacturer" role="tabpanel" aria-labelledby="pills-manufacturer-tab">
                           <p>{{$car->description}}</p>
                           </div>
 

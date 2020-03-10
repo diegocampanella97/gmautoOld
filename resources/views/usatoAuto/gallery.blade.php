@@ -31,11 +31,16 @@
             <div class="item">
               <div class="car-wrap rounded ftco-animate">
                 <a href="{{ route('auto.dettaglio', ['id'=>$item->id]) }}">
-                <div class="img rounded d-flex align-items-end" style="background-image: url(
-                  {{
-                  // Storage::url($item->images[0]->filePath)
-                  }});">
-                </div>
+                  @if ($item->images->count()>0)
+                    <div class="img rounded d-flex align-items-end" style="background-image: url(
+                      {{
+                      Storage::url($item->images[0]->filePath)
+                      }});">
+                    </div> 
+                  @else
+                    <div class="img rounded d-flex align-items-end" style="background-image: url('/images/placeholder_gmautoveicoli.png');">
+                    </div> 
+                  @endif
                   </a>
                 <div class="text">
                 <h2 class="mb-0"><a href="#">{{$item->name}}</a></h2>
