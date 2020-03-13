@@ -162,7 +162,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
-
+        Barryvdh\Debugbar\ServiceProvider::class,
         /*
          * Package Service Providers...
          */
@@ -175,6 +175,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Laravel\Scout\ScoutServiceProvider::class,
+        TeamTNT\Scout\TNTSearchScoutServiceProvider::class,
 
     ],
 
@@ -232,6 +234,8 @@ return [
         'JsonLd'   => Artesaos\SEOTools\Facades\JsonLd::class,
         // or
         'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
+        'Debugbar' => Barryvdh\Debugbar\Facade\Debugbar::class,
+        
     ],
 
 ];

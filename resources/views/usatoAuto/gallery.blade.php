@@ -56,9 +56,15 @@
             </div>  
           </div>
           @endforeach
-
-
+          
+          
         </div>
+            <div class="row py-3">
+              <div class="col-12 d-flex justify-content-center">
+                {{ \App\Car::getCarApproved()->links() }}
+  
+              </div>
+            </div>
     </div>
 
   </section>
