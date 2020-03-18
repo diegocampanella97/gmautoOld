@@ -44,3 +44,4 @@ Route::get('/noleggio', 'HomeController@noleggio')->name('noleggio');
 Route::post('/noleggio/inviaMessaggio', 'HomeController@noleggio')->name('noleggio.invia');
 
 Route::get('/auto/galleria','CarController@showAll')->name('galleryAuto');
+Route::POST('/auto/cerca', 'HomeController@search')->name('auto.cerca');

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Car;
 use Illuminate\Http\Request;
 use Artesaos\SEOTools\Facades\SEOMeta;
 
@@ -37,6 +38,12 @@ class HomeController extends Controller
 
     public function contatti(){
         return view('contatti.home');
+    }
+
+    public function search(Request $request){
+
+        $cars = Car::search($request->input('query'))->paginate(20);
+        return view('usatoAuto.search',compact('cars'));
     }
 
 

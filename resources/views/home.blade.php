@@ -29,12 +29,14 @@
       <div class="col-12 featured-top">
         <div class="row no-gutters">
           <div class="searchcar col-12 align-items-center">
-            <form action="#" class="request-form ftco-animate bg-primary fadeInUp ftco-animated">
+            
+            <form action="{{ route('auto.cerca') }}" method="POST" class="request-form ftco-animate bg-primary fadeInUp ftco-animated">
+              @csrf
               <h2 class="text-center">Trova la tua auto</h2>
               <div class="row">
                   <div class="col-lg-11 col-md-5 col-sm-12 col-xs-12">
                     <div class="car-field">
-                      <input type="text" placeholder="Cosa stai cercando?">
+                      <input type="text" name="query" placeholder="Cosa stai cercando?">
                     </div>
                   </div>
                   <div class="col-lg-1 col-md-2 col-sm-12 col-xs-12 py-2 py-md-0">
