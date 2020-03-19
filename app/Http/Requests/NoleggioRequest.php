@@ -24,7 +24,20 @@ class NoleggioRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'dataRitiro' => 'required',
+            'dataConsegna' => 'required',
+            'messaggio' => 'required',
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'dataRitiro.required' => 'Inserisci una data di ritiro valida',
+            'dataConsegna.required'  => 'Inserisci una data di consegna valida',
+            'messaggio.required' => 'Inserisci un messaggio',
+        ];
+    }
+
+
 }

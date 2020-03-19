@@ -22,7 +22,24 @@
                           <form action="{{ route('noleggio.invia') }}" method="POST" class="request-form ftco-animate bg-primary">
                             @csrf
                             <h2>Noleggia la tua auto</h2>
+                            @if (Session::get('flag')!=null)
+                            <div class="alert alert-danger">
+                              <ul>
+                                <li>{{Session::get('flag')}}</li>
+                              </ul>
+                            </div>
+                            @endif
 
+
+                            @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
                             <div class="d-flex">
                               <div class="form-group mr-2">
                                 <label for="" class="label">Data di ritiro</label>
@@ -35,7 +52,7 @@
                           </div>
                   <div class="form-group">
                     <label for="" class="label">Messaggio</label>
-                    <textarea class="form-control" name="Messaggio" rows="3"></textarea>
+                    <textarea class="form-control" name="messaggio" rows="3"></textarea>
                   </div>
               
 

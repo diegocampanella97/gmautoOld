@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Car;
+use DateTime;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Requests\NoleggioRequest;
@@ -49,12 +50,29 @@ class HomeController extends Controller
     }
 
     public function inviaMessaggio(NoleggioRequest $request){
-        $date = "2016-09-16 11:00:00";
-        $datework = Carbon::createFromDate($date);
-        $now = Carbon::now();
-        $testdate = $datework->diffInDays($now);
+
+        // previdi che le date siano maggiori o uguali del now 
+
+        $dataRitiro = Carbon::createFromDate($request->input('dataRitiro'));
+        if ($dataRitiro<Carbon::now()) {
+            $request->session()->flash('flag','Attenzione: Devi selezionare delle date valide');
+            return redirect()->route('noleggio');
+        }
+
+        $dataConsegna = Carbon::createFromDate($request->input('dataConsegna'));
+
+        if ($dataRitiro<Carbon::now()) {
+            $request->session()->flash('flag','Attenzione: Devi selezionare delle date valide');
+            return redirect()->route('noleggio');
+        }
+
+        if($dataRitiro <=$dataConsegna){
+            dd($request->input());
+        } else {
+            $request->session()->flash('flag','Errore nel selezionare le date!');
+            return redirect()->route('noleggio');
+        }
         
-        dd($testdate);
         
     }
 
