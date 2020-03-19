@@ -18,23 +18,21 @@
             <div class="col-md-12	featured-top">
                 <div class="row no-gutters">
                       <div class="col-md-4 d-flex align-items-center">
-                          <form action="#" class="request-form ftco-animate bg-primary">
-                      <h2>Noleggia la tua auto</h2>
+                        
+                          <form action="{{ route('noleggio.invia') }}" method="POST" class="request-form ftco-animate bg-primary">
+                            @csrf
+                            <h2>Noleggia la tua auto</h2>
 
                             <div class="d-flex">
-                                <div class="form-group mr-2">
-                        <label for="" class="label">Data di ritiro</label>
-                        <input type="text" class="form-control" id="book_pick_date" placeholder="Data">
-                      </div>
-                      <div class="form-group ml-2">
-                        <label for="" class="label">Data di consegna</label>
-                        <input type="text" class="form-control" id="book_off_date" placeholder="Data">
-                      </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="" class="label">Orario di ritiro</label>
-                    <input type="text" class="form-control" id="time_pick" placeholder="Orario">
-              </div>
+                              <div class="form-group mr-2">
+                                <label for="" class="label">Data di ritiro</label>
+                                <input type="date" class="form-control" name="dataRitiro" id="book_pick_date2" placeholder="Data">
+                              </div>
+                              <div class="form-group ml-2">
+                                <label for="" class="label">Data di consegna</label>
+                                <input type="date" class="form-control" name="dataConsegna" id="book_off_date2" placeholder="Data">
+                              </div>
+                          </div>
                   <div class="form-group">
                     <label for="" class="label">Messaggio</label>
                     <textarea class="form-control" name="Messaggio" rows="3"></textarea>
