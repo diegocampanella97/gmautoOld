@@ -33,7 +33,7 @@ class HomeController extends Controller
     }
 
     public function noleggio(){
-        return view('noleggio.home');
+        return view('noleggio.homeNoleggio');
     }
 
     public function servizi(){
