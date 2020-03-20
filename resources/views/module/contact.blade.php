@@ -35,29 +35,46 @@
                 </div>
               </div>
         </div>
-        <div class="col-md-8 block-9 mb-md-5">
-          <form action="#" class="bg-light p-5 contact-form">
+        <div class="col-md-8 block-9 mb-md-5" id="contattiForm">
+
+
+        <form action="{{route('contattiSubmit')}}" method="POST" class="bg-light p-5 contact-form">
+          @csrf
             <h2>Inviaci un messaggio</h2>
             <p class="text pb-3">Non esitare a contattarci per qualunque tipo di informazione riguardante i nostri servizi.</p>
+            @if ($errors->any())
+                <div class="alert alert-danger py-4">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+            
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Nome ">
+              <input type="text" class="form-control" value="{{old('name')}}" name="name" placeholder="Nome">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Email">
+              <input type="text" class="form-control" value="{{old('email')}}" name="email" placeholder="Email">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Oggetto">
+              <input type="text" class="form-control" value="{{old('oggetto')}}" name="oggetto" placeholder="Oggetto">
             </div>
             <div class="form-group">
-              <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Messagio"></textarea>
+            <textarea id="" cols="30" rows="7" value="" name="messaggio" class="form-control" placeholder="Messaggio">{{old('messaggio')}}</textarea>
             </div>
             <span>
-              <label><input class="cbx" type="checkbox" name="your-consent" value="1" aria-invalid="false">
-                <span class="item-label">Acconsento al <a style="color:#333" href="/privacy-policy" target="_blank">trattamento dei dati personali</a></span></label></span>
+              <label>
+                <input class="cbx" type="checkbox" value="1" name="consent" aria-invalid="false">
+                <span class="item-label">Acconsento al <a style="color:#333" href="/privacy-policy" target="_blank">trattamento dei dati personali</a></span>
+              </label>
+            </span>
             <div class="form-group">
                 <input type="submit" value="Invia" class="btn btn-primary py-3 px-5">
             </div>
           </form>
+
         </div>
       </div>
     </div>

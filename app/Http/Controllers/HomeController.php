@@ -6,6 +6,7 @@ use App\Car;
 use DateTime;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use App\Http\Requests\ContattiRequest;
 use App\Http\Requests\NoleggioRequest;
 use Artesaos\SEOTools\Facades\SEOMeta;
 
@@ -49,6 +50,9 @@ class HomeController extends Controller
         return view('usatoAuto.search',compact('cars'));
     }
 
+
+
+    
     public function inviaMessaggio(NoleggioRequest $request){
 
         // previdi che le date siano maggiori o uguali del now 
@@ -72,8 +76,12 @@ class HomeController extends Controller
             $request->session()->flash('flag','Errore nel selezionare le date!');
             return redirect()->route('noleggio');
         }
-        
-        
+    }
+
+    public function contattiSubmit(ContattiRequest $request){
+        dump("form Contatti");
+
+        dd(is_null($request->input('consent')));
     }
 
 }
