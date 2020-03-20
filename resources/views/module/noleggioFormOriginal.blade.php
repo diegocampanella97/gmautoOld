@@ -26,6 +26,15 @@
                     </div>
                     @endif
 
+                        <div class="form-group" >
+                          <label for="" class="label">Nome</label>
+                          <input type="text" class="form-control" name="name" value="{{old('name')}}" id="book_pick_date2" placeholder="Nome">
+                        </div>
+
+                        <div class="form-group" >
+                          <label for="" class="label">email</label>
+                          <input type="email" class="form-control" name="email" value="{{old('email')}}" id="book_pick_date2" placeholder="Email">
+                        </div>
 
                         <div class="form-group" >
                             <label for="" class="label">Data di ritiro</label>
@@ -39,7 +48,7 @@
 
                     <div class="form-group">
                         <label for="" class="label">Messaggio</label>
-                        <textarea class="form-control" name="messaggio" rows="3"></textarea>
+                    <textarea class="form-control" name="messaggio" rows="3">{{old('messaggio')}}</textarea>
                       </div>
                       <div class="form-group">
                         <input type="submit" value="Invia Messaggio" class="btn btn-secondary py-3 px-4">

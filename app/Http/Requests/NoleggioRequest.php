@@ -27,6 +27,8 @@ class NoleggioRequest extends FormRequest
             'dataRitiro' => 'required',
             'dataConsegna' => 'required',
             'messaggio' => 'required',
+            'name' => 'required|min:2',
+            'email' => 'required',
         ];
     }
 
@@ -36,6 +38,8 @@ class NoleggioRequest extends FormRequest
             'dataRitiro.required' => 'Inserisci una data di ritiro valida',
             'dataConsegna.required'  => 'Inserisci una data di consegna valida',
             'messaggio.required' => 'Inserisci un messaggio',
+            'name.required'  => 'Inserisci un nome',
+            'email.required' => 'Inserisci una mail',
         ];
     }
 

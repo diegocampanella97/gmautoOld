@@ -5,7 +5,10 @@ namespace App\Http\Controllers;
 use App\Car;
 use DateTime;
 use Carbon\Carbon;
+use App\Mail\ContattiMailed;
+use App\Mail\NoleggioMailed;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use App\Http\Requests\ContattiRequest;
 use App\Http\Requests\NoleggioRequest;
 use Artesaos\SEOTools\Facades\SEOMeta;
@@ -70,18 +73,56 @@ class HomeController extends Controller
             return redirect()->route('noleggio');
         }
 
+
+        // "name" => "aaa"
+        // "email" => "diegocampanella97@gmail.com"
+        // "dataRitiro" => "2020-03-24"
+        // "dataConsegna" => "2020-03-27"
+        // "messaggio" => "aecqwcw"
+
         if($dataRitiro <=$dataConsegna){
-            dd($request->input());
+            $name = $request->input('name');
+            $email = $request->input('email');
+            $dataRitiro = $request->input('dataRitiro');
+            $dataConsegna = $request->input('dataConsegna');
+            $messaggio = $request->input('messaggio');
+
+
+            $bag = compact('name','email','dataRitiro','dataConsegna','messaggio');
+            
+            $emailAdmin="diegocampanella97@gmail.com";
+
+            $contactMail = new NoleggioMailed($bag);
+            Mail::to($emailAdmin)->send($contactMail);
+
         } else {
             $request->session()->flash('flag','Errore nel selezionare le date!');
             return redirect()->route('noleggio');
         }
     }
 
-    public function contattiSubmit(ContattiRequest $request){
-        dump("form Contatti");
 
-        dd(is_null($request->input('consent')));
+    // "name" => "Hermione Beach"
+    // "email" => "hemato@mailinator.net"
+    // "oggetto" => "Qui cillum esse ani"
+    // "messaggio" => "Iusto eum quisquam u"
+    // "consent" => "1"
+
+    public function contattiSubmit(ContattiRequest $request){
+
+        $name = $request->input('name');
+        $email = $request->input('email');
+        $oggetto = $request->input('oggetto');
+        $messaggio = $request->input('messaggio');
+
+        $bag = compact('name','email','oggetto','messaggio');
+
+        $emailAdmin="diegocampanella97@gmail.com";
+
+        $contactMail = new ContattiMailed($bag);
+        Mail::to($emailAdmin)->send($contactMail);
+
+
     }
 
 }
