@@ -25,7 +25,6 @@
                         </ul>
                     </div>
                     @endif
-
                         <div class="form-group" >
                           <label for="" class="label">Nome</label>
                           <input type="text" class="form-control" name="name" value="{{old('name')}}" id="book_pick_date2" placeholder="Nome">
@@ -38,12 +37,12 @@
 
                         <div class="form-group" >
                             <label for="" class="label">Data di ritiro</label>
-                            <input type="date" class="form-control" name="dataRitiro" id="book_pick_date2" placeholder="Data">
+                            <input type="date" min="{{ Carbon\Carbon::now()->add(1, 'day')->format('Y-m-d') }}" max="{{ Carbon\Carbon::now()->add(1, 'year')->format('Y-m-d') }}" class="form-control" name="dataRitiro" id="book_pick_date2" placeholder="Data">
                         </div>
 
                         <div class="form-group">
                             <label for="" class="label">Data di consegna</label>
-                            <input type="date" class="form-control" name="dataConsegna" id="book_off_date2" placeholder="Data">
+                            <input type="date" min="{{ Carbon\Carbon::now()->add(1, 'day')->format('Y-m-d') }}" max="{{ Carbon\Carbon::now()->add(1, 'year')->format('Y-m-d') }}" class="form-control" name="dataConsegna" id="book_off_date2" placeholder="Data">
                         </div>
 
                     <div class="form-group">
