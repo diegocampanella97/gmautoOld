@@ -139,6 +139,12 @@ class AdminController extends Controller
 
 
 
+    public function golista(){
+        $cars = Car::all();
+
+        return view('adminZone.listCar',compact('cars'));
+    }
+
 
 
 

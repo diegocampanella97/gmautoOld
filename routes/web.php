@@ -24,10 +24,7 @@ Route::view('/contatti/grazie', 'contatti.thanks')->name('contatti.thanks');
 
 Route::get('/home', 'HomeController@contatti')->name('contatti');
 
-// Area Riservata
-Route::get('/home','AdminController@goAreaRiservata')->name('admin.areaRiservata');
 
-Route::get('/home/aggiungiAuto','AdminController@goAggiungiAuto')->name('admin.aggiungiAuto');
 
 Route::post('/home/aggiungiAuto/inviaRichiesta','AdminController@submitAdd')->name('admin.aggiungiAutoRichiesta');
 
@@ -48,3 +45,9 @@ Route::post('/noleggio/inviaMessaggio', 'HomeController@inviaMessaggio')->name('
 
 Route::get('/auto/galleria','CarController@showAll')->name('galleryAuto');
 Route::POST('/auto/cerca', 'HomeController@search')->name('auto.cerca');
+
+
+// Area Riservata
+Route::get('/home','AdminController@goAreaRiservata')->name('admin.areaRiservata');
+Route::get('/home/aggiungiAuto','AdminController@goAggiungiAuto')->name('admin.aggiungiAuto');
+Route::get('/home/ListaMacchine','AdminController@golista')->name('admin.listaAuto');

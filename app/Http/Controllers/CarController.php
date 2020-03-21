@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Car;
 use Illuminate\Http\Request;
 
 class CarController extends Controller
@@ -9,5 +10,18 @@ class CarController extends Controller
     public function showAll(){
         return view('usatoAuto.gallery');
     }
+
+    public function getList(){
+        return datatables(
+            Car::
+                with([
+                    'collection' => function($q) {$q->select('id', 'name');},
+                    'exemplar' => function($q) {$q->select('id', 'name');},
+                ])
+                ->where('approved',true)
+            
+        )->toJson();
+    }
+
 
 }
