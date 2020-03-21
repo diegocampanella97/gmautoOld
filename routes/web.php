@@ -20,6 +20,7 @@ Route::get('/', 'HomeController@index')->name('home');
 // Route::get('/servizi', 'HomeController@servizi')->name('servizi');
 Route::get('/contatti', 'HomeController@contatti')->name('contatti');
 Route::post('/contatti/invia','HomeController@contattiSubmit')->name('contattiSubmit');
+Route::view('/contatti/grazie', 'contatti.thanks')->name('contatti.thanks');
 
 Route::get('/home', 'HomeController@contatti')->name('contatti');
 

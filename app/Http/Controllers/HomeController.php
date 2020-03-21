@@ -95,6 +95,8 @@ class HomeController extends Controller
             $contactMail = new NoleggioMailed($bag);
             Mail::to($emailAdmin)->send($contactMail);
 
+            return redirect()->route('noleggio.thanks');
+
         } else {
             $request->session()->flash('flag','Errore nel selezionare le date!');
             return redirect()->route('noleggio');
@@ -122,6 +124,8 @@ class HomeController extends Controller
         $contactMail = new ContattiMailed($bag);
         Mail::to($emailAdmin)->send($contactMail);
 
+        return redirect()->route('contatti.thanks');
+        
 
     }
 
