@@ -54,4 +54,4 @@ Route::get('home/auto/{id}','CarController@dettaglio')->name('car.detail');
 
 Route::delete('home/auto/{id}/cancella','CarController@dettaglio')->name('car.detail');
 
-Route::get('/home/ListaMacchine','AdminController@golista')->name('admin.listaAuto');
+Route::get('/home/listaMacchine','AdminController@golista')->name('admin.listaAuto');
