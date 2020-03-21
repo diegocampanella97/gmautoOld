@@ -50,4 +50,8 @@ Route::POST('/auto/cerca', 'HomeController@search')->name('auto.cerca');
 // Area Riservata
 Route::get('/home','AdminController@goAreaRiservata')->name('admin.areaRiservata');
 Route::get('/home/aggiungiAuto','AdminController@goAggiungiAuto')->name('admin.aggiungiAuto');
+Route::get('home/auto/{id}','CarController@dettaglio')->name('car.detail');
+
+Route::delete('home/auto/{id}/cancella','CarController@dettaglio')->name('car.detail');
+
 Route::get('/home/ListaMacchine','AdminController@golista')->name('admin.listaAuto');

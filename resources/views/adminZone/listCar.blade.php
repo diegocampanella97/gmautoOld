@@ -29,7 +29,7 @@
                             <th>Nome</th>
                             <th>Produttore</th>
                             <th>Modello</th>
-                            <th></th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                 </table>
@@ -39,8 +39,6 @@
     </div>
 
 </section>
-
-{{request()->segment(2)}}.{{request()->segment(2)}}
 @endsection
 
 @push('jsCustom')
@@ -53,15 +51,39 @@
                 "serverSide":true,
                 "ajax": "{{route('api.listCars')}}",
                 "columns": [
-                    { "data" : "name"},
-                    { "data" : "exemplar.name"},
-                    { "data" : "collection.name"},
                     {
-                data: null,
-                className: "center",
-                defaultContent: '<a href="{{route('home')}}" class="editor_edit">Edit</a> / <a href="" class="editor_remove">Delete</a>'
-            },
-                ]
+                        data : "name",
+                    },
+                    { 
+                        data : "exemplar.name"
+                    },
+                    { 
+                        data : "collection.name"
+                    },
+                    // {
+                    //     className: "text-center",
+                    //     defaultContent: '<a href="{{route('home')}}" class="editor_edit">Edit</a> / <a href="" class="editor_remove">Delete</a>'
+                    // },
+
+                ],
+                
+                "columnDefs": [ {
+                    className: "text-center",
+                    "targets": 3,
+                    render: function(data, type, row) {
+                        return '<a class="mx-2 btn btn-success" href="/{{request()->segment(1)}}/auto/' +row['id']+'">'+'Modifica'+'</a>'+
+                        '<form action="/{{request()->segment(1)}}/auto/' + row['id'] + '/cancella' + ' " method="POST" style="display:inline">'+
+                            '<input type="hidden" name="_method" value="DELETE" />' +
+                            '<input type="hidden" name="_token" value="{{csrf_token()}}" />' +
+                            '<input type="submit" class="mx-2 btn btn-danger" value="Cancella"/>' +
+                        '</form>'+
+                        '<form action="/{{request()->segment(1)}}/auto/' + row['id'] + '/approva' + ' " method="POST" style="display:inline">'+
+                            '<input type="hidden" name="_method" value="DELETE" />' +
+                            '<input type="hidden" name="_token" value="{{csrf_token()}}" />' +
+                            '<input type="submit" class="mx-2 btn btn-info" value="Approva"/>' +
+                        '</form>'
+                    }
+                } ]
 
             });
         } );
@@ -69,4 +91,5 @@
 
         
     </script>
+    {{-- {{ route('car.detail', ['id'=>row['id']]) }} --}}
 @endpush

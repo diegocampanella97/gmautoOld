@@ -23,5 +23,16 @@ class CarController extends Controller
         )->toJson();
     }
 
+    public function dettaglio($id){
+        dd($id);
+    }
+
+    public function cancella($id){
+        dd($id);
+    }
+
+    public function approva($id){
+        dd($id);
+    }
 
 }
