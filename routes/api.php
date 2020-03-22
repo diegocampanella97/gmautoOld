@@ -18,3 +18,4 @@ use Illuminate\Http\Request;
 // });
 
 Route::get('/v1/cars', 'CarController@getList')->name('api.listCars');
+Route::get('/v1/carsToApproved', 'CarController@getListToApproved')->name('api.listCarsToApproved');

@@ -35,8 +35,8 @@
                     <div class="card">
                         <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="">
                         <div class="card-body text-center">
-                          <h3 class="card-title">Modifica Auto</h3>
-                          <a href="#" class="btn btn-primary">Modifica</a>
+                          <h3 class="card-title">Lista Auto</h3>
+                          <a href="{{route('admin.listaAuto')}}" class="btn btn-primary">Modifica</a>
                         </div>
                       </div>
                 </div>

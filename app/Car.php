@@ -5,18 +5,20 @@ namespace App;
 use App\Car;
 use App\Door;
 use App\Fuel;
+use Debugbar;
 use App\Color;
 use App\CarImage;
 use App\Exemplar;
 use App\Collection;
 use App\Transmission;
-use Illuminate\Database\Eloquent\Model;
-use Debugbar;
 use Laravel\Scout\Searchable;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Car extends Model{
 
     use Searchable;
+    use SoftDeletes;
 
     public function toSearchableArray()
     {

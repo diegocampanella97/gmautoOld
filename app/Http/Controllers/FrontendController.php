@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Car;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class FrontendController extends Controller {
     
@@ -20,12 +20,18 @@ class FrontendController extends Controller {
     }
 
     public function goUsatoDettaglio($id){
-        $car = Car::find($id);
+        
+        $car = Car::findOrFail($id);
+
+        if($car->approved == 0) {
+            if(Auth::user()){
+                return view('usatoAuto.detail',compact('car'));
+            }
+
+            return redirect()->route('home');
+        }
+
         return view('usatoAuto.detail',compact('car'));
     }
-
-
-
-
 
 }
