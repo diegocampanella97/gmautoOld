@@ -2,7 +2,6 @@
 
 namespace App;
 
-use App\Car;
 use App\Door;
 use App\Fuel;
 use Debugbar;
@@ -101,7 +100,7 @@ class Car extends Model{
         return $array;
     }
 
-    
+
 
     protected $fillable = [
         'name', 'category_id'
