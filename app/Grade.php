@@ -6,6 +6,23 @@ use App\Car;
 use App\Grade;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * App\Grade
+ *
+ * @property int $id
+ * @property string $name
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \App\Car $car
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Grade newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Grade newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Grade query()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Grade whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Grade whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Grade whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Grade whereUpdatedAt($value)
+ * @mixin \Eloquent
+ */
 class Grade extends Model
 {
     static public function getAll(){
