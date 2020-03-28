@@ -3,7 +3,9 @@
 namespace App;
 
 use App\Car;
+use App\Jobs\ResizeImage;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 /**
  * App\CarImage
@@ -18,7 +20,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\CarImage newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\CarImage query()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\CarImage whereCarId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|\App\CarImage whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\CarImage whereACreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\CarImage whereFilePath($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\CarImage whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|\App\CarImage whereUpdatedAt($value)
@@ -29,4 +31,23 @@ class CarImage extends Model{
     {
         return $this->belongsTo(Car::class);
     }
+
+    static public function getUrlByFileName($filePath, $w = null , $h = null){
+        if(!$w && !$h) {
+            return Storage::url($filePath);
+        }
+
+        $path= dirname($filePath);
+        $fileName= basename($filePath);
+
+        $file= "{$path}/crop{$w}x{$h}_{$fileName}";
+
+        return Storage::url($file);
+    }
+
+    public function getUrl($w = null , $h = null){
+        return CarImage::getUrlByFileName($this->filePath, $w , $h);
+    }
+
+
 }

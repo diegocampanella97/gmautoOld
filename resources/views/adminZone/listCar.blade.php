@@ -18,7 +18,7 @@
     </div>
 </section>
 
-<section class="car-list">
+<section class="car-list py-5">
     <h4 class="text-center">Lista Auto Approvate</h4>
     <div class="container">
         <div class="row">
@@ -26,6 +26,7 @@
                 <table class="table" id="listCarApproved">
                     <thead>
                         <tr>
+                            <th>Data Aggiunta</th>
                             <th>Nome</th>
                             <th>Produttore</th>
                             <th>Modello</th>
@@ -41,7 +42,9 @@
 </section>
 
 
-<hr>
+<hr class="py-5">
+
+
 <section class="car-list">
     <h4 class="text-center">Lista Auto da approvare</h4>
     <div class="container">
@@ -50,6 +53,7 @@
                 <table class="table" id="myTable">
                     <thead>
                         <tr>
+                            <th>Data Aggiunta</th>
                             <th>Nome</th>
                             <th>Produttore</th>
                             <th>Modello</th>
@@ -77,23 +81,26 @@
                 "ajax": "{{route('api.listCarsToApproved')}}",
                 "columns": [
                     {
+                        data : "updated_at",
+                    },
+                    {
                         data : "name",
                     },
-                    { 
+                    {
                         data : "exemplar.name"
                     },
-                    { 
+                    {
                         data : "collection.name"
                     },
-                    { 
+                    {
                         data : "targa"
                     },
 
                 ],
-                
+
                 "columnDefs": [ {
                     className: "text-center",
-                    "targets": 4,
+                    "targets": 5,
                     render: function(data, type, row) {
                         return '<a class="mx-2 btn btn-success" href="/auto/usate/' +row['id']+'">'+'Modifica'+'</a>'+
                         '<form action="/{{request()->segment(1)}}/auto/' + row['id'] + '/cancella' + ' " method="POST" style="display:inline">'+
@@ -116,23 +123,26 @@
                 "ajax": "{{route('api.listCars')}}",
                 "columns": [
                     {
+                        data : "updated_at",
+                    },
+                    {
                         data : "name",
                     },
-                    { 
+                    {
                         data : "exemplar.name"
                     },
-                    { 
+                    {
                         data : "collection.name"
                     },
-                    { 
+                    {
                         data : "targa"
                     },
 
                 ],
-                
+
                 "columnDefs": [ {
                     className: "text-center",
-                    "targets": 4,
+                    "targets": 5,
                     render: function(data, type, row) {
                         return '<a class="mx-2 btn btn-success" href="/auto/usate/' +row['id']+'">'+'Modifica'+'</a>'+
                         '<form action="/{{request()->segment(1)}}/auto/' + row['id'] + '/cancella' + ' " method="POST" style="display:inline">'+

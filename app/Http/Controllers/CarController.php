@@ -27,7 +27,7 @@ class CarController extends Controller
                     'collection' => function($q) {$q->select('id', 'name');},
                     'exemplar' => function($q) {$q->select('id', 'name');},
                 ])
-                ->select('id','name','targa','collection_id','exemplar_id')
+                ->select('id','name','targa','collection_id','exemplar_id','updated_at')
                 ->where('approved',true)
 
         )->toJson();
@@ -40,7 +40,7 @@ class CarController extends Controller
                     'collection' => function($q) {$q->select('id', 'name');},
                     'exemplar' => function($q) {$q->select('id', 'name');},
                 ])
-                ->select('id','name','targa','collection_id','exemplar_id')
+                ->select('id','name','targa','collection_id','exemplar_id','updated_at')
                 ->where('approved',false)
 
         )->toJson();

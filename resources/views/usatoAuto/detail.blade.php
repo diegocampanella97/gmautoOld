@@ -25,21 +25,21 @@
                     @foreach ($car->images as $item)
                     <div class="item">
                       <div class="car-wrap2 rounded ftco-animate">
-                          <img class="img-fluid rounded d-flex align-items-end" src="{{Storage::url($item->filePath)}}" alt="">
-                      </div>   
+                          <img class="img-fluid rounded d-flex align-items-end" src="{{$item -> getUrl(800,570)}}" alt="">
+                      </div>
                     </div>
                     @endforeach
                   @else
                   <div class="item">
                     <div class="car-wrap2 rounded ftco-animate">
                         <img class="img-fluid rounded d-flex align-items-end" src="/images/placeholder_gmautoveicoli.png" alt="">
-                    </div>   
-                  </div>  
+                    </div>
+                  </div>
                   @endif
 
                 </div>
             </div>
-            
+
             <div class="col-md-4">
               <div class="infocar rounded ftco-animate">
                   <div class="text">
@@ -48,7 +48,7 @@
                       </h2>
                       <p>Anno Immatricolazione: {{$car->year}}</p>
                       <p class="d-flex mb-0 d-block">
-                        
+
                           <a href="{{ route('contatti') }}" class="btn btn-secondary py-2 ml-1">Scopri </a>
                       </p>
                       {{-- <p class="offer">Offerta valida fino al <span class="data">25-02-2020</span></p>	 --}}
@@ -57,7 +57,7 @@
               @include('module.social')
           </div>
   </div>
-          
+
       <div class="text text-center">
       <span class="subheading">{{$car->exemplar->name}}</span>
           <h4>{{$car->collection->name}}</h4>
@@ -78,7 +78,7 @@
                   </div>
               </div>
             </div>
-          </div>      
+          </div>
         </div>
         <div class="col-md d-flex align-self-stretch ftco-animate">
           <div class="media block-6 services">
@@ -93,7 +93,7 @@
                   </div>
               </div>
             </div>
-          </div>      
+          </div>
         </div>
         <div class="col-md d-flex align-self-stretch ftco-animate">
           <div class="media block-6 services">
@@ -108,7 +108,7 @@
                   </div>
               </div>
             </div>
-          </div>      
+          </div>
         </div>
         <div class="col-md d-flex align-self-stretch ftco-animate">
           <div class="media block-6 services">
@@ -123,7 +123,7 @@
                   </div>
               </div>
             </div>
-          </div>      
+          </div>
         </div>
         <div class="col-md d-flex align-self-stretch ftco-animate">
           <div class="media block-6 services">
@@ -132,13 +132,13 @@
                     <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-car-door"></span></div>
                     <div class="text">
                       <h3 class="heading mb-0 pl-3">
-                          N. di porte  
+                          N. di porte
                           <span>{{$car->door->name}} Porte</span>
                       </h3>
                   </div>
               </div>
             </div>
-          </div>      
+          </div>
         </div>
         </div>
         <div class="row">
@@ -153,7 +153,7 @@
                           </div>
 
                         <div class="tab-content" id="pills-tabContent">
-                          
+
                           {{-- <div class="tab-pane fade show active text-centers" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab">
                               <div class="row">
                                   <div class="col-md-4">

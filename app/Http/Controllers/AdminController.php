@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Car;
 use App\CarImage;
+use App\Jobs\ResizeImage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
@@ -36,7 +37,7 @@ class AdminController extends Controller
         $car->mounting= $request->input("allestimentoVeicolo");
         $car->km = $request->input("kmVeicolo");
         $car->description = $request->input("testoAnnuncio");
-        
+
         $car->price = $request->input("prezzoVeicolo");
         $car->color_id = $request->input("coloreVeicolo");
         $car->vid = $request->input("vinVeicolo");
@@ -62,10 +63,14 @@ class AdminController extends Controller
         foreach ($images as $image) {
             $i= new CarImage();
             $fileName = basename($image);
-            $newFileName= "public/car/{$car -> id}/{$fileName}";
-            
-            Storage::move($image, $newFileName);          
-            
+            $newFileName= "public/cars/{$car -> id}/{$fileName}";
+
+            Storage::move($image, $newFileName);
+
+            dispatch(
+                new ResizeImage( $newFileName,800,570)
+            );
+
             $i->filePath = $newFileName;
             $i->car_id = $car->id;
 
@@ -77,6 +82,7 @@ class AdminController extends Controller
             //     new ResizeImage($newFileName, 870, 530)
             // ])->dispatch($i->id);
 
+
         }
 
         File::deleteDirectory(storage_path("/app/public/temp/{$unique}"));
@@ -85,12 +91,11 @@ class AdminController extends Controller
         return redirect(route("admin.areaRiservata"));
     }
 
-
     public function uploadPhoto(Request $request) {
         $unique = $request->input('uniqueSecret');
 
         $fileName = $request->file('file') -> store("public/temp/{$unique}");
-        
+
         // dispatch(new ResizeImage($fileName, 120, 120));
 
         session()->push("images.{$unique}", $fileName);
@@ -111,7 +116,7 @@ class AdminController extends Controller
         session()->push("removedimages.{$unique}", $fileName);
 
         Storage::delete($fileName);
-        
+
         return response()->json('rimozione riuscita con successo');
 
     }
@@ -136,8 +141,6 @@ class AdminController extends Controller
         return response()->json($data);
 
     }
-
-
 
     public function golista(){
         $cars = Car::all();
