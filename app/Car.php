@@ -91,8 +91,8 @@ class Car extends Model{
         $array = [
             'id' => $this->id,
             'name' => $this->name,
-            'carName' => $this->collection->name,
-            'carName' => $this->exemplar->name
+            'carProduct' => $this->collection->name,
+            'carExemplae' => $this->exemplar->name
         ];
 
         // Customize array...

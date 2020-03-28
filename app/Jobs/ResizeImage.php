@@ -38,7 +38,7 @@ class ResizeImage implements ShouldQueue
 
         Image::load($srcPath)
             ->crop(Manipulations::CROP_CENTER, $w, $h)
-            ->watermark(public_path('/images/logo_noleggio.jpg'))
+            ->watermark(public_path('/images/gm_logo_white_crop.png'))
             ->save($destPath);
     }
 }
