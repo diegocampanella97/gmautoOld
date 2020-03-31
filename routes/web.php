@@ -56,3 +56,5 @@ Route::post('home/auto/{id}/approva','CarController@approva')->name('car.detail'
 Route::delete('home/auto/{id}/cancella','CarController@cancella')->name('car.detail');
 
 Route::get('/home/listaMacchine','AdminController@golista')->name('admin.listaAuto');
+
+Route::get('/car', 'ExemplarController@showlist')->name('car');
