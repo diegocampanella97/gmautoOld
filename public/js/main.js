@@ -159,7 +159,7 @@
 	// scroll
 	var scrollWindow = function() {
         const whiteLogo = "/images/gm_logo_white.png";
-        const blackLogo = "/images/gm_logo_black.png";
+        const blackLogo = "/images/gm_logo_blue.png";
 
 		$(window).scroll(function(){
 			var $w = $(this),

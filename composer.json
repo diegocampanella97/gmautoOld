@@ -19,8 +19,8 @@
         "teamtnt/laravel-scout-tntsearch-driver": "^8.1",
         "yajra/laravel-datatables-oracle": "^9.9",
         "weidner/goutte": "^1.4",
-        "fruitcake/laravel-cors": "^1.0"
-
+        "fruitcake/laravel-cors": "^1.0",
+      "ext-json": "*"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.6",
