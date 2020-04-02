@@ -30,7 +30,7 @@
         </main>
     </div>
     @include('layouts._footer')
-    @stack('jsCustom')
+        @stack('jsCustom')
 </body>
 
 </html>

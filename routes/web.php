@@ -58,3 +58,9 @@ Route::delete('home/auto/{id}/cancella','CarController@cancella')->name('car.det
 Route::get('/home/listaMacchine','AdminController@golista')->name('admin.listaAuto');
 
 Route::get('/car', 'ExemplarController@showlist')->name('car');
+
+Route::get('/test', 'TestController@index')->name('test');
+
+Route::get('/exemplaries/{id}','TestController@getExemplary')->name('car.exemplaries');
+
+Route::get('/preparation/{id}','TestController@getPreparation')->name('car.preparations');
