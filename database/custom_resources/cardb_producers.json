@@ -1,0 +1,1559 @@
+[
+  {
+    "id": 1,
+    "name": "ABARTH",
+    "slug": "abarth",
+    "img_Path": null,
+    "idExt": "002409",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 2,
+    "name": "ALFA ROMEO",
+    "slug": "alfa-romeo",
+    "img_Path": null,
+    "idExt": "000083",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 3,
+    "name": "AUDI",
+    "slug": "audi",
+    "img_Path": null,
+    "idExt": "000161",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 4,
+    "name": "BMW",
+    "slug": "bmw",
+    "img_Path": null,
+    "idExt": "000085",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 5,
+    "name": "CITROEN",
+    "slug": "citroen",
+    "img_Path": null,
+    "idExt": "000091",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 6,
+    "name": "DACIA",
+    "slug": "dacia",
+    "img_Path": null,
+    "idExt": "000018",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 7,
+    "name": "FERRARI",
+    "slug": "ferrari",
+    "img_Path": null,
+    "idExt": "000013",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 8,
+    "name": "FIAT",
+    "slug": "fiat",
+    "img_Path": null,
+    "idExt": "000008",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 9,
+    "name": "FORD",
+    "slug": "ford",
+    "img_Path": null,
+    "idExt": "000039",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 10,
+    "name": "HONDA",
+    "slug": "honda",
+    "img_Path": null,
+    "idExt": "000147",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 11,
+    "name": "HYUNDAI",
+    "slug": "hyundai",
+    "img_Path": null,
+    "idExt": "000122",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 12,
+    "name": "JAGUAR",
+    "slug": "jaguar",
+    "img_Path": null,
+    "idExt": "000110",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 13,
+    "name": "JEEP",
+    "slug": "jeep",
+    "img_Path": null,
+    "idExt": "000144",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 14,
+    "name": "KIA",
+    "slug": "kia",
+    "img_Path": null,
+    "idExt": "000746",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 15,
+    "name": "LANCIA",
+    "slug": "lancia",
+    "img_Path": null,
+    "idExt": "000034",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 16,
+    "name": "LAND ROVER",
+    "slug": "land-rover",
+    "img_Path": null,
+    "idExt": "000140",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 17,
+    "name": "MASERATI",
+    "slug": "maserati",
+    "img_Path": null,
+    "idExt": "000117",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 18,
+    "name": "MAZDA",
+    "slug": "mazda",
+    "img_Path": null,
+    "idExt": "000145",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 19,
+    "name": "MERCEDES",
+    "slug": "mercedes",
+    "img_Path": null,
+    "idExt": "000033",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 20,
+    "name": "MINI",
+    "slug": "mini",
+    "img_Path": null,
+    "idExt": "002222",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 21,
+    "name": "MITSUBISHI",
+    "slug": "mitsubishi",
+    "img_Path": null,
+    "idExt": "000148",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 22,
+    "name": "NISSAN",
+    "slug": "nissan",
+    "img_Path": null,
+    "idExt": "000149",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 23,
+    "name": "OPEL",
+    "slug": "opel",
+    "img_Path": null,
+    "idExt": "000020",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 24,
+    "name": "PEUGEOT",
+    "slug": "peugeot",
+    "img_Path": null,
+    "idExt": "000151",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 25,
+    "name": "PORSCHE",
+    "slug": "porsche",
+    "img_Path": null,
+    "idExt": "000027",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 26,
+    "name": "RENAULT",
+    "slug": "renault",
+    "img_Path": null,
+    "idExt": "000062",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 27,
+    "name": "SEAT",
+    "slug": "seat",
+    "img_Path": null,
+    "idExt": "000053",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 28,
+    "name": "SKODA",
+    "slug": "skoda",
+    "img_Path": null,
+    "idExt": "000094",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 29,
+    "name": "SMART",
+    "slug": "smart",
+    "img_Path": null,
+    "idExt": "002259",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 30,
+    "name": "SUBARU",
+    "slug": "subaru",
+    "img_Path": null,
+    "idExt": "000155",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 31,
+    "name": "TESLA",
+    "slug": "tesla",
+    "img_Path": null,
+    "idExt": "002749",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 32,
+    "name": "TOYOTA",
+    "slug": "toyota",
+    "img_Path": null,
+    "idExt": "000103",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 33,
+    "name": "VOLKSWAGEN",
+    "slug": "volkswagen",
+    "img_Path": null,
+    "idExt": "000101",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 34,
+    "name": "VOLVO",
+    "slug": "volvo",
+    "img_Path": null,
+    "idExt": "000098",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 35,
+    "name": "AC",
+    "slug": "ac",
+    "img_Path": null,
+    "idExt": "000323",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 36,
+    "name": "ACM",
+    "slug": "acm",
+    "img_Path": null,
+    "idExt": "001024",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 37,
+    "name": "AIXAM",
+    "slug": "aixam",
+    "img_Path": null,
+    "idExt": "000416",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 38,
+    "name": "ALPINA-BMW",
+    "slug": "alpina-bmw",
+    "img_Path": null,
+    "idExt": "000160",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 39,
+    "name": "ALPINE",
+    "slug": "alpine",
+    "img_Path": null,
+    "idExt": "002780",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 40,
+    "name": "AMG",
+    "slug": "amg",
+    "img_Path": null,
+    "idExt": "000700",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 41,
+    "name": "APAL",
+    "slug": "apal",
+    "img_Path": null,
+    "idExt": "000333",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 42,
+    "name": "ARIEL",
+    "slug": "ariel",
+    "img_Path": null,
+    "idExt": "002345",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 43,
+    "name": "ARO",
+    "slug": "aro",
+    "img_Path": null,
+    "idExt": "000180",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 44,
+    "name": "ASIA MOTORS",
+    "slug": "asia-motors",
+    "img_Path": null,
+    "idExt": "001421",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 45,
+    "name": "ASTON MARTIN",
+    "slug": "aston-martin",
+    "img_Path": null,
+    "idExt": "000074",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 46,
+    "name": "AUSTIN ROVER",
+    "slug": "austin-rover",
+    "img_Path": null,
+    "idExt": "000080",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 47,
+    "name": "AUTOBIANCHI",
+    "slug": "autobianchi",
+    "img_Path": null,
+    "idExt": "000035",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 48,
+    "name": "AUVERLAND",
+    "slug": "auverland",
+    "img_Path": null,
+    "idExt": "000515",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 49,
+    "name": "BELLIER",
+    "slug": "bellier",
+    "img_Path": null,
+    "idExt": "001504",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 50,
+    "name": "BENTLEY",
+    "slug": "bentley",
+    "img_Path": null,
+    "idExt": "000070",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 51,
+    "name": "BERTONE",
+    "slug": "bertone",
+    "img_Path": null,
+    "idExt": "000049",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 52,
+    "name": "BIAGINI",
+    "slug": "biagini",
+    "img_Path": null,
+    "idExt": "001362",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 53,
+    "name": "BIRO'",
+    "slug": "biro'",
+    "img_Path": null,
+    "idExt": "002772",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 54,
+    "name": "BOXEL",
+    "slug": "boxel",
+    "img_Path": null,
+    "idExt": "002176",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 55,
+    "name": "BUGATTI",
+    "slug": "bugatti",
+    "img_Path": null,
+    "idExt": "001522",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 56,
+    "name": "BUICK",
+    "slug": "buick",
+    "img_Path": null,
+    "idExt": "000081",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 57,
+    "name": "CADILLAC",
+    "slug": "cadillac",
+    "img_Path": null,
+    "idExt": "000076",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 58,
+    "name": "CARLETTI",
+    "slug": "carletti",
+    "img_Path": null,
+    "idExt": "002273",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 59,
+    "name": "CASALINI",
+    "slug": "casalini",
+    "img_Path": null,
+    "idExt": "000250",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 60,
+    "name": "CATERHAM",
+    "slug": "caterham",
+    "img_Path": null,
+    "idExt": "000277",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 61,
+    "name": "CHATENET",
+    "slug": "chatenet",
+    "img_Path": null,
+    "idExt": "001539",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 62,
+    "name": "CHEVROLET",
+    "slug": "chevrolet",
+    "img_Path": null,
+    "idExt": "000084",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 63,
+    "name": "CHRYSLER",
+    "slug": "chrysler",
+    "img_Path": null,
+    "idExt": "000087",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 64,
+    "name": "CITYCAR",
+    "slug": "citycar",
+    "img_Path": null,
+    "idExt": "001859",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 65,
+    "name": "CMC (CARLETTI)",
+    "slug": "cmc-(carletti)",
+    "img_Path": null,
+    "idExt": "002309",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 66,
+    "name": "CORVETTE",
+    "slug": "corvette",
+    "img_Path": null,
+    "idExt": "002405",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 67,
+    "name": "CUPRA",
+    "slug": "cupra",
+    "img_Path": null,
+    "idExt": "002782",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 68,
+    "name": "DAEWOO",
+    "slug": "daewoo",
+    "img_Path": null,
+    "idExt": "000577",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 69,
+    "name": "DAIHATSU",
+    "slug": "daihatsu",
+    "img_Path": null,
+    "idExt": "000104",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 70,
+    "name": "DAIMLER",
+    "slug": "daimler",
+    "img_Path": null,
+    "idExt": "000106",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 71,
+    "name": "DALLARA",
+    "slug": "dallara",
+    "img_Path": null,
+    "idExt": "002779",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 72,
+    "name": "DE LA CHAPELLE",
+    "slug": "de-la-chapelle",
+    "img_Path": null,
+    "idExt": "001058",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 73,
+    "name": "DE TOMASO",
+    "slug": "de-tomaso",
+    "img_Path": null,
+    "idExt": "000114",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 74,
+    "name": "DODGE",
+    "slug": "dodge",
+    "img_Path": null,
+    "idExt": "000267",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 75,
+    "name": "DONKERVOORT",
+    "slug": "donkervoort",
+    "img_Path": null,
+    "idExt": "000193",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 76,
+    "name": "DR",
+    "slug": "dr",
+    "img_Path": null,
+    "idExt": "002717",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 77,
+    "name": "DS",
+    "slug": "ds",
+    "img_Path": null,
+    "idExt": "002775",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 78,
+    "name": "EFFEDI",
+    "slug": "effedi",
+    "img_Path": null,
+    "idExt": "002311",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 79,
+    "name": "EPOCAR",
+    "slug": "epocar",
+    "img_Path": null,
+    "idExt": "001599",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 80,
+    "name": "EVANTE",
+    "slug": "evante",
+    "img_Path": null,
+    "idExt": "000804",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 81,
+    "name": "FEAB",
+    "slug": "feab",
+    "img_Path": null,
+    "idExt": "002297",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 82,
+    "name": "FISKER",
+    "slug": "fisker",
+    "img_Path": null,
+    "idExt": "002752",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 83,
+    "name": "FSO",
+    "slug": "fso",
+    "img_Path": null,
+    "idExt": "000128",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 84,
+    "name": "GEM",
+    "slug": "gem",
+    "img_Path": null,
+    "idExt": "002303",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 85,
+    "name": "GINETTA",
+    "slug": "ginetta",
+    "img_Path": null,
+    "idExt": "000196",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 86,
+    "name": "GIOTTI VICTORIA",
+    "slug": "giotti-victoria",
+    "img_Path": null,
+    "idExt": "002718",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 87,
+    "name": "GIOTTILINE",
+    "slug": "giottiline",
+    "img_Path": null,
+    "idExt": "002710",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 88,
+    "name": "GREAT WALL MOTOR",
+    "slug": "great-wall-motor",
+    "img_Path": null,
+    "idExt": "002715",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 89,
+    "name": "GRECAV",
+    "slug": "grecav",
+    "img_Path": null,
+    "idExt": "002275",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 90,
+    "name": "GREEN COMPANY",
+    "slug": "green-company",
+    "img_Path": null,
+    "idExt": "002706",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 91,
+    "name": "HAVAL",
+    "slug": "haval",
+    "img_Path": null,
+    "idExt": "002786",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 92,
+    "name": "HUMMER",
+    "slug": "hummer",
+    "img_Path": null,
+    "idExt": "002398",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 93,
+    "name": "IATO",
+    "slug": "iato",
+    "img_Path": null,
+    "idExt": "000776",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 94,
+    "name": "INFINITI",
+    "slug": "infiniti",
+    "img_Path": null,
+    "idExt": "001970",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 95,
+    "name": "INNOCENTI",
+    "slug": "innocenti",
+    "img_Path": null,
+    "idExt": "000120",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 96,
+    "name": "ISO",
+    "slug": "iso",
+    "img_Path": null,
+    "idExt": "002285",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 97,
+    "name": "ISUZU",
+    "slug": "isuzu",
+    "img_Path": null,
+    "idExt": "000146",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 98,
+    "name": "ITALCAR",
+    "slug": "italcar",
+    "img_Path": null,
+    "idExt": "002709",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 99,
+    "name": "IVECO",
+    "slug": "iveco",
+    "img_Path": null,
+    "idExt": "002318",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 100,
+    "name": "JDM",
+    "slug": "jdm",
+    "img_Path": null,
+    "idExt": "000422",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 101,
+    "name": "LADA",
+    "slug": "lada",
+    "img_Path": null,
+    "idExt": "000433",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 102,
+    "name": "LAMBORGHINI",
+    "slug": "lamborghini",
+    "img_Path": null,
+    "idExt": "000135",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 103,
+    "name": "LEXUS",
+    "slug": "lexus",
+    "img_Path": null,
+    "idExt": "001962",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 104,
+    "name": "LIGIER",
+    "slug": "ligier",
+    "img_Path": null,
+    "idExt": "000254",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 105,
+    "name": "LOTUS",
+    "slug": "lotus",
+    "img_Path": null,
+    "idExt": "000134",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 106,
+    "name": "LUAZ (VOLIN)",
+    "slug": "luaz-(volin)",
+    "img_Path": null,
+    "idExt": "000651",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 107,
+    "name": "MAHINDRA",
+    "slug": "mahindra",
+    "img_Path": null,
+    "idExt": "000657",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 108,
+    "name": "MARCOS",
+    "slug": "marcos",
+    "img_Path": null,
+    "idExt": "000495",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 109,
+    "name": "MARTIN MOTORS",
+    "slug": "martin-motors",
+    "img_Path": null,
+    "idExt": "002745",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 110,
+    "name": "MARUTI",
+    "slug": "maruti",
+    "img_Path": null,
+    "idExt": "000848",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 111,
+    "name": "MAYBACH",
+    "slug": "maybach",
+    "img_Path": null,
+    "idExt": "002359",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 112,
+    "name": "MAZZANTI",
+    "slug": "mazzanti",
+    "img_Path": null,
+    "idExt": "002776",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 113,
+    "name": "MAZZIERI",
+    "slug": "mazzieri",
+    "img_Path": null,
+    "idExt": "001960",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 114,
+    "name": "MCLAREN",
+    "slug": "mclaren",
+    "img_Path": null,
+    "idExt": "002754",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 115,
+    "name": "MEGA",
+    "slug": "mega",
+    "img_Path": null,
+    "idExt": "001938",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 116,
+    "name": "MELEX",
+    "slug": "melex",
+    "img_Path": null,
+    "idExt": "002712",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 117,
+    "name": "META",
+    "slug": "meta",
+    "img_Path": null,
+    "idExt": "002713",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 118,
+    "name": "MG",
+    "slug": "mg",
+    "img_Path": null,
+    "idExt": "001945",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 119,
+    "name": "MIA ELECTRIC",
+    "slug": "mia-electric",
+    "img_Path": null,
+    "idExt": "002767",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 120,
+    "name": "MICRO VETT",
+    "slug": "micro-vett",
+    "img_Path": null,
+    "idExt": "000926",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 121,
+    "name": "MICROCAR",
+    "slug": "microcar",
+    "img_Path": null,
+    "idExt": "000766",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 122,
+    "name": "MIDDLEBRIDGE",
+    "slug": "middlebridge",
+    "img_Path": null,
+    "idExt": "000598",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 123,
+    "name": "MILITEM",
+    "slug": "militem",
+    "img_Path": null,
+    "idExt": "002781",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 124,
+    "name": "MINAUTO",
+    "slug": "minauto",
+    "img_Path": null,
+    "idExt": "002773",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 125,
+    "name": "MOKE",
+    "slug": "moke",
+    "img_Path": null,
+    "idExt": "002092",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 126,
+    "name": "MORETTI",
+    "slug": "moretti",
+    "img_Path": null,
+    "idExt": "000109",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 127,
+    "name": "MORGAN",
+    "slug": "morgan",
+    "img_Path": null,
+    "idExt": "000136",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 128,
+    "name": "MPM MOTORS",
+    "slug": "mpm-motors",
+    "img_Path": null,
+    "idExt": "002785",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 129,
+    "name": "MUSTANG",
+    "slug": "mustang",
+    "img_Path": null,
+    "idExt": "002766",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 130,
+    "name": "NISSAN SPAGNA",
+    "slug": "nissan-spagna",
+    "img_Path": null,
+    "idExt": "000095",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 131,
+    "name": "NOBLE",
+    "slug": "noble",
+    "img_Path": null,
+    "idExt": "001117",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 132,
+    "name": "OLTCIT",
+    "slug": "oltcit",
+    "img_Path": null,
+    "idExt": "000113",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 133,
+    "name": "OMAI",
+    "slug": "omai",
+    "img_Path": null,
+    "idExt": "000901",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 134,
+    "name": "OTO MELARA",
+    "slug": "oto-melara",
+    "img_Path": null,
+    "idExt": "000717",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 135,
+    "name": "P.G.O.",
+    "slug": "p.g.o.",
+    "img_Path": null,
+    "idExt": "000772",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 136,
+    "name": "PAGANI",
+    "slug": "pagani",
+    "img_Path": null,
+    "idExt": "002288",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 137,
+    "name": "PANTHER",
+    "slug": "panther",
+    "img_Path": null,
+    "idExt": "000243",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 138,
+    "name": "PIAGGIO",
+    "slug": "piaggio",
+    "img_Path": null,
+    "idExt": "000941",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 139,
+    "name": "PONTIAC",
+    "slug": "pontiac",
+    "img_Path": null,
+    "idExt": "000137",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 140,
+    "name": "PUMA ITALIA",
+    "slug": "puma-italia",
+    "img_Path": null,
+    "idExt": "000240",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 141,
+    "name": "QVALE",
+    "slug": "qvale",
+    "img_Path": null,
+    "idExt": "002300",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 142,
+    "name": "RAYTON FISSORE",
+    "slug": "rayton-fissore",
+    "img_Path": null,
+    "idExt": "000436",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 143,
+    "name": "ROLLS ROYCE",
+    "slug": "rolls-royce",
+    "img_Path": null,
+    "idExt": "000086",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 144,
+    "name": "ROMEO FERRARIS",
+    "slug": "romeo-ferraris",
+    "img_Path": null,
+    "idExt": "002774",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 145,
+    "name": "ROVER",
+    "slug": "rover",
+    "img_Path": null,
+    "idExt": "000154",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 146,
+    "name": "SAAB",
+    "slug": "saab",
+    "img_Path": null,
+    "idExt": "000153",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 147,
+    "name": "SALEEN",
+    "slug": "saleen",
+    "img_Path": null,
+    "idExt": "002408",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 148,
+    "name": "SANTANA",
+    "slug": "santana",
+    "img_Path": null,
+    "idExt": "000255",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 149,
+    "name": "SAVEL-ERAD",
+    "slug": "savel-erad",
+    "img_Path": null,
+    "idExt": "002266",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 150,
+    "name": "SECA",
+    "slug": "seca",
+    "img_Path": null,
+    "idExt": "002403",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 151,
+    "name": "SECMA",
+    "slug": "secma",
+    "img_Path": null,
+    "idExt": "002277",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 152,
+    "name": "SHUANGHUAN",
+    "slug": "shuanghuan",
+    "img_Path": null,
+    "idExt": "002719",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 153,
+    "name": "SSANGYONG",
+    "slug": "ssangyong",
+    "img_Path": null,
+    "idExt": "000979",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 154,
+    "name": "START LAB",
+    "slug": "start-lab",
+    "img_Path": null,
+    "idExt": "002394",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 155,
+    "name": "SUZUKI",
+    "slug": "suzuki",
+    "img_Path": null,
+    "idExt": "000156",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 156,
+    "name": "TALBOT",
+    "slug": "talbot",
+    "img_Path": null,
+    "idExt": "000397",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 157,
+    "name": "TASSO",
+    "slug": "tasso",
+    "img_Path": null,
+    "idExt": "002269",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 158,
+    "name": "TATA",
+    "slug": "tata",
+    "img_Path": null,
+    "idExt": "002130",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 159,
+    "name": "TAZZARI EV",
+    "slug": "tazzari-ev",
+    "img_Path": null,
+    "idExt": "002770",
+    "created_at": "2020-04-01 15:01:42",
+    "updated_at": "2020-04-01 15:01:42"
+  },
+  {
+    "id": 160,
+    "name": "TORPEDO",
+    "slug": "torpedo",
+    "img_Path": null,
+    "idExt": "001036",
+    "created_at": "2020-04-01 15:01:43",
+    "updated_at": "2020-04-01 15:01:43"
+  },
+  {
+    "id": 161,
+    "name": "TOWN LIFE",
+    "slug": "town-life",
+    "img_Path": null,
+    "idExt": "002293",
+    "created_at": "2020-04-01 15:01:43",
+    "updated_at": "2020-04-01 15:01:43"
+  },
+  {
+    "id": 162,
+    "name": "TVR",
+    "slug": "tvr",
+    "img_Path": null,
+    "idExt": "000225",
+    "created_at": "2020-04-01 15:01:43",
+    "updated_at": "2020-04-01 15:01:43"
+  },
+  {
+    "id": 163,
+    "name": "UAZ",
+    "slug": "uaz",
+    "img_Path": null,
+    "idExt": "000224",
+    "created_at": "2020-04-01 15:01:43",
+    "updated_at": "2020-04-01 15:01:43"
+  },
+  {
+    "id": 164,
+    "name": "UMM",
+    "slug": "umm",
+    "img_Path": null,
+    "idExt": "000222",
+    "created_at": "2020-04-01 15:01:43",
+    "updated_at": "2020-04-01 15:01:43"
+  },
+  {
+    "id": 165,
+    "name": "VALENTINI",
+    "slug": "valentini",
+    "img_Path": null,
+    "idExt": "002291",
+    "created_at": "2020-04-01 15:01:43",
+    "updated_at": "2020-04-01 15:01:43"
+  },
+  {
+    "id": 166,
+    "name": "VENTURI",
+    "slug": "venturi",
+    "img_Path": null,
+    "idExt": "000507",
+    "created_at": "2020-04-01 15:01:43",
+    "updated_at": "2020-04-01 15:01:43"
+  },
+  {
+    "id": 167,
+    "name": "VOLGA",
+    "slug": "volga",
+    "img_Path": null,
+    "idExt": "000216",
+    "created_at": "2020-04-01 15:01:43",
+    "updated_at": "2020-04-01 15:01:43"
+  },
+  {
+    "id": 168,
+    "name": "VOLKSWAGEN MESSICO",
+    "slug": "volkswagen-messico",
+    "img_Path": null,
+    "idExt": "000173",
+    "created_at": "2020-04-01 15:01:43",
+    "updated_at": "2020-04-01 15:01:43"
+  },
+  {
+    "id": 169,
+    "name": "XEV",
+    "slug": "xev",
+    "img_Path": null,
+    "idExt": "002788",
+    "created_at": "2020-04-01 15:01:43",
+    "updated_at": "2020-04-01 15:01:43"
+  },
+  {
+    "id": 170,
+    "name": "XINDAYANG",
+    "slug": "xindayang",
+    "img_Path": null,
+    "idExt": "002777",
+    "created_at": "2020-04-01 15:01:43",
+    "updated_at": "2020-04-01 15:01:43"
+  },
+  {
+    "id": 171,
+    "name": "YUGO",
+    "slug": "yugo",
+    "img_Path": null,
+    "idExt": "000892",
+    "created_at": "2020-04-01 15:01:43",
+    "updated_at": "2020-04-01 15:01:43"
+  },
+  {
+    "id": 172,
+    "name": "ZAZ",
+    "slug": "zaz",
+    "img_Path": null,
+    "idExt": "000197",
+    "created_at": "2020-04-01 15:01:43",
+    "updated_at": "2020-04-01 15:01:43"
+  },
+  {
+    "id": 173,
+    "name": "Altro",
+    "slug": "altro",
+    "img_Path": null,
+    "idExt": "000000",
+    "created_at": "2020-04-01 15:01:43",
+    "updated_at": "2020-04-01 15:01:43"
+  }
+]

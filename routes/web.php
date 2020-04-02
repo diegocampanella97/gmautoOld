@@ -58,34 +58,3 @@ Route::delete('home/auto/{id}/cancella','CarController@cancella')->name('car.det
 Route::get('/home/listaMacchine','AdminController@golista')->name('admin.listaAuto');
 
 Route::get('/car', 'ExemplarController@showlist')->name('car');
-
-
-Route::get('/test',function () {
-
-
-    $produttoreCars = json_decode(file_get_contents(database_path('seeds/produttore_cars.json')),true);
-
-
-    foreach ($produttoreCars as $produttore) {
-
-        echo "<h1>".$produttore['value']."</h1>";
-
-        $produttoreVeicolo = "https://www2.subito.it/templates/api/carmodels.js?v=5&carbrand=".$produttore['id'];
-
-        $dataModelliAuto = json_decode(utf8_encode(file_get_contents($produttoreVeicolo)),true);
-
-        foreach ($dataModelliAuto as $modelloSingolo) {
-            echo "<h2>".$modelloSingolo['id'] . ' - '.  $modelloSingolo['value'] .": </h2>". "\n";
-
-            $dataAllestimenti = json_decode(utf8_encode(file_get_contents('https://www2.subito.it/templates/api/carversions.js?v=5&carbrand='.$produttore['id'].'&carmodel='.$modelloSingolo['id'])),true);
-
-            foreach ($dataAllestimenti as $allestimentoVeicolo) {
-                echo "<p>".$allestimentoVeicolo['id'] . ' - '.  $allestimentoVeicolo['value'] .": </p>". "\n";
-            }
-
-            echo "\n\n";
-        }
-
-    }
-
-});

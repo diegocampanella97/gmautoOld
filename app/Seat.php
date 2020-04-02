@@ -3,7 +3,6 @@
 namespace App;
 
 use App\Car;
-use App\Seat;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -25,6 +24,8 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Seat extends Model
 {
+    protected $fillable = ['name'];
+
     static public function getAll(){
         return Seat::all();
     }

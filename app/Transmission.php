@@ -3,7 +3,6 @@
 namespace App;
 
 use App\Car;
-use App\Transmission;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -25,6 +24,11 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Transmission extends Model
 {
+    protected $fillable = [
+        'name'
+    ];
+
+
     static public function getAll(){
         return Transmission::all();
     }

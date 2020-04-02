@@ -1,0 +1,11 @@
+[
+    {"id": "1", "name": "Utilitaria"},
+    {"id": "2", "name": "Berlina"},
+    {"id": "3", "name": "Station Wagon"},
+    {"id": "4", "name": "Monovolume"},
+    {"id": "5", "name": "SUV/Fuoristrada"},
+    {"id": "6", "name": "Cabrio"},
+    {"id": "7", "name": "Coupé"},
+    {"id": "8", "name": "City Car"},
+    {"id": "10", "name": "Altro"}
+]

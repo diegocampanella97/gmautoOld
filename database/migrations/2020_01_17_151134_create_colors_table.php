@@ -20,15 +20,15 @@ class CreateColorsTable extends Migration
             $table->timestamps();
         });
 
-        $path = database_path('seeds/color-model.json');
-        $models = json_decode(file_get_contents($path),true);
-
-
-        for ($i=0; $i < count($models); $i++) { 
-            $cat= new Color();
-            $cat->name= $models[$i]["value"];
-            $cat->save();
-        }
+//        $path = database_path('seeds/color-model.json');
+//        $models = json_decode(file_get_contents($path),true);
+//
+//
+//        for ($i=0; $i < count($models); $i++) {
+//            $cat= new Color();
+//            $cat->name= $models[$i]["value"];
+//            $cat->save();
+//        }
 
     }
 

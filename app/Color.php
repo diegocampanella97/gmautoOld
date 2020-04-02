@@ -3,7 +3,6 @@
 namespace App;
 
 use App\Car;
-use App\Color;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -26,7 +25,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Color extends Model
 {
-    //
+    protected $fillable = ['name'];
 
     static public function getColors(){
         return Color::all();
