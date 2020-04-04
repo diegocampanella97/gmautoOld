@@ -6,7 +6,7 @@ use App\Car;
 use Illuminate\Support\Facades\Auth;
 
 class FrontendController extends Controller {
-    
+
     public function goNoleggio(){
         return view('noleggio.home');
     }
@@ -14,13 +14,13 @@ class FrontendController extends Controller {
     public function goContatti(){
         return view('contatti.home');
     }
-    
+
     public function goUsato(){
         return view('usatoAuto.home');
     }
 
     public function goUsatoDettaglio($id){
-        
+
         $car = Car::findOrFail($id);
 
         if($car->approved == 0) {
@@ -33,5 +33,7 @@ class FrontendController extends Controller {
 
         return view('usatoAuto.detail',compact('car'));
     }
+
+
 
 }

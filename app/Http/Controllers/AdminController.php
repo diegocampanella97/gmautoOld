@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Car;
 use App\CarImage;
+use App\Exemplary;
 use App\Jobs\ResizeImage;
+use App\Preparation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
@@ -148,6 +150,16 @@ class AdminController extends Controller
         return view('adminZone.listCar',compact('cars'));
     }
 
+    public function getExemplary($id)
+    {
+        $states = Exemplary::where("producers_id",$id)->pluck("name","id");
+        return json_encode($states);
+    }
+    public function getPreparation($id)
+    {
+        $states = Preparation::where("exemplaries_id",$id)->pluck("name","id");
+        return json_encode($states);
+    }
 
 
 

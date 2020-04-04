@@ -61,6 +61,5 @@ Route::get('/car', 'ExemplarController@showlist')->name('car');
 
 Route::get('/test', 'TestController@index')->name('test');
 
-Route::get('/exemplaries/{id}','TestController@getExemplary')->name('car.exemplaries');
-
-Route::get('/preparation/{id}','TestController@getPreparation')->name('car.preparations');
+Route::get('/exemplaries/{id}','AdminController@getExemplary')->name('car.exemplaries');
+Route::get('/preparation/{id}','AdminController@getPreparation')->name('car.preparations');

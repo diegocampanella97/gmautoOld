@@ -29,7 +29,7 @@
       <div class="col-12 featured-top">
         <div class="row no-gutters">
           <div class="searchcar col-12 align-items-center">
-            
+
             <form action="{{ route('auto.cerca') }}" method="POST" class="request-form ftco-animate bg-primary fadeInUp ftco-animated">
               @csrf
               <h2 class="text-center">Trova la tua auto</h2>
@@ -48,7 +48,7 @@
     </div>
   </div>
 </section>
-    
+
 <section class="ftco-section ftco-no-pt bg-light">
   <div class="container">
     <div class="row justify-content-center">
@@ -67,24 +67,24 @@
 
               <a href="{{ route('auto.dettaglio', ['id'=>$item->id]) }}">
                 @if ($item->images->count()>0)
-                  <div class="img rounded d-flex align-items-end" style="background-image: url({{Storage::url($item->images[0]->filePath)}});">    
+                  <div class="img rounded d-flex align-items-end" style="background-image: url({{Storage::url($item->images[0]->filePath)}});">
                     @else
                     <div class="img rounded d-flex align-items-end" style="background-image: url('/images/placeholder_gmautoveicoli.png');">
                       @endif
                     </div>
                   </a>
                 <div class="text">
-                <h2 class="mb-0"><a href="#">{{$item->name}}</a></h2>
-                  <div class="d-flex mb-3">
-                    <span class="cat">{{$item->exemplar->name}} | {{$item->collection->name}}</span>
-                    <p class="price ml-auto">{{$item->price}} <span>€</span></p>
-                  </div>
-                  <p class="d-flex justify-content-center mb-0 d-block">
-                    <a href="{{ route('auto.dettaglio', ['id'=>$item->id]) }}" class="btn btn-xl btn-primary py-2 mr-1">Scopri di più</a>
-                  </p>
+                    <h2 class="mb-0"><a href="#">{{$item->name}}</a></h2>
+                      <div class="d-flex mb-3">
+                        <span class="cat">{{$item->exemplar->name}} | {{$item->collection->name}}</span>
+                        <p class="price ml-auto">{{$item->price}} <span>€</span></p>
+                      </div>
+                      <p class="d-flex justify-content-center mb-0 d-block">
+                        <a href="{{ route('auto.dettaglio', ['id'=>$item->id]) }}" class="btn btn-xl btn-primary py-2 mr-1">Scopri di più</a>
+                      </p>
                 </div>
               </div>
-            </div>            
+            </div>
           @endforeach
 
 
@@ -215,14 +215,14 @@
   <h2 class="mb-3">Sei un nostro cliente? Contattaci.</h2>
   <h4 class="con-text py-2">Garanzia 12 mesi sull’usato</h4>
   <p class="con-text pb-5">Per richieste di informazioni o assistenza per la tua auto. Siamo a tua disposizione.</p>
-  
+
   <div class="contactus_btn">
   <a href="{{route('contatti')}}" class="con-link" target="" rel="follow"><i class="icon ion-ios-arrow-forward"></i> Entra in contatto con noi</a>
   </div>
 </section>
 
 
-  
+
 
 
 @endsection

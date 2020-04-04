@@ -70,27 +70,20 @@
                                 <div class="form-group">
                                     <label for="produttoreVeicolo" class="bmd-label-floating lead text-info">Produttore Veicolo</label>
                                     <select title="Produttore Veicolo" class="selectpicker" data-width="100%" name="produttoreVeicolo" data-live-search="true">
-                                        @foreach ($exemplars as $exemplar)
-                                        <option value="{{$exemplar->id}}">{{$exemplar->name}}</option>  
-                                        @endforeach
+                                        <option value="12">12</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="modelloVeicolo" class="bmd-label-floating lead text-info">Modello Veicolo</label>
                                     <select title="Modello Veicolo" class="selectpicker" data-width="100%" name="modelloVeicolo" data-live-search="true">
-                                        @foreach ($exemplars as $exemplar)
-                                    <optgroup label="{{$exemplar->name}}">
-                                        @foreach ($exemplar->collection as $collection)
-                                            <option value="{{$collection->id}}">{{$collection->name}}</option>  
-                                        @endforeach
-                                        </optgroup>
-                                        @endforeach
-                        
+                                        <option value="12">12</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="allestimentoVeicolo" class="bmd-label-floating lead text-info">Allestimento Veicolo</label>
-                                    <input class="form-control" type="text" name="allestimentoVeicolo" required="true" aria-required="true">
+                                    <label for="modelloVeicolo" class="bmd-label-floating lead text-info">Allestimento Veicolo</label>
+                                    <select title="Modello Veicolo" class="selectpicker" data-width="100%" name="allestimentoVeicolo" data-live-search="true">
+                                        <option value="12">12</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="kmVeicolo" class="bmd-label-floating lead text-info">Chilometraggio (km)</label>
@@ -178,5 +171,5 @@
 @endsection
 
 @push('jsCustom')
- 
+
 @endpush
