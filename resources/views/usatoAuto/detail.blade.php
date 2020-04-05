@@ -58,10 +58,10 @@
           </div>
   </div>
 
-      <div class="text text-center">
-      <span class="subheading">{{$car->exemplar->name}}</span>
-          <h4>{{$car->collection->name}}</h4>
-          <h5>{{$car->mounting}}</h5>
+      <div class="text text-center py-5">
+        <span class="subheading">{{$car->preparations->exemplar->producer->name}}</span>
+        <h4>{{$car->preparations->exemplar->name}}</h4>
+        <h5>{{$car->preparations->name}}</h5>
       </div>
 
         <div class="row">
@@ -73,7 +73,7 @@
                     <div class="text">
                       <h3 class="heading mb-0 pl-3">
                           Kilometri
-                          <span>{{$car->km}}</span>
+                          <span>{{$car->kilometers->name}}</span>
                       </h3>
                   </div>
               </div>

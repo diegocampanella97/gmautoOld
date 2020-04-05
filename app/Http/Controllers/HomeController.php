@@ -49,16 +49,18 @@ class HomeController extends Controller
 
     public function search(Request $request){
 
-        $cars = Car::search($request->input('query'))->where('approved',1)->paginate(20); 
+//        dd($request->input());
+
+        $cars = Car::search($request->input('query'))->where('approved',1)->paginate(20);
         return view('usatoAuto.search',compact('cars'));
     }
 
 
 
-    
+
     public function inviaMessaggio(NoleggioRequest $request){
 
-        // previdi che le date siano maggiori o uguali del now 
+        // previdi che le date siano maggiori o uguali del now
 
         $dataRitiro = Carbon::createFromDate($request->input('dataRitiro'));
         if ($dataRitiro<Carbon::now()) {
@@ -89,7 +91,7 @@ class HomeController extends Controller
 
 
             $bag = compact('name','email','dataRitiro','dataConsegna','messaggio');
-            
+
             $emailAdmin="diegocampanella97@gmail.com";
 
             $contactMail = new NoleggioMailed($bag);
@@ -125,7 +127,7 @@ class HomeController extends Controller
         Mail::to($emailAdmin)->send($contactMail);
 
         return redirect()->route('contatti.thanks');
-        
+
 
     }
 

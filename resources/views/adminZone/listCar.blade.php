@@ -80,6 +80,7 @@
                 "serverSide":true,
                 "ajax": "{{route('api.listCarsToApproved')}}",
                 "columns": [
+
                     {
                         data : "updated_at",
                     },
@@ -87,10 +88,10 @@
                         data : "name",
                     },
                     {
-                        data : "exemplar.name"
+                        data : "preparations.exemplar.producer.name"
                     },
                     {
-                        data : "collection.name"
+                        data : "preparations.exemplar.name"
                     },
                     {
                         data : "targa"
@@ -99,6 +100,9 @@
                 ],
 
                 "columnDefs": [ {
+                    "targets" : 0,
+                    "className" : "text-center",
+                },{
                     className: "text-center",
                     "targets": 5,
                     render: function(data, type, row) {
@@ -122,6 +126,7 @@
                 "serverSide":true,
                 "ajax": "{{route('api.listCars')}}",
                 "columns": [
+
                     {
                         data : "updated_at",
                     },
@@ -129,10 +134,10 @@
                         data : "name",
                     },
                     {
-                        data : "exemplar.name"
+                        data : "preparations.exemplar.producer.name"
                     },
                     {
-                        data : "collection.name"
+                        data : "preparations.exemplar.name"
                     },
                     {
                         data : "targa"
@@ -141,6 +146,9 @@
                 ],
 
                 "columnDefs": [ {
+                    "targets" : 0,
+                    "className" : "text-center",
+                },{
                     className: "text-center",
                     "targets": 5,
                     render: function(data, type, row) {

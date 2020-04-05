@@ -24,7 +24,7 @@ class AdminController extends Controller
 
     public function goAggiungiAuto(Request $request){
         $uniqueSecret = $request->old('uniqueSecret',base_convert(sha1(uniqid(mt_rand())),16,32));
-        return view('adminZone.addAuto',compact('uniqueSecret'));
+        return view('adminZone.wizard',compact('uniqueSecret'));
     }
 
     public function submitAdd(Request $request){

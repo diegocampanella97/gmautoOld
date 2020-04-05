@@ -94,7 +94,7 @@
                             <label for="producer" class="bmd-label-floating lead text-info">Produttore Veicolo </label>
                             <select name="producer" id="producer" class="form-control input-lg">
                                 <option value="">Select Preparation</option>
-                                @foreach($producers as $producer)
+                                @foreach(\App\Producer::all()  as $producer)
                                     <option value="{{$producer->id}}">{{$producer->name}}</option>
                                 @endforeach
                             </select>

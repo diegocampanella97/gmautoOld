@@ -24,25 +24,21 @@ class CarController extends Controller
         return datatables(
             Car::
                 with([
-                    'collection' => function($q) {$q->select('id', 'name');},
-                    'exemplar' => function($q) {$q->select('id', 'name');},
+                    'preparations.exemplar.producer',
                 ])
-                ->select('id','name','targa','collection_id','exemplar_id','updated_at')
+                ->select('id','name','targa','preparations_id','updated_at')
                 ->where('approved',true)
-
         )->toJson();
     }
 
     public function getListToApproved(){
         return datatables(
             Car::
-                with([
-                    'collection' => function($q) {$q->select('id', 'name');},
-                    'exemplar' => function($q) {$q->select('id', 'name');},
-                ])
-                ->select('id','name','targa','collection_id','exemplar_id','updated_at')
+            with([
+                'preparations.exemplar.producer',
+            ])
+                ->select('id','name','targa','preparations_id','updated_at')
                 ->where('approved',false)
-
         )->toJson();
     }
 

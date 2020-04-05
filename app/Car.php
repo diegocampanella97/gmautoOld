@@ -86,10 +86,24 @@ class Car extends Model{
     use Searchable;
     use SoftDeletes;
 
+    protected $casts = [
+        'created_at' => 'datetime:Y-m-d H:00',
+        'updated_at' => 'datetime:Y-m-d H:00',
+    ];
+
+    protected $fillable = [
+        'name', 'category_id'
+    ];
+
+
     public function toSearchableArray()
     {
         $array = [
-            'id' => $this->id
+            'id' => $this->id,
+            'name' => $this->name,
+//            'collection' => $this->preparations->name,
+//            'exemplar' => $this->preparations->exemplar->name,
+//            'producer' => $this->preparations->exemplar->producer->name,
         ];
 
         // Customize array...
@@ -97,16 +111,9 @@ class Car extends Model{
         return $array;
     }
 
-
-
-    protected $fillable = [
-        'name', 'category_id'
-    ];
-
     static public function getLastCar(){
-        return Car::take(3)->with(['collection','exemplar','images'])->orderBy('updated_at', 'desc')->get();
+        return Car::take(3)->with(['preparations.exemplar.producer'])->orderBy('updated_at', 'desc')->get();
     }
-
 
     public function images(){
         return $this->hasMany(CarImage::class);
@@ -114,12 +121,6 @@ class Car extends Model{
 
     public function preparations(){
         return $this->belongsTo(Preparation::class);
-    }
-
-
-
-    public function collection(){
-        return $this->belongsTo(Collection::class);
     }
 
     public function transmission(){
@@ -134,6 +135,10 @@ class Car extends Model{
         return $this->belongsTo(Fuel::class);
     }
 
+    public function kilometers(){
+        return $this->belongsTo(Kilometers::class);
+    }
+
     public function color(){
         return $this->belongsTo(Color::class);
     }
@@ -141,8 +146,7 @@ class Car extends Model{
     static public function getCarApproved(){
         // Debugbar::startMeasure('render','Time for loading car');
             return Car::with([
-                'collection' => function($q) {$q->select('id', 'name');},
-                'exemplar' => function($q) {$q->select('id', 'name');},
+                'preparations.exemplar.producer',
                 'images'])
             ->where('approved','=',true)->paginate(10);
         // Debugbar::stopMeasure('render');
