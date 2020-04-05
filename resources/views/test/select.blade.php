@@ -39,6 +39,7 @@
 </div>
 
     @push('jsCustom')
+
         <script type="text/javascript">
             $(document).ready( () =>
             {
@@ -93,6 +94,7 @@
 
             });
         </script>
+
     @endpush
 
 

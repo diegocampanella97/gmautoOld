@@ -89,10 +89,7 @@ class Car extends Model{
     public function toSearchableArray()
     {
         $array = [
-            'id' => $this->id,
-            'name' => $this->name,
-            'carProduct' => $this->collection->name,
-            'carExemplae' => $this->exemplar->name
+            'id' => $this->id
         ];
 
         // Customize array...
@@ -115,9 +112,11 @@ class Car extends Model{
         return $this->hasMany(CarImage::class);
     }
 
-    public function exemplar(){
-        return $this->belongsTo(Exemplar::class);
+    public function preparations(){
+        return $this->belongsTo(Preparation::class);
     }
+
+
 
     public function collection(){
         return $this->belongsTo(Collection::class);

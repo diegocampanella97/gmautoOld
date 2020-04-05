@@ -14,7 +14,7 @@ class AddVidToCarsTable extends Migration
     public function up()
     {
         Schema::table('cars', function (Blueprint $table) {
-            $table->string('vid')->default();
+            $table->string('vid')->nullable();
         });
     }
 

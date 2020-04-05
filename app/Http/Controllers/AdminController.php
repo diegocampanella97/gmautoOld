@@ -28,22 +28,22 @@ class AdminController extends Controller
     }
 
     public function submitAdd(Request $request){
-        // dd($request->input());
+
+
+//        dump($request->input());
+
+        $preparation = Preparation::find($request->input("preparation"));
+//        dd($preparation);
 
         $car = new Car();
-        $car->name= $request->input("titoloAnnuncio");
 
-        $car->category_id = $request->input("categoriaVeicolo");
+        $car->name= $preparation->exemplar->producer->name." | ".$preparation->exemplar->name." - ".$preparation->name;
+
         $car->targa = $request->input("targaVeicolo");
-        $car->exemplar_id= $request->input("produttoreVeicolo");
-        $car->mounting= $request->input("allestimentoVeicolo");
-        $car->km = $request->input("kmVeicolo");
         $car->description = $request->input("testoAnnuncio");
-
         $car->price = $request->input("prezzoVeicolo");
         $car->color_id = $request->input("coloreVeicolo");
         $car->vid = $request->input("vinVeicolo");
-        $car->collection_id = $request->input("modelloVeicolo");
         $car->mouth = $request->input("meseImmatricolazione");
         $car->year = $request->input("AnnoImmatricolazione");
         $car->fuel_id= $request->input("carburanteVeicolo");
@@ -51,9 +51,11 @@ class AdminController extends Controller
         $car->grade_id = $request->input("classeVeicolo");
         $car->seat_id = $request->input("postiVeicolo");
         $car->door_id = $request->input("porteVeicolo");
+        $car->preparations_id = $request->input("preparation");
+        $car->kilometers_id = $request->input("kmVeicolo");
+        $car->tipology_id = $request->input("categoriaVeicolo");
 
         $car->save();
-
 
         $unique = $request->input('uniqueSecret');
 

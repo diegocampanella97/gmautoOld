@@ -14,7 +14,7 @@ class AddPriceToCarsTable extends Migration
     public function up()
     {
         Schema::table('cars', function (Blueprint $table) {
-            $table->unsignedBigInteger('price');
+            $table->unsignedBigInteger('price')->default(0);;
         });
     }
 

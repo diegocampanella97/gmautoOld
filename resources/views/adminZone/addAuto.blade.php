@@ -80,10 +80,8 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="modelloVeicolo" class="bmd-label-floating lead text-info">Allestimento Veicolo</label>
-                                    <select title="Modello Veicolo" class="selectpicker" data-width="100%" name="allestimentoVeicolo" data-live-search="true">
-                                        <option value="12">12</option>
-                                    </select>
+                                    <label for="allestimentoVeicolo" class="bmd-label-floating lead text-info">Allestimento Veicolo</label>
+                                    <input class="form-control" type="text" name="allestimentoVeicolo" required="true" aria-required="true">
                                 </div>
                                 <div class="form-group">
                                     <label for="kmVeicolo" class="bmd-label-floating lead text-info">Chilometraggio (km)</label>

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddCategoryIdToCarsTable extends Migration
+class AddKilometersIdToCarsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,8 +14,8 @@ class AddCategoryIdToCarsTable extends Migration
     public function up()
     {
         Schema::table('cars', function (Blueprint $table) {
-            $table->unsignedBigInteger('category_id')->default(1);
-            $table->foreign('category_id')->references('id')->on('categories');
+            $table->unsignedBigInteger('kilometers_id');
+            $table->foreign('kilometers_id')->references('id')->on('kilometers');
         });
     }
 
@@ -27,8 +27,8 @@ class AddCategoryIdToCarsTable extends Migration
     public function down()
     {
         Schema::table('cars', function (Blueprint $table) {
-            $table->dropForeign(['category_id']);
-            $table->dropColumn('category_id');
+            $table->dropForeign(['kilometers_id']);
+            $table->dropColumn('kilometers_id');
         });
     }
 }

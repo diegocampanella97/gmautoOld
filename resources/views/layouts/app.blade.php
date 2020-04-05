@@ -21,6 +21,7 @@
     {{-- <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
     @include('layouts._style')
+    @stack('cssCustom')
 </head>
 <body>
     <div id="app">

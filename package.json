@@ -26,6 +26,7 @@
         "waypoints": "^4.0.1"
     },
     "dependencies": {
+        "bs-stepper": "^1.7.0",
         "flat-icons": "^1.0.0"
     }
 }
