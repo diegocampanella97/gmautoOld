@@ -92,7 +92,9 @@ class Car extends Model{
     ];
 
     protected $fillable = [
-        'name', 'category_id'
+        'name', 'targa','description','price','color_id','vid',
+        'mouth','year','fuel_id','transmission_id','grade_id',
+        'seat_id','door_id','preparations_id','kilometers_id','tipology_id','approved'
     ];
 
 

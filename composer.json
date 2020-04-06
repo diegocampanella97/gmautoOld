@@ -9,18 +9,19 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "ext-json": "*",
         "artesaos/seotools": "^0.17.1",
         "barryvdh/laravel-debugbar": "^3.2",
         "fideloper/proxy": "^4.2",
+        "fruitcake/laravel-cors": "^1.0",
         "laravel/framework": "^7.0",
         "laravel/scout": "^8.0",
         "laravel/tinker": "^2.0",
+        "pelmered/fake-car": "^1.4",
         "spatie/image": "^1.7",
         "teamtnt/laravel-scout-tntsearch-driver": "^8.1",
-        "yajra/laravel-datatables-oracle": "^9.9",
         "weidner/goutte": "^1.4",
-        "fruitcake/laravel-cors": "^1.0",
-      "ext-json": "*"
+        "yajra/laravel-datatables-oracle": "^9.9"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.6",
