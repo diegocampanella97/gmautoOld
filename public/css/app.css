@@ -434,3 +434,20 @@
   border-bottom: 6px solid #be2626;
 }
 
+.form-control2 {
+  height: 52px !important;
+  /* background: #fff !important; */
+  color: #000000 !important;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: none !important;
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+

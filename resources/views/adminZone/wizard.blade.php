@@ -19,22 +19,23 @@
             <div class="col-12">
                     <form id="regForm" method="POST" action="{{route('admin.aggiungiAutoRichiesta')}}">
                     @csrf
+                    <input type="hidden" name="uniqueSecret" value="{{$uniqueSecret}}">
 
                     <!-- One "tab" for each step in the form: -->
                     <div class="tab">
                         <div class="form-group">
                             <label for="targaVeicolo" class="bmd-label-floating lead text-info">Targa Auto</label>
-                            <input type="text" class="form-control" name="targaVeicolo" id="targaVeicolo" aria-describedby="emailHelp">
+                            <input type="text" required class="form-control2" name="targaVeicolo" id="targaVeicolo">
                         </div>
 
                         <div class="form-group">
                             <label for="vinVeicolo" class="bmd-label-floating lead text-info">Vin Auto</label>
-                            <input type="text" class="form-control" name="vinVeicolo" id="vinVeicolo" aria-describedby="emailHelp">
+                            <input type="text" class="form-control2" name="vinVeicolo" id="vinVeicolo" aria-describedby="emailHelp">
                         </div>
 
                         <div class="form-group">
                             <label for="categoriaVeicolo" class="bmd-label-floating lead text-info">Tipologia Veicolo</label>
-                            <select name="categoriaVeicolo" id="categoriaVeicolo" class="form-control input-lg">
+                            <select name="categoriaVeicolo" id="categoriaVeicolo" class="form-control2 input-lg">
                                 <option value="">Seleziona Tipologia</option>
                                 @foreach(\App\Typology::all() as $producer)
                                     <option value="{{$producer->id}}">{{$producer->name}}</option>
@@ -44,12 +45,12 @@
 
                         <div class="form-group">
                             <label for="prezzoVeicolo" class="bmd-label-floating lead text-info">Prezzo</label>
-                            <input type="number" class="form-control" name="prezzoVeicolo" id="prezzoVeicolo" aria-describedby="emailHelp">
+                            <input type="number" required class="form-control2" name="prezzoVeicolo" id="prezzoVeicolo">
                         </div>
 
                         <div class="form-group">
                             <label for="testoAnnuncio" class="bmd-label-floating lead text-info">Descrizione dell'annuncio</label>
-                            <textarea class="form-control" name="testoAnnuncio" rows="8"></textarea>
+                            <textarea class="form-control2" name="testoAnnuncio" rows="8"></textarea>
                         </div>
 
                     </div>
@@ -57,7 +58,7 @@
                     <div class="tab">
                         <div class="form-group">
                             <label for="meseImmatricolazione" class="bmd-label-floating lead text-info">Mese Immatricolazione</label>
-                            <select name="meseImmatricolazione" id="meseImmatricolazione" class="form-control input-lg">
+                            <select name="meseImmatricolazione" id="meseImmatricolazione" class="form-control2 input-lg">
                                 <option value="1">Gennaio</option>
                                 <option value="2">Febbraio</option>
                                 <option value="3">Marzo</option>
@@ -75,12 +76,12 @@
 
                         <div class="form-group">
                             <label for="AnnoImmatricolazione" class="bmd-label-floating lead text-info">Anno Immatricolazione</label>
-                            <input type="number" class="form-control" name="AnnoImmatricolazione" min="1900" id="AnnoImmatricolazione">
+                            <input type="number" required class="form-control2" name="AnnoImmatricolazione" min="1900" id="AnnoImmatricolazione">
                         </div>
 
                         <div class="form-group">
                             <label for="kmVeicolo" class="bmd-label-floating lead text-info">Chilometraggio (km)</label>
-                            <select name="kmVeicolo" id="kmVeicolo" class="form-control input-lg">
+                            <select required name="kmVeicolo" id="kmVeicolo" class="form-control2 input-lg">
                                 <option value="">Seleziona Kilometraggio</option>
                                 @foreach(\App\Kilometers::all() as $producer)
                                     <option value="{{$producer->id}}">{{$producer->name}}</option>
@@ -92,7 +93,7 @@
                     <div class="tab">
                         <div class="form-group">
                             <label for="producer" class="bmd-label-floating lead text-info">Produttore Veicolo </label>
-                            <select name="producer" id="producer" class="form-control input-lg">
+                            <select name="producer" id="producer" class="form-control2 input-lg">
                                 <option value="">Select Preparation</option>
                                 @foreach(\App\Producer::all()  as $producer)
                                     <option value="{{$producer->id}}">{{$producer->name}}</option>
@@ -102,14 +103,14 @@
 
                         <div class="form-group">
                             <label for="exemplary" class="bmd-label-floating lead text-info">Modello Veicolo</label>
-                            <select name="exemplary" id="exemplary" class="form-control input-lg">
+                            <select name="exemplary" id="exemplary" class="form-control2 input-lg">
                                 <option value="">Select exemplary</option>
                             </select>
                         </div>
 
                         <div class="form-group">
                             <label for="preparation" class="bmd-label-floating lead text-info">Allestimento Veicolo</label>
-                            <select name="preparation" id="preparation" class="form-control input-lg">
+                            <select name="preparation" id="preparation" class="form-control2 input-lg">
                                 <option value="">Select preparation</option>
                             </select>
                         </div>
@@ -118,7 +119,7 @@
                     <div class="tab">
                         <div class="form-group">
                             <label for="carburanteVeicolo" class="bmd-label-floating lead text-info">Carburante Veicolo</label>
-                            <select title="Carburante Veicolo" class="form-control input-lg" data-width="100%" name="carburanteVeicolo" >
+                            <select title="Carburante Veicolo" class="form-control2 input-lg" data-width="100%" name="carburanteVeicolo" >
                                 @foreach (\App\Fuel::getall() as $item)
                                     <option value="{{$item->id}}" data-tokens="ketchup mustard">{{$item->name}}</option>
                                 @endforeach
@@ -127,7 +128,7 @@
 
                         <div class="form-group">
                             <label for="coloreVeicolo" class="bmd-label-floating lead text-info">Colore Veicolo</label>
-                            <select title="Colore Veicolo" class="form-control input-lg" data-width="100%" name="coloreVeicolo">
+                            <select title="Colore Veicolo" class="form-control2 input-lg" data-width="100%" name="coloreVeicolo">
                                 @foreach (\App\Color::getColors() as $item)
                                     <option value="{{$item->id}}" data-tokens="ketchup mustard">{{$item->name}}</option>
                                 @endforeach
@@ -136,7 +137,7 @@
 
                         <div class="form-group">
                             <label for="cambioVeicolo" class="bmd-label-floating lead text-info">Cambio Veicolo</label>
-                            <select title="Trasmissione Veicolo" class="form-control input-lg" data-width="100%" name="cambioVeicolo" >
+                            <select title="Trasmissione Veicolo" class="form-control2 input-lg" data-width="100%" name="cambioVeicolo" >
                                 @foreach (\App\Transmission::getall() as $item)
                                     <option value="{{$item->id}}" data-tokens="ketchup mustard">{{$item->name}}</option>
                                 @endforeach
@@ -145,7 +146,7 @@
 
                         <div class="form-group">
                             <label for="classeVeicolo" class="bmd-label-floating lead text-info">Classe emissioni Veicolo</label>
-                            <select title="Classe emissioni" class="form-control input-lg" data-width="100%" name="classeVeicolo" >
+                            <select title="Classe emissioni" class="form-control2 input-lg" data-width="100%" name="classeVeicolo" >
                                 @foreach (\App\Grade::getall() as $item)
                                     <option value="{{$item->id}}" data-tokens="ketchup mustard">{{$item->name}}</option>
                                 @endforeach
@@ -154,7 +155,7 @@
 
                         <div class="form-group">
                             <label for="postiVeicolo" class="bmd-label-floating lead text-info">Posti Veicolo</label>
-                            <select title="Posti Veicolo" class="form-control input-lg" data-width="100%" name="postiVeicolo" >
+                            <select title="Posti Veicolo" class="form-control2 input-lg" data-width="100%" name="postiVeicolo" >
                                 @foreach (\App\Seat::getall() as $item)
                                     <option value="{{$item->id}}" data-tokens="ketchup mustard">{{$item->name}}</option>
                                 @endforeach
@@ -164,7 +165,7 @@
 
                         <div class="form-group">
                             <label for="porteVeicolo" class="bmd-label-floating lead text-info">Porte Veicolo</label>
-                            <select title="Porte Veicolo" class="form-control input-lg" data-width="100%" name="porteVeicolo" >
+                            <select title="Porte Veicolo" class="form-control2 input-lg" data-width="100%" name="porteVeicolo" >
                                 @foreach (\App\Door::getall() as $item)
                                     <option value="{{$item->id}}" data-tokens="ketchup mustard">{{$item->name}}</option>
                                 @endforeach
@@ -305,13 +306,13 @@
             // This function deals with validation of the form fields
             let x, y, i, valid = true;
             x = document.getElementsByClassName("tab");
-            y = x[currentTab].getElementsByTagName("input");
+            y = x[currentTab].getElementsByClassName('form-control2');
             // A loop that checks every input field in the current tab:
             for (i = 0; i < y.length; i++) {
                 // If a field is empty...
-                if ((y[i].value == "") && (y[i].required==true)) {
+                if ((y[i].value === "") && (y[i].required)) {
                     // add an "invalid" class to the field:
-                    y[i].className += " invalid";
+                    y[i].className += " bg-warning";
                     // and set the current valid status to false:
                     valid = false;
                 }

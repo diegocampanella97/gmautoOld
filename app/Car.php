@@ -101,9 +101,9 @@ class Car extends Model{
         $array = [
             'id' => $this->id,
             'name' => $this->name,
-//            'collection' => $this->preparations->name,
-//            'exemplar' => $this->preparations->exemplar->name,
-//            'producer' => $this->preparations->exemplar->producer->name,
+            'collection' => $this->preparations->name,
+            'exemplar' => $this->preparations->exemplar->name,
+            'producer' => $this->preparations->exemplar->producer->name,
         ];
 
         // Customize array...

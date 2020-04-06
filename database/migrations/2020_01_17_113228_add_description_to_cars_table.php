@@ -14,7 +14,7 @@ class AddDescriptionToCarsTable extends Migration
     public function up()
     {
         Schema::table('cars', function (Blueprint $table) {
-            $table->longText('description')->default("");
+            $table->longText('description')->nullable();
         });
     }
 
