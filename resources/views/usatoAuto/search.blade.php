@@ -53,7 +53,9 @@
                   @endif
                   </a>
                 <div class="text">
-                <h2 class="mb-0"><a href="#">{{$item->name}}</a></h2>
+                <h2 class="mb-0">
+                    <a href="{{ route('auto.dettaglio', ['id'=>$item->id]) }}">{{$item->name}}</a>
+                </h2>
                   <div class="d-flex mb-3">
                     <span class="cat">{{$item->preparations->exemplar->name}} | {{$item->preparations->exemplar->producer->name}}</span>
                     <p class="price ml-auto">{{$item->price}} <span>€</span></p>
@@ -71,7 +73,7 @@
         </div>
             <div class="row py-3">
               <div class="col-12 d-flex justify-content-center">
-                {{ \App\Car::getCarApproved()->links() }}
+                {{ $cars->links() }}
               </div>
             </div>
     </div>

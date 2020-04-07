@@ -65,26 +65,33 @@
             <div class="item">
               <div class="car-wrap rounded ftco-animate">
 
-              <a href="{{ route('auto.dettaglio', ['id'=>$item->id]) }}">
-                @if ($item->images->count()>0)
-                  <div class="img rounded d-flex align-items-end" style="background-image: url({{Storage::url($item->images[0]->filePath)}});">
-                    @else
-                    <div class="img rounded d-flex align-items-end" style="background-image: url('/images/placeholder_gmautoveicoli.png');">
+                  <a href="{{ route('auto.dettaglio', ['id'=>$item->id]) }}">
+                      @if ($item->images->count()>0)
+                          <div class="img rounded d-flex align-items-end" style="background-image: url(
+                          {{
+                          Storage::url($item->images[0]->filePath)
+                          }});">
+                          </div>
+                      @else
+                          <div class="img rounded d-flex align-items-end" style="background-image: url('/images/placeholder_gmautoveicoli.png');">
+                          </div>
                       @endif
-                    </div>
                   </a>
                 <div class="text">
                     <h2 class="mb-0"><a href="#">{{$item->name}}</a></h2>
                       <div class="d-flex mb-3">
-                        <span class="cat">{{$item->preparations -> exemplar->name}} | {{$item ->preparations -> exemplar-> producer-> name}}</span>
-                        <p class="price ml-auto">{{$item->price}} <span>€</span></p>
+                        <span class="cat">{{$item->preparations -> exemplar->name}}<br>
+                            <img class="img-fluid logo-resize" src="/images/logo_cars/{{$item ->preparations -> exemplar-> producer-> slug}}.svg" alt="{{$item ->preparations -> exemplar-> producer-> name}}">
+                        </span>
+                        <p class="price ml-auto">{{$item->price}} €</p>
                       </div>
                       <p class="d-flex justify-content-center mb-0 d-block">
                         <a href="{{ route('auto.dettaglio', ['id'=>$item->id]) }}" class="btn btn-xl btn-primary py-2 mr-1">Scopri di più</a>
                       </p>
                 </div>
               </div>
-            </div>
+
+              </div>
           @endforeach
 
 

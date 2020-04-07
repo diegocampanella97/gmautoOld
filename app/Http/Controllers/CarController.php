@@ -17,7 +17,8 @@ class CarController extends Controller
 
 
     public function showAll(){
-        return view('usatoAuto.gallery');
+        $cars = Car::getCarApproved();
+        return view('usatoAuto.gallery',compact('cars'));
     }
 
     public function getList(){

@@ -53,7 +53,7 @@ class AdminController extends Controller
         $car->door_id = $request->input("porteVeicolo");
         $car->preparations_id = $request->input("preparation");
         $car->kilometers_id = $request->input("kmVeicolo");
-        $car->tipology_id = $request->input("categoriaVeicolo");
+        $car->hai  = $request->input("categoriaVeicolo");
 
         $car->save();
 

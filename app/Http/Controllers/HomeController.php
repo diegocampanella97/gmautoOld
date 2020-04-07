@@ -51,7 +51,10 @@ class HomeController extends Controller
 
 //        dd($request->input());
 
-        $cars = Car::search($request->input('query'))->where('approved',1)->paginate(20);
+        $cars = Car::search($request->input('query'))
+            ->where('approved',1)
+            ->paginate(20);
+
         return view('usatoAuto.search',compact('cars'));
     }
 

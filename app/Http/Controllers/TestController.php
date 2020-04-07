@@ -11,7 +11,7 @@ class TestController extends Controller
     public function index()
     {
         $producers=Producer::all();
-        return view('test.zizard',compact('producers'));
+        return view('test.logo',compact('producers'));
     }
 
 
