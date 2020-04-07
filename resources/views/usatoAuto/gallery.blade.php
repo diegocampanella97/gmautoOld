@@ -48,7 +48,11 @@
                 </h2>
                     <div class="d-flex mb-3 mt-3">
                         <span class="cat">{{$item->preparations -> exemplar->name}} <br>
-                            <img alt="{{$item ->preparations -> exemplar-> producer-> name}}" class="img-fluid logo-resize" src="/images/logo_cars/{{$item ->preparations -> exemplar-> producer-> slug}}.svg">
+                                                        <a href="{{route('auto.cerca.produttore',$item ->preparations -> exemplar-> producer-> id)}}">
+                            <img class="img-fluid logo-resize"
+                                 src="/images/logo_cars/{{$item ->preparations -> exemplar-> producer-> slug}}.svg"
+                                 alt="{{$item ->preparations -> exemplar-> producer-> name}}">
+                            </a>
                         </span>
                         <p class="price ml-auto">{{$item->price}} <span>€</span></p>
                     </div>

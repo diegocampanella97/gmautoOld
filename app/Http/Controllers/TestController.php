@@ -2,17 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Car;
 use App\Exemplary;
 use App\Preparation;
 use App\Producer;
 
 class TestController extends Controller
 {
-    public function index()
-    {
-        $producers=Producer::all();
-        return view('test.logo',compact('producers'));
-    }
 
 
 }

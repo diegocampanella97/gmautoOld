@@ -45,7 +45,7 @@ Route::post('/noleggio/inviaMessaggio', 'HomeController@inviaMessaggio')->name('
 
 Route::get('/auto/galleria','CarController@showAll')->name('galleryAuto');
 Route::POST('/auto/cerca', 'HomeController@search')->name('auto.cerca');
-
+Route::get('/cerca/producers/{id}', 'HomeController@searchForProducers')->name('auto.cerca.produttore');
 
 // Area Riservata
 Route::get('/home','AdminController@goAreaRiservata')->name('admin.areaRiservata');
@@ -59,7 +59,7 @@ Route::get('/home/listaMacchine','AdminController@golista')->name('admin.listaAu
 
 Route::get('/car', 'ExemplarController@showlist')->name('car');
 
-Route::get('/test', 'TestController@index')->name('test');
+Route::get('/test/{id}', 'TestController@index')->name('test');
 
 Route::get('/exemplaries/{id}','AdminController@getExemplary')->name('car.exemplaries');
 Route::get('/preparation/{id}','AdminController@getPreparation')->name('car.preparations');

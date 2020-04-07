@@ -147,6 +147,7 @@ class Car extends Model{
 
     static public function getCarApproved(){
         // Debugbar::startMeasure('render','Time for loading car');
+
             return Car::with([
                 'preparations.exemplar.producer',
                 'images'])

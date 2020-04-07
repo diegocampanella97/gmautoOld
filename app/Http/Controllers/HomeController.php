@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Car;
+use App\Producer;
 use DateTime;
 use Carbon\Carbon;
 use App\Mail\ContattiMailed;
@@ -57,8 +58,6 @@ class HomeController extends Controller
 
         return view('usatoAuto.search',compact('cars'));
     }
-
-
 
 
     public function inviaMessaggio(NoleggioRequest $request){
@@ -131,7 +130,26 @@ class HomeController extends Controller
 
         return redirect()->route('contatti.thanks');
 
+    }
 
+    public function searchForProducers($id){
+        $producer = Producer::find($id);
+        $cars = Car::search($producer->name)->paginate(50)->load(['preparations.exemplar.producer','images']);
+
+//        $cars=(new Collection($cars));
+
+//        dd($cars);
+//        $cars = Car::
+////            with(['preparations.exemplar.producer'])->
+//            with('preparations')->
+//            with('preparations.exemplar')->
+//            with('preparations.exemplar.producer')->
+//            first();
+//
+
+//        dd($cars);
+
+        return view('usatoAuto.search',compact('cars'));
     }
 
 }

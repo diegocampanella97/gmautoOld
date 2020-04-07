@@ -56,10 +56,16 @@
                 <h2 class="mb-0">
                     <a href="{{ route('auto.dettaglio', ['id'=>$item->id]) }}">{{$item->name}}</a>
                 </h2>
-                  <div class="d-flex mb-3">
-                    <span class="cat">{{$item->preparations->exemplar->name}} | {{$item->preparations->exemplar->producer->name}}</span>
-                    <p class="price ml-auto">{{$item->price}} <span>€</span></p>
-                  </div>
+                    <div class="d-flex mb-3">
+                        <span class="cat">{{$item->preparations -> exemplar->name}}<br>
+                            <a href="{{route('auto.cerca.produttore',$item ->preparations -> exemplar-> producer-> id)}}">
+                            <img class="img-fluid logo-resize"
+                                 src="/images/logo_cars/{{$item ->preparations -> exemplar-> producer-> slug}}.svg"
+                                 alt="{{$item ->preparations -> exemplar-> producer-> name}}">
+                            </a>
+                        </span>
+                        <p class="price ml-auto">{{$item->price}} €</p>
+                    </div>
                   <p class="d-flex justify-content-center mb-0 d-block">
                     <a href="{{ route('auto.dettaglio', ['id'=>$item->id]) }}" class="btn btn-xl btn-primary py-2 mr-1">Scopri di più</a>
                   </p>
@@ -73,7 +79,9 @@
         </div>
             <div class="row py-3">
               <div class="col-12 d-flex justify-content-center">
-                {{ $cars->links() }}
+
+{{--                  {{ dd($cars->links()) }}--}}
+{{--                {{ $cars->links() }}--}}
               </div>
             </div>
     </div>
