@@ -59,7 +59,8 @@ Route::get('/home/listaMacchine','AdminController@golista')->name('admin.listaAu
 
 Route::get('/car', 'ExemplarController@showlist')->name('car');
 
-Route::get('/test/{id}', 'TestController@index')->name('test');
+Route::get('/test', 'TestController@index')->name('test');
 
 Route::get('/exemplaries/{id}','AdminController@getExemplary')->name('car.exemplaries');
 Route::get('/preparation/{id}','AdminController@getPreparation')->name('car.preparations');
+
