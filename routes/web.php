@@ -44,7 +44,7 @@ Route::get('/noleggio', 'HomeController@noleggio')->name('noleggio');
 Route::post('/noleggio/inviaMessaggio', 'HomeController@inviaMessaggio')->name('noleggio.invia');
 
 Route::get('/auto/galleria','CarController@showAll')->name('galleryAuto');
-Route::POST('/auto/cerca', 'HomeController@search')->name('auto.cerca');
+Route::post('/auto/cerca', 'HomeController@search')->name('auto.cerca');
 Route::get('/cerca/producers/{id}', 'HomeController@searchForProducers')->name('auto.cerca.produttore');
 
 // Area Riservata

@@ -30,7 +30,7 @@
         <div class="row no-gutters">
           <div class="searchcar col-12 align-items-center">
 
-            <form action="{{ route('auto.cerca') }}" method="POST" class="request-form ftco-animate bg-primary fadeInUp ftco-animated">
+            <form action="{{ route('auto.cerca') }}" method="post" class="request-form ftco-animate bg-primary fadeInUp ftco-animated">
               @csrf
               <h2 class="text-center">Trova la tua auto</h2>
               <div class="row">

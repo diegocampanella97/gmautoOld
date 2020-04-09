@@ -52,11 +52,24 @@ class HomeController extends Controller
 
 //        dd($request->input());
 
-        $cars = Car::search($request->input('query'))
+        $carsID = Car::search($request->input('query'))
             ->where('approved',1)
-            ->paginate(20);
+            ->keys()
+            ->toArray();
 
-        return view('usatoAuto.search',compact('cars'));
+
+
+        $cars=
+            Car::
+            with(['preparations.exemplar.producer','images'])->
+            whereIn('id',$carsID)->
+                get();
+        ;
+
+//
+        $paginate=false;
+
+        return view('usatoAuto.search',compact('cars','paginate'));
     }
 
 
@@ -133,23 +146,28 @@ class HomeController extends Controller
     }
 
     public function searchForProducers($id){
-        $producer = Producer::find($id);
-        $cars = Car::search($producer->name)->paginate(50)->load(['preparations.exemplar.producer','images']);
+//        $producer = Producer::find($id);
+//        $cars = Car::search($producer->name)->paginate(50)->load(['preparations.exemplar.producer','images']);
 
-//        $cars=(new Collection($cars));
+        $carsFind=Car::
+        join('preparations','cars.preparations_id','=','preparations.id')->
+        join('exemplaries','exemplaries_id','=','exemplaries.id')->
+        join('producers','producers_id','=','producers.id')->
+        where('producers.id','=',$id)->
+        pluck('cars.id');
+
+        $cars=
+            Car::
+            with(['preparations.exemplar.producer','images'])->
+            whereIn('id',$carsFind)->
+            paginate(15)
+        ;
 
 //        dd($cars);
-//        $cars = Car::
-////            with(['preparations.exemplar.producer'])->
-//            with('preparations')->
-//            with('preparations.exemplar')->
-//            with('preparations.exemplar.producer')->
-//            first();
-//
 
-//        dd($cars);
+        $paginate=true;
 
-        return view('usatoAuto.search',compact('cars'));
+        return view('usatoAuto.search',compact('cars','paginate'));
     }
 
 }

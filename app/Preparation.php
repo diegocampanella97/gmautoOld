@@ -16,4 +16,8 @@ class Preparation extends Model
     public function exemplar(){
         return $this->belongsTo(Exemplary::class,'exemplaries_id');
     }
+
+    public function cars(){
+        return $this->hasMany(Car::class,'preparations_id');
+    }
 }

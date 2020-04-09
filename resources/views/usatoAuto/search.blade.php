@@ -77,13 +77,15 @@
 
 
         </div>
+            @if($paginate==true)
             <div class="row py-3">
               <div class="col-12 d-flex justify-content-center">
 
 {{--                  {{ dd($cars->links()) }}--}}
-{{--                {{ $cars->links() }}--}}
+                  {{ $cars->links() }}
               </div>
             </div>
+            @endif
     </div>
 
   </section>
