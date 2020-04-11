@@ -23,7 +23,8 @@ class DatabaseSeeder extends Seeder
             GradeTableSeeder::class,
             KilometersSeeder::class,
             DoorTableSeeder::class,
-            SeatTableSeeder::class
+            SeatTableSeeder::class,
+            CarsTableSeeder::class,
         ]);
     }
 }

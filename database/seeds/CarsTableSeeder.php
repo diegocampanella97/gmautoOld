@@ -12,6 +12,13 @@ class CarsTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(Car::class, 45)->create();
+        $cars = (factory(Car::class, 5000)->make())->toArray();
+
+        $chunks = array_chunk($cars,1000);
+
+        foreach ($chunks as $chunk){
+            Car::insert($chunk);
+        }
+
     }
 }

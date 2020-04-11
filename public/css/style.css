@@ -8709,9 +8709,11 @@ h1, h2, h3, h4, h5,
     border-top: none;
     padding: 20px 30px 30px; }
     .car-wrap .text .price {
-      color: #185D7F;
-      margin-bottom: 0;
-      font-weight: 600; }
+        color: #185D7F;
+        margin-bottom: 0;
+        font-weight: 600;
+        min-height: 100px;
+    }
       .car-wrap .text .price span {
         font-size: 12px;
         font-weight: 400;
