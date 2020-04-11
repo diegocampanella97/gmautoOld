@@ -44,12 +44,6 @@ class CarController extends Controller
     }
 
 
-
-
-    public function dettaglio($id){
-        dd($id);
-    }
-
     public function cancella($id){
         $car = Car::findOrFail($id);
 

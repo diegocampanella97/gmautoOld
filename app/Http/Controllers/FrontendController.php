@@ -21,7 +21,10 @@ class FrontendController extends Controller {
 
     public function goUsatoDettaglio($id){
 
-        $car = Car::findOrFail($id);
+        $car = Car::with([
+            'preparations.exemplar.producer','images','fuel',
+            'transmission','kilometers','color','door'
+        ])->findOrFail($id);
 
         if($car->approved == 0) {
             if(Auth::user()){

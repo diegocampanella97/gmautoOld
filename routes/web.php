@@ -50,7 +50,6 @@ Route::get('/cerca/producers/{id}', 'HomeController@searchForProducers')->name('
 // Area Riservata
 Route::get('/home','AdminController@goAreaRiservata')->name('admin.areaRiservata');
 Route::get('/home/aggiungiAuto','AdminController@goAggiungiAuto')->name('admin.aggiungiAuto');
-Route::get('home/auto/{id}','CarController@dettaglio')->name('car.detail');
 
 Route::post('home/auto/{id}/approva','CarController@approva')->name('car.detail');
 Route::delete('home/auto/{id}/cancella','CarController@cancella')->name('car.detail');
