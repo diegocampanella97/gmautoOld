@@ -128,14 +128,14 @@ class HomeController extends Controller
     // "consent" => "1"
 
     public function contattiSubmit(ContattiRequest $request){
-
+        $idAuto = $request->input('idAuto');
         $name = $request->input('name');
         $email = $request->input('email');
         $oggetto = $request->input('oggetto');
         $messaggio = $request->input('messaggio');
 
-        $bag = compact('name','email','oggetto','messaggio');
-
+        $bag = compact('name','email','oggetto','messaggio','idAuto');
+//        dd($bag);
         $emailAdmin="diegocampanella97@gmail.com";
 
         $contactMail = new ContattiMailed($bag);

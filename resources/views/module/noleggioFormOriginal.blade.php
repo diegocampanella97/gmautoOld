@@ -1,4 +1,9 @@
-<section class="">
+<section class="">@extends('layouts.app')
+
+@section('content')
+
+@endsection
+
     <div class="container">
       <div class="row no-gutters">
         <div class="col-md-12	featured-top">
@@ -15,7 +20,7 @@
                         </ul>
                     </div>
                     @endif
-    
+
                     @if ($errors->any())
                     <div class="alert alert-danger">
                         <ul>
@@ -67,7 +72,7 @@
                               <div class="text w-100">
                                 <h3 class="heading mb-2">Pianifica una vacanza</h3>
                               </div>
-                            </div>      
+                            </div>
                         </div>
 
                         <div class="col-md-4 d-flex align-self-stretch ftco-animate">
@@ -78,7 +83,7 @@
                               <div class="text w-100">
                                 <h3 class="heading mb-2">Verifica le date</h3>
                               </div>
-                            </div>      
+                            </div>
                         </div>
 
                         <div class="col-md-4 d-flex align-self-stretch ftco-animate">
@@ -89,7 +94,7 @@
                               <div class="text w-100">
                                 <h3 class="heading mb-2">Ritira in concessonario</h3>
                               </div>
-                            </div>      
+                            </div>
                           </div>
 
                     </div>

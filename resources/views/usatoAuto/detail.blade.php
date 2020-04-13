@@ -165,5 +165,5 @@
     </div>
   </section>
 
-    @include('module.contact')
+    <x-form-contacts :idAuto="$car->id"/>
 @endsection

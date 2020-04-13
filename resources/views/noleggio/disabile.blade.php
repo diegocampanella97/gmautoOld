@@ -32,6 +32,17 @@
       </div>
     </div>
 
+      <div class="fadeInUp ftco-animated row py-3">
+        <div class="col-12 col-md-6 order-1 order-md-1">
+            <p>Hai necessità di trasportare persone diversamente abili in carrozzina? Da noi troverai un mezzo allestito e omologato che ti consentirà di farlo in totale indipendenza.</p>
+        </div>
+        <div class="col-12 col-md-6 order-0 order-md-0">
+            <figure>
+                <img src="https://via.placeholder.com/550x340" class="img-fluid" alt="">
+            </figure>
+        </div>
+    </div>
+
     </div>
 </section>
 @endsection

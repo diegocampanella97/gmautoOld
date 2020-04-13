@@ -16,8 +16,13 @@
 
 <hr>
 
+@component('mail::button', ['url' => route('auto.dettaglio',[$bag['idAuto']])])
+    Vai all'Annuncio
+@endcomponent
+
+
 @component('mail::button', ['url' => "mailto:".$bag["email"]])
-Rispondi
+Rispondi alla Mail
 @endcomponent
 
 Thanks,<br>

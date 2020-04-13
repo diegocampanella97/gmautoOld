@@ -58,8 +58,11 @@ Route::get('/home/listaMacchine','AdminController@golista')->name('admin.listaAu
 
 Route::get('/car', 'ExemplarController@showlist')->name('car');
 
-Route::get('/test', 'TestController@index')->name('test');
 
 Route::get('/exemplaries/{id}','AdminController@getExemplary')->name('car.exemplaries');
 Route::get('/preparation/{id}','AdminController@getPreparation')->name('car.preparations');
 
+
+
+
+Route::get('/test', 'TestController@index')->name('test');
