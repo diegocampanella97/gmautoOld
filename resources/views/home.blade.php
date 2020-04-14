@@ -78,7 +78,9 @@
                       @endif
                   </a>
                 <div class="text">
-                    <h2 class="mb-0"><a href="#">{{$item->name}}</a></h2>
+                    <h2 class="mb-0">
+                        <a href="{{ route('auto.dettaglio', ['id'=>$item->id]) }}">{{$item->name}}</a>
+                    </h2>
                       <div class="d-flex mb-3">
                         <span class="cat">{{$item->preparations -> exemplar->name}}<br>
                             <a href="{{route('auto.cerca.produttore',$item ->preparations -> exemplar-> producer-> id)}}">

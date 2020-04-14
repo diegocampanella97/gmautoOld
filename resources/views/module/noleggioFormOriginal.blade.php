@@ -1,11 +1,7 @@
-<section class="">@extends('layouts.app')
-
-@section('content')
-
-@endsection
-
+<section class="">
     <div class="container">
       <div class="row no-gutters">
+
         <div class="col-md-12	featured-top">
           <div class="row no-gutters">
             <div class="col-md-4 d-flex align-items-center">
