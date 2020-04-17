@@ -114,7 +114,7 @@ class Car extends Model{
     }
 
     static public function getLastCar(){
-        return Car::take(3)->with(['preparations.exemplar.producer'])->orderBy('updated_at', 'desc')->get();
+        return Car::take(3)->with(['preparations.exemplar.producer','images'])->orderBy('updated_at', 'desc')->get();
     }
 
     public function images(){

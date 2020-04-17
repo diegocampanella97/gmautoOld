@@ -1,5 +1,5 @@
 <tr>
 <td class="header">
-    <img src="https://via.placeholder.com/350x150" alt="">
+    @include('module.logo.noleggioLogo')
 </td>
 </tr>
