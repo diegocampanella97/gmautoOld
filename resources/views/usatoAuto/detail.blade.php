@@ -16,6 +16,10 @@
     </div>
   </section>
 
+    @if(!$car->approved)
+        <x-alerts flag="danger" text="Attenzione! Questo annuncio è visibile solo agli amministratori"/>
+    @endif
+
   <section class="ftco-section ftco-car-details">
     <div class="container">
         <div class="row justify-content-left">
