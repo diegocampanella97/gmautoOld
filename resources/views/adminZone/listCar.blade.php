@@ -106,7 +106,7 @@
                     className: "text-center",
                     "targets": 5,
                     render: function(data, type, row) {
-                        return '<a class="mx-2 btn btn-success" href="/auto/usate/' +row['id']+'">'+'Modifica'+'</a>'+
+                        return '<a class="mx-2 btn btn-success" href="/auto/usate/' +row['id']+'">'+'Visualizza'+'</a>'+
                         '<form action="/{{request()->segment(1)}}/auto/' + row['id'] + '/cancella' + ' " method="POST" style="display:inline">'+
                             '<input type="hidden" name="_method" value="DELETE" />' +
                             '<input type="hidden" name="_token" value="{{csrf_token()}}" />' +
@@ -152,7 +152,7 @@
                     className: "text-center",
                     "targets": 5,
                     render: function(data, type, row) {
-                        return '<a class="mx-2 btn btn-success" href="/auto/usate/' +row['id']+'">'+'Modifica'+'</a>'+
+                        return '<a class="mx-2 btn btn-success" href="/auto/usate/' +row['id']+'">'+'Visualizza'+'</a>'+
                         '<form action="/{{request()->segment(1)}}/auto/' + row['id'] + '/cancella' + ' " method="POST" style="display:inline">'+
                             '<input type="hidden" name="_method" value="DELETE" />' +
                             '<input type="hidden" name="_token" value="{{csrf_token()}}" />' +
