@@ -2,14 +2,6 @@
 
 namespace App;
 
-use App\Door;
-use App\Fuel;
-use Debugbar;
-use App\Color;
-use App\CarImage;
-use App\Exemplar;
-use App\Collection;
-use App\Transmission;
 use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -155,5 +147,16 @@ class Car extends Model{
         // Debugbar::stopMeasure('render');
     }
 
+    public function euroClass(){
+        return $this->belongsTo(Grade::class,'grade_id');
+    }
+
+    public function seat(){
+        return $this->belongsTo(Seat::class);
+    }
+
+    public function tipology(){
+        return $this->belongsTo(Typology::class);
+    }
 
 }

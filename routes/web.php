@@ -27,6 +27,7 @@ Route::get('/home', 'HomeController@contatti')->name('contatti');
 
 
 Route::post('/home/aggiungiAuto/inviaRichiesta','AdminController@submitAdd')->name('admin.aggiungiAutoRichiesta');
+Route::post('/home/aggiungiAuto/modificaRichiesta','AdminController@submitEdit')->name('admin.modificaAuto');
 
 Route::get('/auto/usate/{id}','FrontendController@goUsatoDettaglio')->name('auto.dettaglio');
 

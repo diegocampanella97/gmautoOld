@@ -163,6 +163,9 @@ class AdminController extends Controller
         return json_encode($states);
     }
 
+    public function submitEdit(Request $request){
+        dd('Prova');
+    }
 
 
 
