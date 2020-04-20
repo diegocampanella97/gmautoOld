@@ -53,7 +53,7 @@ class AdminController extends Controller
         $car->door_id = $request->input("porteVeicolo");
         $car->preparations_id = $request->input("preparation");
         $car->kilometers_id = $request->input("kmVeicolo");
-        $car->hai  = $request->input("categoriaVeicolo");
+        $car->tipology_id  = $request->input("categoriaVeicolo");
 
         $car->save();
 
@@ -163,10 +163,42 @@ class AdminController extends Controller
         return json_encode($states);
     }
 
-    public function submitEdit(Request $request){
-        dd('Prova');
+    private function checkValueField($car, $text){
+        if($car!=$text){
+            $car=$text;
+        }
+        return $car;
     }
 
+    public function submitEdit(Request $request,$id){
+        $car = Car::find($id);
+
+        $car->name=$this->checkValueField($car->name, $request->input("titolo"));
+        $car->targa = $this->checkValueField($car->targa,$request->input("targaVeicolo"));
+        $car->description = $this->checkValueField($car->description,$request->input("testoAnnuncio"));
+
+        $car->price = $this->checkValueField($car->price,$request->input("prezzoVeicolo"));
+        $car->color_id = $this->checkValueField($car->color_id,$request->input("coloreVeicolo"));
+        $car->vid = $this->checkValueField($car->vid,$request->input("vinVeicolo"));
+        $car->mouth = $this->checkValueField($car->mouth,$request->input("meseImmatricolazione"));
+        $car->year = $this->checkValueField($car->year,$request->input("AnnoImmatricolazione"));
+
+        $car->fuel_id=$this->checkValueField($car->fuel_id, $request->input("carburanteVeicolo"));
+        $car->transmission_id = $this->checkValueField($car->transmission_id,$request->input("cambioVeicolo"));
+        $car->grade_id = $this->checkValueField($car->grade, $request->input("classeVeicolo"));
+        $car->seat_id = $this->checkValueField($car->seat, $request->input("postiVeicolo"));
+        $car->door_id = $this->checkValueField($car->door, $request->input("porteVeicolo"));
+        $car->kilometers_id = $this->checkValueField($car->kilometers, $request->input('kmVeicolo'));
+        $car->tipology_id = $this->checkValueField($car->tipology, $request->input('categoriaVeicolo'));
+
+        if($request->input("preparation")!=0){
+            $car->preparations_id = $request->input("preparation");
+        }
+
+        $car->save();
+//        dd($car);
+        return redirect()->route('auto.dettaglio',['id'=>$car->id]);
+    }
 
 
 

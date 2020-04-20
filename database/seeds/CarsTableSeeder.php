@@ -12,7 +12,7 @@ class CarsTableSeeder extends Seeder
      */
     public function run()
     {
-        $cars = (factory(Car::class, 5000)->make())->toArray();
+        $cars = (factory(Car::class, 1000)->make())->toArray();
 
         $chunks = array_chunk($cars,1000);
 

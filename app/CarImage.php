@@ -5,6 +5,7 @@ namespace App;
 use App\Car;
 use App\Jobs\ResizeImage;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Storage;
 
 /**
@@ -27,6 +28,9 @@ use Illuminate\Support\Facades\Storage;
  * @mixin \Eloquent
  */
 class CarImage extends Model{
+
+    use SoftDeletes;
+
     public function car()
     {
         return $this->belongsTo(Car::class);
