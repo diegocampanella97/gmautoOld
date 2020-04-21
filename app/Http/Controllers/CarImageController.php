@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\CarImage;
+use App\Http\Requests\ImageRequest;
 use App\Jobs\ResizeImage;
 use App\r;
 use Illuminate\Http\Request;
@@ -37,7 +38,7 @@ class CarImageController extends Controller
         $carImage->save();
         return redirect()->route('auto.dettaglio',['id' => $carImage->car_id]);
     }
-    public function addImage($id,Request $request){
+    public function addImage($id,ImageRequest $request){
 
         $filePath=$request -> file('imgPhoto')->store("public/cars/{$id}");
 
