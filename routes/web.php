@@ -1,18 +1,5 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-
-
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
@@ -24,8 +11,6 @@ Route::view('/contatti/grazie', 'contatti.thanks')->name('contatti.thanks');
 
 Route::get('/home', 'HomeController@contatti')->name('contatti');
 
-
-
 Route::post('/home/aggiungiAuto/inviaRichiesta','AdminController@submitAdd')->name('admin.aggiungiAutoRichiesta');
 Route::put('/home/modificaRichiesta/{id}','AdminController@submitEdit')->name('admin.modificaAuto');
 
@@ -35,8 +20,6 @@ Route::get('/auto/usate/{id}','FrontendController@goUsatoDettaglio')->name('auto
 Route::post('/aggiungiAuto/img/upload','AdminController@uploadPhoto')->name('admin.img.upload');
 Route::delete('/aggiungiAuto/img/remove','AdminController@removePhoto')->name('admin.img.remove');
 Route::get('/aggiungiAuto/img','AdminController@getImages')->name('admin.img');
-
-
 
 Route::view('/noleggio/trasporto-disabili-in-carrozzina', 'noleggio.disabile')->name('disabile');
 Route::view('/noleggio/grazie', 'noleggio.thanks')->name('noleggio.thanks');
@@ -64,3 +47,6 @@ Route::get('/exemplaries/{id}','AdminController@getExemplary')->name('car.exempl
 Route::get('/preparation/{id}','AdminController@getPreparation')->name('car.preparations');
 
 Route::get('/test', 'TestController@index')->name('test');
+
+Route::post('/photo/{id}/delete', 'CarImageController@delete')->name('photo.delete');
+Route::post('/photo/{id}/rating', 'CarImageController@rating')->name('photo.rating');

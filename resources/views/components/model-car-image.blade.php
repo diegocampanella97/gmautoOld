@@ -23,14 +23,23 @@
                                         <img width="500px" src="{{Storage::url($image->filePath)}}" alt="">
                                     </div>
                                     <div class="col-6 d-flex justify-content-center">
-                                        <a class="minWidth m-2 rounded-pill btn btn-danger btn-lg text-uppercase text-white">
-                                            <i class="fas fa-trash-alt"></i>
-                                            <br> Cancella
-                                        </a>
-                                        <a class="minWidth m-2 rounded-pill btn btn-warning btn-lg text-uppercase text-white">
-                                            <i class="fas fa-star"></i>
-                                            <br> Metti in risalto
-                                        </a>
+
+                                        <form action="{{route('photo.delete',['id' => $image->id])}}" method="post">
+                                            @csrf
+                                            <button class="minWidth m-2 rounded-pill btn btn-danger btn-lg text-uppercase text-white">
+                                                <i class="fas fa-trash-alt"></i><br/>
+                                                Cancella
+                                            </button>
+                                        </form>
+
+                                        <form action="{{route('photo.rating',['id' => $image->id])}}" method="post">
+                                            @csrf
+                                            <button class="minWidth m-2 rounded-pill btn btn-warning btn-lg text-uppercase text-white">
+                                                <i class="fas fa-star"></i><br/>
+                                                Metti in risalto
+                                            </button>
+                                        </form>
+
                                     </div>
                                 </div>
                             </div>
