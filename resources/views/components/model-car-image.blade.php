@@ -52,9 +52,9 @@
 
                                         <form action="{{route('photo.rating',['id' => $image->id])}}" method="post">
                                             @csrf
-                                            <button class="minWidth m-2 rounded-pill btn btn-warning btn-lg text-uppercase text-white">
+                                            <button class="minWidth m-2 rounded-pill btn btn-{{(is_null($image->order))  ? 'warning' : 'info'}} btn-lg text-uppercase text-white">
                                                 <i class="fas fa-star"></i><br/>
-                                                Metti in risalto
+                                                {{(is_null($image->order))  ? 'Metti In Risalto' : 'Ordine Normale'}}
                                             </button>
                                         </form>
 
