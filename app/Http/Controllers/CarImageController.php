@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\CarImage;
+use App\Jobs\ResizeImage;
 use App\r;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class CarImageController extends Controller
 {
@@ -34,6 +36,24 @@ class CarImageController extends Controller
 
         $carImage->save();
         return redirect()->route('auto.dettaglio',['id' => $carImage->car_id]);
+    }
+    public function addImage($id,Request $request){
+
+        $filePath=$request -> file('imgPhoto')->store("public/cars/{$id}");
+
+        dispatch(
+            new ResizeImage( $filePath,800,570)
+        );
+
+        $i= new CarImage();
+        $i->filePath = $filePath;
+        $i->car_id = $id;
+
+        $i->save();
+
+        return redirect()->route('auto.dettaglio',['id' => $id]);
+
+
     }
 
 

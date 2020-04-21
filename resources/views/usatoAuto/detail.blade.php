@@ -37,7 +37,7 @@
             <div class="col-md-8">
                 <div class="carousel-car2 owl-carousel">
                   @if ($car->images->count()>0)
-                    @foreach ($car->images as $item)
+                    @foreach ($car->images()->orderBy('order','desc')->get() as $item)
                     <div class="item">
                       <div class="car-wrap2 rounded ftco-animate">
                           <img class="img-fluid rounded d-flex align-items-end" src="{{$item -> getUrl(800,570)}}" alt="">

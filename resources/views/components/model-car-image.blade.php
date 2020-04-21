@@ -14,6 +14,24 @@
                         <h2>Gestione Galleria</h2>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <form method="POST" action="{{@route('photo.add',['id'=>$car->id])}}" enctype="multipart/form-data">
+                        @csrf
+                            <div class="form-group">
+                                <label class="text-primary" for="">Carica Foto</label>
+                                <input type="file" class="minWidth m-2 rounded-pill btn btn-primary btn-lg text-uppercase text-white" name="imgPhoto" id="imgPhoto">
+                            </div>
+                            <button type="submit" class="minWidth m-2 rounded-pill btn btn-primary btn-lg text-uppercase text-white">
+                                <i class="far fa-image"></i><br/>
+                                Invia Foto</button>
+                        </form>
+                    </div>
+                </div>
+
+
+                <hr>
                 @foreach($car->images as $image)
                     <div class="row">
                         <div class="col-12">
