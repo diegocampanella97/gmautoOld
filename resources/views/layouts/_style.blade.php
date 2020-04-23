@@ -21,4 +21,6 @@
 <link rel="stylesheet" href="/css/icomoon.css">
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+@livewireStyles
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
