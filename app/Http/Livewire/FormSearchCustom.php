@@ -10,7 +10,14 @@ class FormSearchCustom extends Component
 
     public $name = "Diego";
     public $item = null;
+
+
     public $model;
+    public $kilometers;
+    public $tipology;
+
+
+
 
     public function addPlusName(){
         $this->name = "";

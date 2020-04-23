@@ -8,17 +8,18 @@ class FormSelect extends Component
 {
     public $listValue;
     public $title;
+    public $model;
 
     /**
      * Create a new component instance.
      *
      * @param $listValue
      */
-    public function __construct($title)
+    public function __construct($title,$listValue,$model)
     {
-        //
-//        $this->listValue = $listValue;
         $this->title = $title;
+        $this->listValue = $listValue;
+        $this->model = $model;
     }
 
     /**

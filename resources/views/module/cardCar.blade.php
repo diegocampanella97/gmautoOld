@@ -1,5 +1,5 @@
-<div class="col-6 col-md-3 m-1">
-    <div class="card" style="width: 18rem;">
+<div class="col-6 col-md-3 py-2">
+    <div class="card">
         <img src="{{($car->images->count()>0) ? Storage::url($cars->images[0]->filePath) : '/images/placeholder_gmautoveicoli.png'}}" class="card-img-top" alt="...">
         <div class="card-body">
             <div class="text">
