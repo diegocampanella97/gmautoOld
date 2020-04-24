@@ -12,37 +12,70 @@ class FormSearchCustom extends Component
     public $item = null;
 
 
-    public $model;
+    public $producers;
     public $kilometers;
-    public $tipology;
+    public $tipologies;
 
+    public $fuel;
+    public $color;
+    public $transmission;
+    public $grade;
+    public $seat;
+    public $door;
 
-
-
-    public function addPlusName(){
-        $this->name = "";
-        $this->name = $this->name . "+";
-    }
 
     public function insertCar(){
-//        $this->item=null;
 
-        $carsFind=Car::
+
+        $this->item = Car::all();
+
+        if($this->producers != null) {
+            $carsFind=Car::
             join('preparations','cars.preparations_id','=','preparations.id')->
             join('exemplaries','exemplaries_id','=','exemplaries.id')->
             join('producers','producers_id','=','producers.id')->
-            where('producers.id','=',$this->model)->
+            where('producers.id','=',$this->producers)->
             pluck('cars.id');
 
-        $this->item=
-            Car::
-            with(['preparations.exemplar.producer','images'])->
-            whereIn('id',$carsFind)->
-            get();
-        ;
+            $this->item=
+                Car::
+                whereIn('id',$carsFind)->
+                get();
+        }
 
 
-//        $this->item = $cars;
+        if($this->tipologies != null) {
+            $this->item = $this->item->where('tipology_id','=',$this->tipologies);
+        }
+
+        if($this->kilometers != null) {
+            $this->item = $this->item->where('kilometers_id','=',$this->kilometers);
+        }
+
+        if($this->fuel != null) {
+            $this->item = $this->item->where('fuel_id','=',$this->fuel);
+        }
+
+        if($this->color != null) {
+            $this->item = $this->item->where('color_id','=',$this->color);
+        }
+
+        if($this->transmission != null) {
+            $this->item = $this->item->where('transmission_id','=',$this->transmission);
+        }
+
+        if($this->grade != null) {
+            $this->item = $this->item->where('grade_id','=',$this->grade);
+        }
+
+        if($this->seat != null) {
+            $this->item = $this->item->where('seat_id','=',$this->seat);
+        }
+
+        if($this->door != null) {
+            $this->item = $this->item->where('door_id','=',$this->door);
+        }
+
 
     }
 
