@@ -11,44 +11,70 @@
         <div class="modal-content">
             <div class="container-fluid">
 
-                <form action="{{route('admin.modificaAuto',['id' => $car->id])}}" method="post">
+                <form action="{{route('customers.store')}}" method="post">
                     @csrf
-                    @method('PUT')
-
-
+                    <input type="hidden" name="car_id" value="{{$car->id}}">
                     <div class="row py-5">
 
-                        <div class="col-12 text-center">
+                        <div class="col-12">
                             <h2>Dettagli Auto</h2>
 
                             <p>{{$car->targa}}</p>
                         </div>
 
 
-                        <div class="col-12 text-center">
+                        <div class="col-12">
                             <h2>Dettagli Cliente</h2>
                         </div>
 
+                        
+                        
                         <div class="col-12 col-md-4">
                             <div class="form-group">
-                                <label for="targaVeicolo" class="bmd-label-floating lead text-info">Nome</label>
-                                <input type="text" required class="form-control2" name="titolo" id="titolo">
+                                <label for="nome" class="bmd-label-floating lead text-info">Nome</label>
+                                <input type="text" required class="form-control2" name="nome" id="nome">
                             </div>
                         </div>
 
                         <div class="col-12 col-md-4">
                             <div class="form-group">
-                                <label for="targaVeicolo" class="bmd-label-floating lead text-info">Cognome</label>
-                                <input type="text" required class="form-control2" name="titolo" id="titolo">
+                                <label for="cognome" class="bmd-label-floating lead text-info">Cognome</label>
+                                <input type="text" required class="form-control2" name="cognome" id="cognome">
                             </div>
                         </div>
 
                         <div class="col-12 col-md-4">
                             <div class="form-group">
-                                <label for="targaVeicolo" class="bmd-label-floating lead text-info">Email</label>
-                                <input type="text" required class="form-control2" name="titolo" id="titolo">
+                                <label for="residenza" class="bmd-label-floating lead text-info">Residenza</label>
+                                <input type="text" required class="form-control2" name="residenza" id="residenza">
                             </div>
                         </div>
+
+
+
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="email" class="bmd-label-floating lead text-info">Email</label>
+                                <input type="text" required class="form-control2" name="email" id="email">
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="telefono" class="bmd-label-floating lead text-info">Telefono</label>
+                                <input type="number" required class="form-control2" name="telefono" id="telefono">
+                            </div>
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <div class="form-group">
+                                <button class="py-4 mx-4 rounded-pill btn btn-info btn-lg mb-3 text-uppercase" type="submit">Completa Vendita</button>
+                            </div>
+                        </div>
+
+                        
+
 
                     </div>
 

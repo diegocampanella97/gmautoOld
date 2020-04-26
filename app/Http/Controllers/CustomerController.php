@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Car;
 use App\Customer;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,7 @@ class CustomerController extends Controller
      */
     public function index()
     {
-        //
+        // dd("morto");
     }
 
     /**
@@ -22,20 +23,26 @@ class CustomerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //
+        $customer = new Customer();
+        $customer->nome = $request->input('nome');
+        $customer->cognome = $request->input('cognome');
+        $customer->residenza = $request->input('residenza');
+        $customer->email = $request->input('email');
+        $customer->telefono = $request->input('telefono');
+        $customer->save();
+
+        $car = Car::find($request->input('car_id'));
+        $car->approved=0;
+        $car->customer_id = $customer->id;
+        $car->save();
+
+        return redirect()->route('auto.dettaglio',['id' => $request->input('car_id')]);
     }
 
     /**

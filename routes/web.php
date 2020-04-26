@@ -51,3 +51,5 @@ Route::get('/test', 'TestController@index')->name('test');
 Route::post('/photo/{id}/delete', 'CarImageController@delete')->name('photo.delete');
 Route::post('/photo/{id}/rating', 'CarImageController@rating')->name('photo.rating');
 Route::post('/photo/{id}/images', 'CarImageController@addImage')->name('photo.add');
+
+Route::resource('customers', 'CustomerController');
