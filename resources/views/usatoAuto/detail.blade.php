@@ -24,8 +24,10 @@
         <div class="container py-5">
             <div class="row d-flex justify-content-center">
                 <div class="col-12 col-md-4">
+                    <x-model-approved-car :car="$car"/>
                     <x-model-edit-car :car="$car"/>
                     <x-model-car-image :car="$car"/>
+                    <x-model-customer-cars :car="$car"/>
                 </div>
             </div>
         </div>

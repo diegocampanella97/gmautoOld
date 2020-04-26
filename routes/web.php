@@ -35,8 +35,8 @@ Route::get('/cerca/producers/{id}', 'HomeController@searchForProducers')->name('
 Route::get('/home','AdminController@goAreaRiservata')->name('admin.areaRiservata');
 Route::get('/home/aggiungiAuto','AdminController@goAggiungiAuto')->name('admin.aggiungiAuto');
 
-Route::post('home/auto/{id}/approva','CarController@approva')->name('car.detail');
-Route::delete('home/auto/{id}/cancella','CarController@cancella')->name('car.detail');
+Route::post('home/auto/{id}/approva','CarController@approva')->name('car.approved');
+Route::delete('home/auto/{id}/cancella','CarController@cancella')->name('car.delete');
 
 Route::get('/home/listaMacchine','AdminController@golista')->name('admin.listaAuto');
 

@@ -73,7 +73,8 @@ class CarController extends Controller
 
         $car->save();
 
-        return redirect()->route('admin.listaAuto');
+        // return redirect()->route('admin.listaAuto');
+        return redirect()->back();
     }
 
 }

@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 use App\Car;
 use App\CarImage;
 use App\Exemplary;
-use App\Jobs\ResizeImage;
 use App\Preparation;
+use App\Jobs\ResizeImage;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
@@ -29,21 +30,18 @@ class AdminController extends Controller
 
     public function submitAdd(Request $request){
 
-
-//        dump($request->input());
-
         $preparation = Preparation::find($request->input("preparation"));
-//        dd($preparation);
 
         $car = new Car();
 
         $car->name= $preparation->exemplar->producer->name." | ".$preparation->exemplar->name." - ".$preparation->name;
-
-        $car->targa = $request->input("targaVeicolo");
+        
+        
+        $car->targa = Str::of($request->input("targaVeicolo"))->upper();
         $car->description = $request->input("testoAnnuncio");
         $car->price = $request->input("prezzoVeicolo");
         $car->color_id = $request->input("coloreVeicolo");
-        $car->vid = $request->input("vinVeicolo");
+        $car->vid = Str::of($request->input("vinVeicolo"))->upper();
         $car->mouth = $request->input("meseImmatricolazione");
         $car->year = $request->input("AnnoImmatricolazione");
         $car->fuel_id= $request->input("carburanteVeicolo");
