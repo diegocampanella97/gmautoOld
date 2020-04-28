@@ -14,24 +14,29 @@ class ContactsTable extends Component
     public $sortField = 'updated_at';
     public $sortAsc = true;
     public $search = '';
+    public $customer = null;
 
-    public function sortBy($field)
-    {
+
+    public function sortBy($field){
         if ($this->sortField === $field) {
             $this->sortAsc = ! $this->sortAsc;
         } else {
             $this->sortAsc = true;
         }
-
         $this->sortField = $field;
     }
 
-    public function render()
-    {
+    public function showDetailCustomer($id){
+        $this->customer = Customer::find($id);
+    }
+
+    public function render(){
         return view('livewire.contacts-table', [
             'contacts' => Customer::search($this->search)
                 ->orderBy($this->sortField, $this->sortAsc ? 'asc' : 'desc')
                 ->paginate($this->perPage),
+            'customer' => Customer::find(1),    
         ]);
     }
+
 }

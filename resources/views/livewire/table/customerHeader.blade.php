@@ -31,9 +31,8 @@
             </a>
         </th>
         <th>
-            <a wire:click.prevent="sortBy('car')" role="button" href="#">
+            <a role="button" href="#">
                 Auto Acquistate
-                @include('module._sort-icon', ['field' => 'car'])
             </a>
         </th>
     </tr>

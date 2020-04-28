@@ -7,7 +7,7 @@
     <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
         <div class="col-md-9 ftco-animate pb-5">
             <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>area Riservata <i class="ion-ios-arrow-forward"></i></span></p>
-        <h1 class="mb-3 bread">lista Clienti</h1>
+        <h1 class="mb-3 bread">Lista Clienti</h1>
         </div>
     </div>
     </div>
@@ -16,7 +16,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            @livewire('contacts-table')
+            <livewire:contacts-table/>
         </div>
     </div>
 </div>

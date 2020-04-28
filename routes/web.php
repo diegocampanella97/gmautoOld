@@ -55,4 +55,7 @@ Route::post('/photo/{id}/images', 'CarImageController@addImage')->name('photo.ad
 Route::resource('customers', 'CustomerController');
 
 
-Route::view('/home/listaClienti','customers.listCustomer')->name('admin.listaClienti');
+Route::group(['middleware' => ['auth']], function () {
+    Route::view('/home/listaClienti','customers.listCustomer')->name('admin.listaClienti');
+});
+

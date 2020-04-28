@@ -147,7 +147,9 @@ class Car extends Model{
             return Car::with([
                 'preparations.exemplar.producer',
                 'images'])
-            ->where('approved','=',true)->paginate(15);
+            ->where('approved','=',true)
+            ->orderBy('updated_at', 'desc')
+            ->paginate(15);
         // Debugbar::stopMeasure('render');
     }
 
