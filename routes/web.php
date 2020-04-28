@@ -53,3 +53,6 @@ Route::post('/photo/{id}/rating', 'CarImageController@rating')->name('photo.rati
 Route::post('/photo/{id}/images', 'CarImageController@addImage')->name('photo.add');
 
 Route::resource('customers', 'CustomerController');
+
+
+Route::view('/home/listaClienti','customers.listCustomer')->name('admin.listaClienti');

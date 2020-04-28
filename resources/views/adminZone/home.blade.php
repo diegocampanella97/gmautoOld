@@ -15,30 +15,49 @@
 
     <section class="ftco-section">
         <div class="container">
-            <div class="row justify-content-center mb-5">
+            <div class="row d-flex justify-content-center mb-5">
                 <div class="col-md-7 text-center heading-section ftco-animate">
                     <span class="subheading">Bentornato</span>
                     <h2 class="mb-3">Area Riservata</h2>
                 </div>
             </div>
             <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-6">
-                    <div class="card">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="">
-                        <div class="card-body text-center">
-                          <h3 class="card-title">Aggiungi Auto</h3>
-                        <a href="{{route('admin.aggiungiAuto')}}" class="btn btn-primary">Aggiungi</a>
-                        </div>
-                      </div>
+                <div class="col-12 text-center">
+                    <h3>
+                        Gestione Auto
+                    </h3>
                 </div>
-                <div class="col-12 col-md-6">
-                    <div class="card">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="card-img-top" alt="">
-                        <div class="card-body text-center">
-                          <h3 class="card-title">Lista Auto</h3>
-                          <a href="{{route('admin.listaAuto')}}" class="btn btn-primary">Modifica</a>
-                        </div>
-                      </div>
+                <div class="col-12 col-md-3">
+                    <a href="{{route('admin.aggiungiAuto')}}" class="py-4 mx-4 rounded-pill btn btn-info btn-lg w-100 mb-3 text-uppercase">
+                        <h4 class="text-white">
+                            <i class="fas fa-user-edit"></i> Aggiungi Auto
+                        </h4>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <a href="{{route('admin.listaAuto')}}" class="py-4 mx-4 rounded-pill btn btn-info btn-lg w-100 mb-3 text-uppercase">
+                        <h4 class="text-white">
+                            <i class="fas fa-user-edit"></i> Lista Auto
+                        </h4>
+                    </a>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 text-center">
+                    <h3>
+                        Gestione Cliente
+                    </h3>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <a href="{{route('admin.listaClienti')}}" class="py-4 mx-4 rounded-pill btn btn-info btn-lg w-100 mb-3 text-uppercase">
+                        <h4 class="text-white">
+                            <i class="fas fa-user-edit"></i> Lista Clienti
+                        </h4>
+                    </a>
                 </div>
             </div>
         </div>

@@ -197,8 +197,7 @@ class AdminController extends Controller
 //        dd($car);
         return redirect()->route('auto.dettaglio',['id'=>$car->id]);
     }
-
-
+    
 
 
 }

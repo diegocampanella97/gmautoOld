@@ -21,3 +21,4 @@ Route::get('/v1/cars', 'CarController@getList')->name('api.listCars');
 Route::get('/v1/carsToApproved', 'CarController@getListToApproved')->name('api.listCarsToApproved');
 
 Route::get('/exemplaries/{id}','TestController@getStates')->name('car.exemplaries');
+

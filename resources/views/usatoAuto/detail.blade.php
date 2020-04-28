@@ -16,22 +16,39 @@
     </div>
   </section>
 
-    @if(!$car->approved)
-        <x-alerts flag="danger" text="Attenzione! Questo annuncio è visibile solo agli amministratori"/>
-    @endif
+  <hr>
+  
+  @if(!is_null($car->customer_id))
+    <x-alerts flag="danger" text="Attenzione! E' stata già completata la vendita"/>
+  @else
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 col-md-4">
+        <x-model-customer-cars :car="$car"/>
+      </div>
+    </div>
+  </div>
+  @endif
+    
+  <hr>
 
-    @if(Auth::user())
-        <div class="container py-5">
-            <div class="row d-flex justify-content-center">
-                <div class="col-12 col-md-4">
+  @if(!$car->approved)
+    <x-alerts flag="info" text="Attenzione! Questo annuncio è visibile solo agli amministratori"/>
+  @endif
+
+  @if(Auth::user())
+    <div class="container py-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-4">
+                  @if (is_null($car->customer_id))
                     <x-model-approved-car :car="$car"/>
-                    <x-model-edit-car :car="$car"/>
-                    <x-model-car-image :car="$car"/>
-                    <x-model-customer-cars :car="$car"/>
-                </div>
+                  @endif
+                  <x-model-edit-car :car="$car"/>
+                  <x-model-car-image :car="$car"/>
             </div>
         </div>
-    @endif
+    </div>
+  @endif
 
   <section class="ftco-section ftco-car-details">
     <div class="container">
