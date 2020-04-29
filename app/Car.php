@@ -169,4 +169,10 @@ class Car extends Model{
         return $this->belongsTo(Customer::class,'customer_id');
     }
 
+    public static function search($query){
+        return empty($query) ? static::query()
+            : static::where('name', 'like', '%'.$query.'%')
+                ->orWhere('targa', 'like', '%'.$query.'%')
+                ->orWhere('updated_at', 'like', '%'.$query.'%');
+    }
 }

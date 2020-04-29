@@ -38,7 +38,7 @@ Route::get('/home/aggiungiAuto','AdminController@goAggiungiAuto')->name('admin.a
 Route::post('home/auto/{id}/approva','CarController@approva')->name('car.approved');
 Route::delete('home/auto/{id}/cancella','CarController@cancella')->name('car.delete');
 
-Route::get('/home/listaMacchine','AdminController@golista')->name('admin.listaAuto');
+// Route::get('/home/listaMacchine','AdminController@golista')->name('admin.listaAuto');
 
 Route::get('/car', 'ExemplarController@showlist')->name('car');
 
@@ -57,5 +57,6 @@ Route::resource('customers', 'CustomerController');
 
 Route::group(['middleware' => ['auth']], function () {
     Route::view('/home/listaClienti','customers.listCustomer')->name('admin.listaClienti');
+    Route::view('/home/listaAuto','cars.listCar')->name('admin.listaAuto');
 });
 
