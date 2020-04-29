@@ -16,27 +16,28 @@
     </div>
   </section>
 
+  @if(Auth::user())
   <hr>
-  
-  @if(!is_null($car->customer_id))
-    <x-alerts flag="danger" text="Attenzione! E' stata già completata la vendita"/>
-  @else
-  <div class="container">
-    <div class="row d-flex justify-content-center">
-      <div class="col-12 col-md-4">
-        <x-model-customer-cars :car="$car"/>
+    @if(!is_null($car->customer_id))
+      <x-alerts flag="danger" text="Attenzione! E' stata già completata la vendita"/>
+    @else
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-md-4">
+          <x-model-customer-cars :car="$car"/>
+        </div>
       </div>
     </div>
-  </div>
+    @endif
+    <hr>
   @endif
     
-  <hr>
 
-  @if(!$car->approved)
-    <x-alerts flag="info" text="Attenzione! Questo annuncio è visibile solo agli amministratori"/>
-  @endif
-
+  
   @if(Auth::user())
+    @if(!$car->approved)
+      <x-alerts flag="info" text="Attenzione! Questo annuncio è visibile solo agli amministratori"/>
+    @endif
     <div class="container py-5">
         <div class="row d-flex justify-content-center">
             <div class="col-12 col-md-4">
