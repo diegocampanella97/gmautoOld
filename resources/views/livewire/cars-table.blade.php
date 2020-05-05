@@ -11,7 +11,7 @@
             </div>
     
             <div class="col">
-                <input wire:model="search" class="form-control" type="text" placeholder="Search Contacts...">
+                <input wire:model="search" class="form-control" type="text" placeholder="Cerca Auto...">
             </div>
         </div>
     </div>

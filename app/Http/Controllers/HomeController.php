@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Car;
-use App\Producer;
 use DateTime;
+use App\Producer;
 use Carbon\Carbon;
 use App\Mail\ContattiMailed;
 use App\Mail\NoleggioMailed;
@@ -12,7 +12,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Requests\ContattiRequest;
 use App\Http\Requests\NoleggioRequest;
-use Artesaos\SEOTools\Facades\SEOMeta;
+use Artesaos\SEOTools\Facades\SEOTools;
+use Artesaos\SEOTools\Facades\OpenGraph;
+
 
 class HomeController extends Controller
 {
@@ -32,7 +34,23 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index(){
-        SEOMeta::setTitle('Home');
+
+        OpenGraph::setTitle('Home')
+            ->setDescription('Attivi sul territorio da oltre 30 anni, Gm Autoveicoli come attività a conduzione familiare offriamo alla clientela un vasto assortimento di autovetture usate plurimarche, selezionate e garantite.')
+            ->setType('article')
+            ->setArticle([
+                'published_time' => 'datetime',
+                'modified_time' => 'datetime',
+                'expiration_time' => 'datetime',
+                'author' => 'profile / array',
+                'section' => 'string',
+                'tag' => 'string / array'
+            ])
+            ->addImage(['url' => 'https://images.unsplash.com/photo-1531137199527-9546e8290fd4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80', 'size' => 300]);
+
+
+
+        
         return view('home');
     }
 
