@@ -1,29 +1,24 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="hero-wrap ftco-degree-bg" style="background-image: url('/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row no-gutters slider-text justify-content-start align-items-center justify-content-center">
-        <div class="col-lg-8 ftco-animate">
-          <div class="text w-100 text-center mb-md-5 pb-md-5">
-            <h1 class="mb-4">Auto Usate | KM 0</h1>
-            <a href="{{ route('contatti') }}" class="icon-wrap d-flex align-items-center mt-4 justify-content-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-2x fa-envelope text-white"></i>
-              </div>
-              <div class="heading-title ml-5">
-                <span>Vieni a trovarci!</span>
-              </div>
-            </a>
-          </div>
-        </div>
-        </div>
+<section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('https://www.fcafleet-business.it/Style%20library/Domino/reskin18/images/offers/Hero_offerte.jpg');" data-stellar-background-ratio="0.5">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
+      <div class="col-md-9 ftco-animate pb-5">
+          <p class="breadcrumbs"><span class="mr-2">
+            <a href="{{route('home')}}">Home <i class="ion-ios-arrow-forward"></i></a>
+          </span></p>
+        <h1 class="mb-3 bread">Galleria Auto</h1>
       </div>
     </div>
+  </div>
+</section>
+
+    
 
   <section>
-    <div class="container">
+    <div class="container py-4">
         <div class="row">
 
           @foreach ($cars as $item)
