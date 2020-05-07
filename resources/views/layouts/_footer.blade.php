@@ -5,13 +5,16 @@
       <div class="row mb-5">
         <div class="col-md">
           <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2"><a href="#" class="logo">GM<span>Automobili</span></a></h2>
-            <p>Lorem ipsum dolored is a sit ameted consectetur adipisicing elit...</p>
-            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-            </ul>
+            <div class="ftco-heading-2">
+              <img width="100px" class="img-responsive" src="/images/gm_logo_white.png" alt="" id="">
+            </div>
+            <div class="block-23 py-3">
+              <ul>
+                <li><a href="#"><span class="icon icon-map-marker"></span><span class="text">S.p 215, 70010 - Turi (BA)</span></a></li>
+                <li><a href="#"><span class="icon icon-phone"></span><span class="text">808 891 6567</span></a></li>
+                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@gmautomobili.com</span></a></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="col-md">
@@ -35,18 +38,6 @@
               <li><a href="#" class="py-2 d-block">Termini e Condizioni</a></li>
               <li><a href="#" class="py-2 d-block">Contattaci</a></li>
             </ul>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Contatti</h2>
-            <div class="block-23 mb-3">
-              <ul>
-                <li><span class="icon icon-map-marker"></span><span class="text">S.p 215, 70010 - Turi (BA)</span></li>
-                <li><a href="#"><span class="icon icon-phone"></span><span class="text">808 891 6567</span></a></li>
-                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@gmautomobili.com</span></a></li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
