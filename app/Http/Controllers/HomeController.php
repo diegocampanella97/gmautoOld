@@ -35,7 +35,8 @@ class HomeController extends Controller
      */
     public function index(){
 
-        OpenGraph::setTitle('Home')
+        OpenGraph::setTitle('Home - Gm Autoveicoli')
+            ->setUrl('https://gmautoveicoli.it')
             ->setDescription('Attivi sul territorio da oltre 30 anni, Gm Autoveicoli come attività a conduzione familiare offriamo alla clientela un vasto assortimento di autovetture usate plurimarche, selezionate e garantite.')
             ->setType('article')
             ->setArticle([
@@ -47,6 +48,7 @@ class HomeController extends Controller
                 'tag' => 'string / array'
             ])
             ->addImage(['url' => 'https://images.unsplash.com/photo-1531137199527-9546e8290fd4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80', 'size' => 300]);
+
 
 
 
