@@ -11,7 +11,7 @@
                     <a target="_blank" href="{{ route('auto.dettaglio', ['id'=>$car->id]) }}">{{$car->name}}</a>
                 </h4>
 
-                <div class="d-flex mb-3 mt-3">
+                <div class="d-flex py-4">
                     <span class="cat">{{$car->preparations -> exemplar->name}} <br>
                         <a target="_blank" href="{{route('auto.cerca.produttore',$car ->preparations -> exemplar-> producer-> id)}}">
                         <img class="img-fluid logo-resize"
@@ -19,7 +19,7 @@
                              alt="{{$car ->preparations -> exemplar-> producer-> name}}">
                         </a>
                     </span>
-                    <p class="price ml-auto">{{$car->price}} <span>€</span></p>
+                   <a href="" class="btn btn-success btnMaxHeight">Scopri di più</a>
                 </div>
             </div>
         </div>
