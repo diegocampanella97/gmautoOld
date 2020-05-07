@@ -16,7 +16,6 @@ Route::put('/home/modificaRichiesta/{id}','AdminController@submitEdit')->name('a
 
 Route::get('/auto/usate/{id}','FrontendController@goUsatoDettaglio')->name('auto.dettaglio');
 
-
 Route::post('/aggiungiAuto/img/upload','AdminController@uploadPhoto')->name('admin.img.upload');
 Route::delete('/aggiungiAuto/img/remove','AdminController@removePhoto')->name('admin.img.remove');
 Route::get('/aggiungiAuto/img','AdminController@getImages')->name('admin.img');
@@ -27,7 +26,7 @@ Route::view('/noleggio/grazie', 'noleggio.thanks')->name('noleggio.thanks');
 Route::get('/noleggio', 'HomeController@noleggio')->name('noleggio');
 Route::post('/noleggio/inviaMessaggio', 'HomeController@inviaMessaggio')->name('noleggio.invia');
 
-Route::get('/auto/galleria','CarController@showAll')->name('galleryAuto');
+Route::get('/auto/galleria', 'CarController@index')->name('auto.search');
 Route::post('/auto/cerca', 'HomeController@search')->name('auto.cerca');
 Route::get('/cerca/producers/{id}', 'HomeController@searchForProducers')->name('auto.cerca.produttore');
 
@@ -42,11 +41,8 @@ Route::delete('home/auto/{id}/cancella','CarController@cancella')->name('car.del
 
 Route::get('/car', 'ExemplarController@showlist')->name('car');
 
-
 Route::get('/exemplaries/{id}','AdminController@getExemplary')->name('car.exemplaries');
 Route::get('/preparation/{id}','AdminController@getPreparation')->name('car.preparations');
-
-Route::get('/test', 'TestController@index')->name('test');
 
 Route::post('/photo/{id}/delete', 'CarImageController@delete')->name('photo.delete');
 Route::post('/photo/{id}/rating', 'CarImageController@rating')->name('photo.rating');

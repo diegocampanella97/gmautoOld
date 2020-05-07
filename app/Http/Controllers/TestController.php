@@ -13,9 +13,6 @@ use Illuminate\Support\Facades\DB;
 class TestController extends Controller
 {
     public function index(){
-//        $cars = Car::getCarApproved();
-//        $color = Color::all();
-
 
         return view('test.test');
     }

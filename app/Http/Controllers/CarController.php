@@ -77,4 +77,8 @@ class CarController extends Controller
         return redirect()->back();
     }
 
+    public function index(){
+        return view('cars.search');
+    }
+
 }
