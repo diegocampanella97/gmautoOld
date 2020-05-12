@@ -34,6 +34,8 @@ class FrontendController extends Controller {
             return redirect()->route('home');
         }
 
+        
+
         return view('usatoAuto.detail',compact('car'));
     }
 

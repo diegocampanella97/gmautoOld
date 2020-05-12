@@ -1,20 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
-        <div class="col-md-9 ftco-animate pb-5">
-            <p class="breadcrumbs">
-                <span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span>
-                <span class="mr-2">Auto Usate <i class="ion-ios-arrow-forward"></i></span>
-            </p>
-          <h1 class="mb-3 bread">{{$car->name}}</h1>
-        </div>
-      </div>
-    </div>
-  </section>
+  <x-headerComponent :title="$car->name" img=""/>
 
   @if(Auth::user())
   <hr>
@@ -94,7 +81,14 @@
     </div>
 
       <div class="text text-center py-5">
-        <span class="subheading">{{$car->preparations->exemplar->producer->name}}</span>
+        {{-- <span class="subheading">{{$car->preparations->exemplar->producer->slug.".svg"}}</span> --}}
+        {{-- <img class="subheading" href="{{$car->preparations->exemplar->producer->slug.".svg"}}"></img> --}}
+        <a target="_blank" href="{{route('auto.cerca.produttore',$car ->preparations -> exemplar-> producer-> id)}}">
+          <img height="100px" class="img-fluid" style="max-width: 10% !important;"
+               src="/images/logo_cars/{{$car ->preparations -> exemplar-> producer-> slug}}.svg"
+               alt="{{$car ->preparations -> exemplar-> producer-> name}}"/>
+        </a>
+
         <h4>{{$car->preparations->exemplar->name}}</h4>
         <h5>{{$car->preparations->name}}</h5>
       </div>

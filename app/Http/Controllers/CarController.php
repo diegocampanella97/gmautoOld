@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Car;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Artesaos\SEOTools\Facades\OpenGraph;
 
 class CarController extends Controller
 {
@@ -78,6 +79,22 @@ class CarController extends Controller
     }
 
     public function index(){
+
+        OpenGraph::setTitle('Galleria - Gm Autoveicoli')
+        ->setUrl('https://gmautoveicoli.it')
+        ->setDescription('')
+        ->setType('article')
+        ->setArticle([
+            'published_time' => 'datetime',
+            'modified_time' => 'datetime',
+            'expiration_time' => 'datetime',
+            'author' => 'profile / array',
+            'section' => 'string',
+            'tag' => 'string / array'
+        ])
+        ->addImage(['url' => 'https://image.freepik.com/free-psd/man-car-with-business-card-mockup_23-2148018111.jpg', 'size' => 300]);
+
+
         return view('cars.search');
     }
 
