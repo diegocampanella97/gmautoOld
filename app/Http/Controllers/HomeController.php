@@ -57,6 +57,11 @@ class HomeController extends Controller
     }
 
     public function noleggio(){
+        OpenGraph::setTitle('Noleggio - Gm Autoveicoli')
+        ->setUrl('https://gmautoveicoli.it')
+        ->setDescription('Per richieste di informazioni o assistenza per la tua auto. Siamo a tua disposizione.')
+        ->addImage(['url' => 'https://www.tripsta.it/wp-content/uploads/trip-5.jpg', 'size' => 50]);
+
         return view('noleggio.homeNoleggio');
     }
 
@@ -65,25 +70,26 @@ class HomeController extends Controller
     }
 
     public function contatti(){
+        OpenGraph::setTitle('Contatti - Gm Autoveicoli')
+        ->setUrl('https://gmautoveicoli.it')
+        ->setDescription('Per richieste di informazioni o assistenza per la tua auto. Siamo a tua disposizione.')
+        ->addImage(['url' => 'https://images.unsplash.com/photo-1531137199527-9546e8290fd4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80', 'size' => 50]);
+
         return view('contatti.home');
     }
 
     public function search(Request $request){
 
 //        dd($request->input());
-
         $carsID = Car::search($request->input('query'))
             ->where('approved',1)
-            ->keys()
-            ->toArray();
-
-
+            ->pluck('id');
 
         $cars=
             Car::
             with(['preparations.exemplar.producer','images'])->
             whereIn('id',$carsID)->
-                get();
+            get();
         ;
 
 //
