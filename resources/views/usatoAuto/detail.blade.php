@@ -27,12 +27,22 @@
     @endif
     <div class="container py-5">
         <div class="row d-flex justify-content-center">
-            <div class="col-12 col-md-4">
-                  @if (is_null($car->customer_id))
-                    <x-model-approved-car :car="$car"/>
-                  @endif
-                  <x-model-edit-car :car="$car"/>
-                  <x-model-car-image :car="$car"/>
+            <div class="col-12">
+              <div class="container">
+                <div class="row">
+                    @if (is_null($car->customer_id))
+                      <div class="col-12 col-md-4">
+                        <x-model-approved-car :car="$car"/>
+                      </div>
+                    @endif
+                    <div class="col-12 col-md-4">
+                      <x-model-edit-car :car="$car"/>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <x-model-car-image :car="$car"/>
+                    </div>
+                </div>
+              </div>
             </div>
         </div>
     </div>
