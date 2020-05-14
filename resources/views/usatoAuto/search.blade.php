@@ -1,28 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="hero-wrap ftco-degree-bg" style="background-image: url('/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row no-gutters slider-text justify-content-start align-items-center justify-content-center">
-        <div class="col-lg-8 ftco-animate">
-          <div class="text w-100 text-center mb-md-5 pb-md-5">
-            <h1 class="mb-4">Ricerca Auto</h1>
-            <a href="{{ route('contatti') }}" class="icon-wrap d-flex align-items-center mt-4 justify-content-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-2x fa-envelope text-white"></i>
-              </div>
-              <div class="heading-title ml-5">
-                <span>Vieni a trovarci!</span>
-              </div>
-            </a>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
+<x-headerComponent title="Ricerca Auto" img=""/>
 
-  <section>
+  <section class="py-5">
     <div class="container">
 
         @if ($cars->count()<=0)
@@ -32,8 +13,6 @@
                 </div>
             </div>
             @endif
-
-
         <div class="row">
 
           @foreach ($cars as $item)
