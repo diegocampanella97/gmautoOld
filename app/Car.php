@@ -101,8 +101,6 @@ class Car extends Model{
             'producer' => $this->preparations->exemplar->producer->name,
         ];
 
-        // Customize array...
-
         return $array;
     }
 
