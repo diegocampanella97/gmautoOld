@@ -1,3 +1,4 @@
+@include('cookieConsent::index')
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
   <div class="container">
   <a class="navbar-brand" href="{{route('home')}}">
@@ -13,7 +14,11 @@
       <li class="nav-item"><a href="{{route('noleggio')}}" class="nav-link">Noleggio</a></li>
       <li class="nav-item"><a href="{{route('auto.search')}}" class="nav-link">Auto Usate</a></li>
       <li class="nav-item"><a href="{{route('contatti')}}" class="nav-link">Contatti</a></li>
-      <li class="nav-item"><a href="{{route('login')}}" class="nav-link">Area Riservata</a></li>
+      {{-- <li class="nav-item"><a href="{{route('login')}}" class="nav-link">Area Riservata</a></li> --}}
+      <li class="nav-item">
+        <a target="_blank" href="https://www.iubenda.com/privacy-policy/13800230" class="nav-link iubenda-white iubenda-embed" title="Privacy Policy ">Privacy Policy</a>
+      </li>
+
     </ul>
   </div>
   </div>

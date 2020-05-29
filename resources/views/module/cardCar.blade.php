@@ -1,4 +1,4 @@
-<div class="col-6 col-md-3 py-2">
+<div class="col-12 col-md-3 py-2">
     <div class="card cardHeight">
         
         <a target="_blank" href="{{ route('auto.dettaglio', ['id'=>$car->id]) }}">
