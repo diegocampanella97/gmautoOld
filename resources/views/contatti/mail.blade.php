@@ -16,11 +16,6 @@
 
 <hr>
 
-@component('mail::button', ['url' => route('auto.dettaglio',[$bag['car']['id'],$bag['car']['slug']])])
-    Vai all'Annuncio
-@endcomponent
-
-
 @component('mail::button', ['url' => "mailto:".$bag["email"]])
 Rispondi alla Mail
 @endcomponent

@@ -38,7 +38,7 @@
             <div class="col-md-8 block-9 mb-md-5" id="contattiForm">
 
 
-                <form action="{{route('contattiSubmit')}}" method="POST" class="bg-light p-5 contact-form">
+                <form action="{{route('contattiCarSubmit')}}" method="POST" class="bg-light p-5 contact-form">
                     @csrf
                     <h2>Inviaci un messaggio</h2>
                     <p class="text pb-3">Non esitare a contattarci per qualunque tipo di informazione riguardante i nostri servizi.</p>

@@ -108,7 +108,7 @@
 
 
                     <div class="modal-footer">
-                        <a target="_blank" href="{{route('auto.dettaglio',['id' => $item->id])}}" class="btn btn-secondary" >Dettagli</a>
+                        <a target="_blank" href="{{route('auto.dettaglio',['id' => $item->id,'slug' => $item->slug])}}" class="btn btn-secondary" >Dettagli</a>
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Chiudi</button>
                     </div>
                 </div>

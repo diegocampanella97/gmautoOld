@@ -22,7 +22,7 @@ class CarImageController extends Controller
         $carImage=CarImage::find($id);
         $carImage->delete();
 
-        return redirect()->route('auto.dettaglio',['id' => $carImage->car_id]);
+        return redirect()->route('auto.dettaglio',['id' => $carImage->car_id,'slug' => $carImage->slug]);
     }
 
     public function rating($id)
@@ -36,7 +36,7 @@ class CarImageController extends Controller
         }
 
         $carImage->save();
-        return redirect()->route('auto.dettaglio',['id' => $carImage->car_id]);
+        return redirect()->route('auto.dettaglio',['id' => $carImage->car_id,'slug' => $carImage->slug]);
     }
     public function addImage($id,ImageRequest $request){
 
@@ -52,7 +52,7 @@ class CarImageController extends Controller
 
         $i->save();
 
-        return redirect()->route('auto.dettaglio',['id' => $id]);
+        return redirect()->route('auto.dettaglio',['id' => $id, 'slug' => $id->slug]);
 
 
     }

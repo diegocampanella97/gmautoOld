@@ -15,6 +15,7 @@ Route::group(['middleware' => ['auth']], function () {
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/contatti', 'HomeController@contatti')->name('contatti');
 Route::post('/contatti/invia','HomeController@contattiSubmit')->name('contattiSubmit');
+Route::post('/auto/usate//invia','HomeController@contattiCarSubmit')->name('contattiCarSubmit');
 Route::get('/home', 'HomeController@contatti')->name('contatti');
 Route::get('/noleggio', 'HomeController@noleggio')->name('noleggio');
 Route::post('/noleggio/inviaMessaggio', 'HomeController@inviaMessaggio')->name('noleggio.invia');

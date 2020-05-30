@@ -197,7 +197,7 @@ class AdminController extends Controller
 
         $car->save();
 //        dd($car);
-        return redirect()->route('auto.dettaglio',['id'=>$car->id]);
+        return redirect()->route('auto.dettaglio',['id'=>$car->id,'slug' => $car->slug]);
     }
 
     public function approva($id){

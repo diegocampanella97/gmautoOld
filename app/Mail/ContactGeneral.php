@@ -30,6 +30,6 @@ class ContactGeneral extends Mailable
     public function build()
     {
         return $this->markdown('contatti.mail')
-        ->subject("Nuove informazioni di contatto" ."prova") ;
+        ->subject("Nuove informazioni di contatto") ;
     }
 }

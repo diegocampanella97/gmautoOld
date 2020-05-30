@@ -6,6 +6,7 @@ use App\Car;
 use DateTime;
 use App\Producer;
 use Carbon\Carbon;
+use App\Mail\ContactGeneral;
 use App\Mail\ContattiMailed;
 use App\Mail\NoleggioMailed;
 use Illuminate\Http\Request;
@@ -117,13 +118,6 @@ class HomeController extends Controller
             return redirect()->route('noleggio');
         }
 
-
-        // "name" => "aaa"
-        // "email" => "diegocampanella97@gmail.com"
-        // "dataRitiro" => "2020-03-24"
-        // "dataConsegna" => "2020-03-27"
-        // "messaggio" => "aecqwcw"
-
         if($dataRitiro <=$dataConsegna){
             $name = $request->input('name');
             $email = $request->input('email');
@@ -162,6 +156,24 @@ class HomeController extends Controller
         $messaggio = $request->input('messaggio');
 
         $bag = compact('name','email','oggetto','messaggio','idAuto');
+//        dd($bag);
+        $emailAdmin="diegocampanella97@gmail.com";
+
+        $contactMail = new ContactGeneral($bag);
+        Mail::to($emailAdmin)->send($contactMail);
+
+        return redirect()->route('contatti.thanks');
+
+    }    
+    
+    public function contattiCarSubmit(ContattiRequest $request){
+        $car = Car::find($request->input('idAuto'));
+        $name = $request->input('name');
+        $email = $request->input('email');
+        $oggetto = $request->input('oggetto');
+        $messaggio = $request->input('messaggio');
+
+        $bag = compact('name','email','oggetto','messaggio','car');
 //        dd($bag);
         $emailAdmin="diegocampanella97@gmail.com";
 
