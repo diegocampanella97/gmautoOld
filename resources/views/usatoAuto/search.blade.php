@@ -19,7 +19,7 @@
           <div class="col-12 col-md-4">
             <div class="item">
               <div class="car-wrap rounded ftco-animate">
-                <a href="{{ route('auto.dettaglio', ['id'=>$item->id]) }}">
+                <a href="{{ route('auto.dettaglio', ['id'=>$item->id,'slug' => $item->slug]) }}">
                   @if ($item->images->count()>0)
                     <div class="img rounded d-flex align-items-end" style="background-image: url(
                       {{
@@ -33,7 +33,7 @@
                   </a>
                 <div class="text">
                 <h2 class="mb-0">
-                    <a href="{{ route('auto.dettaglio', ['id'=>$item->id]) }}">{{$item->name}}</a>
+                    <a href="{{ route('auto.dettaglio', ['id'=>$item->id,'slug' => $item->slug]) }}">{{$item->name}}</a>
                 </h2>
                     <div class="d-flex mb-3">
                         <span class="cat">{{$item->preparations -> exemplar->name}}<br>
@@ -46,7 +46,7 @@
                         <p class="price ml-auto">{{$item->price}} €</p>
                     </div>
                   <p class="d-flex justify-content-center mb-0 d-block">
-                    <a href="{{ route('auto.dettaglio', ['id'=>$item->id]) }}" class="btn btn-xl btn-primary py-2 mr-1">Scopri di più</a>
+                    <a href="{{ route('auto.dettaglio', ['id'=>$item->id,'slug' => $item->slug]) }}" class="btn btn-xl btn-primary py-2 mr-1">Scopri di più</a>
                   </p>
                 </div>
               </div>

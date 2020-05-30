@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\CarImage;
-use App\Http\Requests\ImageRequest;
-use App\Jobs\ResizeImage;
 use App\r;
+use App\Car;
+use App\CarImage;
+use App\Jobs\ResizeImage;
 use Illuminate\Http\Request;
+use App\Http\Requests\ImageRequest;
 use Illuminate\Support\Facades\Storage;
 
 class CarImageController extends Controller
@@ -22,7 +23,7 @@ class CarImageController extends Controller
         $carImage=CarImage::find($id);
         $carImage->delete();
 
-        return redirect()->route('auto.dettaglio',['id' => $carImage->car_id,'slug' => $carImage->slug]);
+        return redirect()->route('auto.dettaglio',['id' => $carImage->car_id,'slug' => $carImage->car->slug]);
     }
 
     public function rating($id)
@@ -36,7 +37,7 @@ class CarImageController extends Controller
         }
 
         $carImage->save();
-        return redirect()->route('auto.dettaglio',['id' => $carImage->car_id,'slug' => $carImage->slug]);
+        return redirect()->route('auto.dettaglio',['id' => $carImage->car_id,'slug' => $carImage->car->slug]);
     }
     public function addImage($id,ImageRequest $request){
 
@@ -52,7 +53,7 @@ class CarImageController extends Controller
 
         $i->save();
 
-        return redirect()->route('auto.dettaglio',['id' => $id, 'slug' => $id->slug]);
+        return redirect()->route('auto.dettaglio',['id' => $id, 'slug' => $i->car->slug]);
 
 
     }

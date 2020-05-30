@@ -40,6 +40,8 @@ class CustomerController extends Controller
         $car = Car::find($request->input('car_id'));
         $car->approved=0;
         $car->customer_id = $customer->id;
+
+        // dd($car); 
         $car->save();
 
         return redirect()->route('auto.dettaglio',['id' => $car->id ,'slug' => $car->slug]);

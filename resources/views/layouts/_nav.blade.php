@@ -18,6 +18,10 @@
       <li class="nav-item">
         <a target="_blank" href="https://www.iubenda.com/privacy-policy/13800230" class="nav-link iubenda-white iubenda-embed" title="Privacy Policy ">Privacy Policy</a>
       </li>
+      
+      @auth
+      <li class="nav-item bg-danger rounded-pill"><a href="{{route('login')}}" class="nav-link">Area Riservata</a></li>
+      @endauth
 
     </ul>
   </div>

@@ -83,16 +83,17 @@ class HomeController extends Controller
     public function search(Request $request){
 
 //        dd($request->input());
-        $carsID = Car::search($request->input('query'))
-            ->where('approved',1)
-            ->pluck('id');
+        $carsID = Car::search($request->input('query'))->pluck('id');
 
         $cars=
             Car::
             with(['preparations.exemplar.producer','images'])->
             whereIn('id',$carsID)->
+            where('approved','=',1)->
             get();
         ;
+
+        dd($cars);
 
 //
         $paginate=false;

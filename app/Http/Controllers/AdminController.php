@@ -194,7 +194,8 @@ class AdminController extends Controller
         if($request->input("preparation")!=0){
             $car->preparations_id = $request->input("preparation");
         }
-
+        
+        $car->slug  = Str::slug($car->name, '-');
         $car->save();
 //        dd($car);
         return redirect()->route('auto.dettaglio',['id'=>$car->id,'slug' => $car->slug]);
