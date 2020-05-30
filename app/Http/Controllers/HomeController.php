@@ -9,6 +9,7 @@ use Carbon\Carbon;
 use App\Mail\ContattiMailed;
 use App\Mail\NoleggioMailed;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Requests\ContattiRequest;
 use App\Http\Requests\NoleggioRequest;
@@ -179,7 +180,7 @@ class HomeController extends Controller
         join('preparations','cars.preparations_id','=','preparations.id')->
         join('exemplaries','exemplaries_id','=','exemplaries.id')->
         join('producers','producers_id','=','producers.id')->
-        where('producers.id','=',$id)->
+        where('producers.slug','=',$id)->
         pluck('cars.id');
 
         $cars=
@@ -194,6 +195,70 @@ class HomeController extends Controller
         $paginate=true;
 
         return view('usatoAuto.search',compact('cars','paginate'));
+    }
+
+
+    public function indexCar(){
+
+        OpenGraph::setTitle('Galleria - Gm Autoveicoli')
+        ->setUrl('https://gmautoveicoli.it')
+        ->setDescription('')
+        ->setType('article')
+        ->setArticle([
+            'published_time' => 'datetime',
+            'modified_time' => 'datetime',
+            'expiration_time' => 'datetime',
+            'author' => 'profile / array',
+            'section' => 'string',
+            'tag' => 'string / array'
+        ])
+        ->addImage(['url' => 'https://image.freepik.com/free-psd/man-car-with-business-card-mockup_23-2148018111.jpg', 'size' => 300]);
+
+
+        return view('cars.search');
+    }
+
+
+    public function goUsatoDettaglio($id,$slug){
+        
+        // dd($id->slug);
+        // $car = Car::with([
+        //     'preparations.exemplar.producer','images','fuel',
+        //     'transmission','kilometers','color','door'
+        // ])->findOrFail($id);
+        
+        $car = Car::with([
+            'preparations.exemplar.producer','images','fuel',
+            'transmission','kilometers','color','door'
+        ])
+        ->where('slug',$slug)
+        ->where('id',$id)
+        ->firstOrFail();
+
+        // dd($car);
+
+        if($car->approved == 0) {
+            if(Auth::user()){
+                return view('usatoAuto.detail',compact('car'));
+            }
+            return redirect()->route('home');
+        }
+
+        OpenGraph::setTitle($car->name. ' - Gm Autoveicoli')
+        ->setUrl('https://gmautoveicoli.it')
+        ->setDescription('Per richieste di informazioni o assistenza per la tua auto. Siamo a tua disposizione.')
+        ->setType('article')
+        ->setArticle([
+            'published_time' => 'datetime',
+            'modified_time' => 'datetime',
+            'expiration_time' => 'datetime',
+            'author' => 'profile / array',
+            'section' => 'string',
+            'tag' => 'string / array'
+        ])
+        ->addImage(['url' => 'https://images.unsplash.com/photo-1531137199527-9546e8290fd4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80', 'size' => 300]);
+        
+        return view('usatoAuto.detail',compact('car'));
     }
 
 }

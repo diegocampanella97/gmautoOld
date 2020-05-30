@@ -4,6 +4,7 @@
 
 use App\Car;
 use App\Model;
+use Illuminate\Support\Str;
 use Faker\Generator as Faker;
 
 $factory->define(Car::class, function (Faker $faker) {
@@ -28,6 +29,7 @@ $factory->define(Car::class, function (Faker $faker) {
         'preparations_id' => $faker->biasedNumberBetween(1,64435, 'sqrt'),
         'kilometers_id' => $faker->biasedNumberBetween(1,37, 'sqrt'),
         'tipology_id' => $faker->biasedNumberBetween(1,7, 'sqrt'),
-        'approved' => 1
+        'approved' => 1,
+        'slug' => Str::slug($faker->name, '-')
     ];
 });

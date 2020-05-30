@@ -45,57 +45,6 @@ class CarController extends Controller
     }
 
 
-    public function cancella($id){
-        $car = Car::findOrFail($id);
 
-        if(!Auth::user()){
-            return redirect()->route('home');
-        }
-
-        $car->delete();
-
-
-        return redirect()->route('admin.listaAuto');
-
-    }
-
-    public function approva($id){
-        $car = Car::findOrFail($id);
-
-        if(!Auth::user()){
-            return redirect()->route('home');
-        }
-
-        if($car->approved == 1){
-            $car->approved = 0;
-        } else {
-            $car->approved = 1;
-        }
-
-        $car->save();
-
-        // return redirect()->route('admin.listaAuto');
-        return redirect()->back();
-    }
-
-    public function index(){
-
-        OpenGraph::setTitle('Galleria - Gm Autoveicoli')
-        ->setUrl('https://gmautoveicoli.it')
-        ->setDescription('')
-        ->setType('article')
-        ->setArticle([
-            'published_time' => 'datetime',
-            'modified_time' => 'datetime',
-            'expiration_time' => 'datetime',
-            'author' => 'profile / array',
-            'section' => 'string',
-            'tag' => 'string / array'
-        ])
-        ->addImage(['url' => 'https://image.freepik.com/free-psd/man-car-with-business-card-mockup_23-2148018111.jpg', 'size' => 300]);
-
-
-        return view('cars.search');
-    }
 
 }

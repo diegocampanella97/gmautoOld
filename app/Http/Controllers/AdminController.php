@@ -9,6 +9,7 @@ use App\Preparation;
 use App\Jobs\ResizeImage;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 
@@ -52,6 +53,7 @@ class AdminController extends Controller
         $car->preparations_id = $request->input("preparation");
         $car->kilometers_id = $request->input("kmVeicolo");
         $car->tipology_id  = $request->input("categoriaVeicolo");
+        $car->slug  = Str::slug($car->name, '-');
 
         $car->save();
 
@@ -196,6 +198,39 @@ class AdminController extends Controller
         $car->save();
 //        dd($car);
         return redirect()->route('auto.dettaglio',['id'=>$car->id]);
+    }
+
+    public function approva($id){
+        $car = Car::findOrFail($id);
+
+        if(!Auth::user()){
+            return redirect()->route('home');
+        }
+
+        if($car->approved == 1){
+            $car->approved = 0;
+        } else {
+            $car->approved = 1;
+        }
+
+        $car->save();
+
+        // return redirect()->route('admin.listaAuto');
+        return redirect()->back();
+    }
+
+    public function cancella($id){
+        $car = Car::findOrFail($id);
+
+        if(!Auth::user()){
+            return redirect()->route('home');
+        }
+
+        $car->delete();
+
+
+        return redirect()->route('admin.listaAuto');
+
     }
     
 

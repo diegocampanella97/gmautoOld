@@ -15,7 +15,7 @@
 
                 <div class="d-flex py-4 align-items-center">
                     <span class="cat">{{$car->preparations -> exemplar->name}} <br>
-                        <a target="_blank" href="{{route('auto.cerca.produttore',$car ->preparations -> exemplar-> producer-> id)}}">
+                        <a target="_blank" href="{{route('auto.cerca.produttore',$car ->preparations -> exemplar-> producer-> slug)}}">
                         <img class="img-fluid logo-resize"
                              src="/images/logo_cars/{{$car ->preparations -> exemplar-> producer-> slug}}.svg"
                              alt="{{$car ->preparations -> exemplar-> producer-> name}}"/>

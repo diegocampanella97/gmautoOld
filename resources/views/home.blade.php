@@ -65,7 +65,7 @@
             <div class="item">
               <div class="car-wrap rounded ftco-animate">
 
-                  <a href="{{ route('auto.dettaglio', ['id'=>$item->id]) }}">
+                  <a href="{{ route('auto.dettaglio', ['id'=>$item->slug]) }}">
                       @if ($item->images->count()>0)
                           <div class="img rounded d-flex align-items-end" style="background-image: url(
                           {{
@@ -79,11 +79,11 @@
                   </a>
                 <div class="text">
                     <h2 class="mb-0">
-                        <a href="{{ route('auto.dettaglio', ['id'=>$item->id]) }}">{{$item->name}}</a>
+                        <a href="{{ route('auto.dettaglio', ['id'=>$item->slug]) }}">{{$item->name}}</a>
                     </h2>
                       <div class="d-flex mb-3">
                         <span class="cat">{{$item->preparations -> exemplar->name}}<br>
-                            <a href="{{route('auto.cerca.produttore',$item ->preparations -> exemplar-> producer-> id)}}">
+                            <a href="{{route('auto.cerca.produttore',$item ->preparations -> exemplar-> producer-> slug)}}">
                             <img class="img-fluid logo-resize"
                                  src="/images/logo_cars/{{$item ->preparations -> exemplar-> producer-> slug}}.svg"
                                  alt="{{$item ->preparations -> exemplar-> producer-> name}}">
