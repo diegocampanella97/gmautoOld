@@ -93,7 +93,7 @@
       <div class="text text-center py-5">
         {{-- <span class="subheading">{{$car->preparations->exemplar->producer->slug.".svg"}}</span> --}}
         {{-- <img class="subheading" href="{{$car->preparations->exemplar->producer->slug.".svg"}}"></img> --}}
-        <a target="_blank" href="{{route('auto.cerca.produttore',$car ->preparations -> exemplar-> producer-> id)}}">
+        <a target="_blank" href="{{route('auto.cerca.produttore',$car ->preparations -> exemplar-> producer-> slug)}}">
           <img height="100px" class="img-fluid" style="max-width: 10% !important;"
                src="/images/logo_cars/{{$car ->preparations -> exemplar-> producer-> slug}}.svg"
                alt="{{$car ->preparations -> exemplar-> producer-> name}}"/>

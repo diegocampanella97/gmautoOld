@@ -9,7 +9,7 @@
 
                 <div class="d-flex mb-3 mt-3">
                     <span class="cat">{{$car->preparations -> exemplar->name}} <br>
-                        <a href="{{route('auto.cerca.produttore',$car ->preparations -> exemplar-> producer-> id)}}">
+                        <a href="{{route('auto.cerca.produttore',$car ->preparations -> exemplar-> producer-> slug)}}">
                         <img class="img-fluid logo-resize"
                              src="/images/logo_cars/{{$car ->preparations -> exemplar-> producer-> slug}}.svg"
                              alt="{{$car ->preparations -> exemplar-> producer-> name}}">

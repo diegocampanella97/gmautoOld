@@ -56,7 +56,7 @@
                         </td>
                         <td>{{ $car->targa }}</td>
                         <td>{{ $car->created_at }}</td>
-                        <td>{{ $car->approved }}</td>
+                        <td>{{ ($car->approved == 0) ? "Non visibile" : "Visibile"  }}</td>
                     </tr>
                 @endforeach
             </tbody>

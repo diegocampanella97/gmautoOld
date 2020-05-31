@@ -93,7 +93,7 @@ class HomeController extends Controller
             get();
         ;
 
-        dd($cars);
+        // dd($cars);
 
 //
         $paginate=false;
@@ -200,6 +200,7 @@ class HomeController extends Controller
             Car::
             with(['preparations.exemplar.producer','images'])->
             whereIn('id',$carsFind)->
+            where('approved',1)->
             paginate(15)
         ;
 

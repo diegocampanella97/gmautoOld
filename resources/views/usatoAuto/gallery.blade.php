@@ -43,7 +43,7 @@
                 </h2>
                     <div class="d-flex mb-3 mt-3">
                         <span class="cat">{{$item->preparations -> exemplar->name}} <br>
-                                                        <a href="{{route('auto.cerca.produttore',$item ->preparations -> exemplar-> producer-> id)}}">
+                            <a href="{{route('auto.cerca.produttore',$item ->preparations -> exemplar-> producer-> slug)}}">
                             <img class="img-fluid logo-resize"
                                  src="/images/logo_cars/{{$item ->preparations -> exemplar-> producer-> slug}}.svg"
                                  alt="{{$item ->preparations -> exemplar-> producer-> name}}">
