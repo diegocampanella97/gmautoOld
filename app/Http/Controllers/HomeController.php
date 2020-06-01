@@ -30,6 +30,10 @@ class HomeController extends Controller
         // $this->middleware('auth');
     }
 
+    public function address(){
+        return $_SERVER['SERVER_NAME'].":".$_SERVER['SERVER_PORT'];
+    }
+
     /**
      * Show the application dashboard.
      *
@@ -234,7 +238,7 @@ class HomeController extends Controller
 
 
     public function goUsatoDettaglio($id,$slug){
-        
+        $images = null;
         // dd($id->slug);
         // $car = Car::with([
         //     'preparations.exemplar.producer','images','fuel',
@@ -249,7 +253,16 @@ class HomeController extends Controller
         ->where('id',$id)
         ->firstOrFail();
 
-        // dd($car);
+        // dd($car->images->first()->filePath);
+        // dd("localhost:8000".$car->images->first() -> getUrl(800,570));
+        
+        if($car->images->count()>0){
+            $images = $this->address().$car->images->first() -> getUrl(800,570);
+        } else {
+            $images = "https://images.unsplash.com/photo-1531137199527-9546e8290fd4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80";
+        }
+
+        // dd($images);
 
         if($car->approved == 0) {
             if(Auth::user()){
@@ -257,6 +270,8 @@ class HomeController extends Controller
             }
             return redirect()->route('home');
         }
+
+
 
         OpenGraph::setTitle($car->name. ' - Gm Autoveicoli')
         ->setUrl('https://gmautoveicoli.it')
@@ -270,9 +285,9 @@ class HomeController extends Controller
             'section' => 'string',
             'tag' => 'string / array'
         ])
-        ->addImage(['url' => 'https://images.unsplash.com/photo-1531137199527-9546e8290fd4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80', 'size' => 300]);
+        ->addImage(['url' => $images, 'size' => 300]);
         
         return view('usatoAuto.detail',compact('car'));
-    }
+    }   
 
 }
