@@ -12915,7 +12915,11 @@ __webpack_require__(/*! ./imgDropZone */ "./resources/js/imgDropZone.js");
 
 
 
-__webpack_require__(/*! ../../node_modules/bs-stepper/dist/js/bs-stepper.min.js */ "./node_modules/bs-stepper/dist/js/bs-stepper.min.js");
+__webpack_require__(/*! ../../node_modules/bs-stepper/dist/js/bs-stepper.min.js */ "./node_modules/bs-stepper/dist/js/bs-stepper.min.js"); // require('summernote/dist/summernote.css');
+// require('../../node_modules/summernote/src/js/summernote');
+
+
+__webpack_require__(/*! ./superNote */ "./resources/js/superNote.js");
 
 /***/ }),
 
@@ -12977,6 +12981,28 @@ $(function () {
         },
         dataType: 'json'
       });
+    });
+  }
+});
+
+/***/ }),
+
+/***/ "./resources/js/superNote.js":
+/*!***********************************!*\
+  !*** ./resources/js/superNote.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  if ($("#summernote").length > 0) {
+    $('#summernote').summernote({
+      lang: 'it-IT',
+      height: 300,
+      minHeight: null,
+      maxHeight: null,
+      focus: true,
+      toolbar: [['style', ['style']], ['font', ['bold', 'underline', 'clear']], ['color', ['color']], ['para', ['ul', 'ol', 'paragraph']], ['table', ['table']], ['insert', ['link', 'picture', 'video']], ['view', ['fullscreen', 'codeview', 'help']]]
     });
   }
 });

@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
 
 <link rel="stylesheet" href="/css/full.css">
+<link rel="stylesheet" href="/css/summernote.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 @include("layouts._iconList")
 @livewireStyles

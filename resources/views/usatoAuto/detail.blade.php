@@ -186,7 +186,7 @@
                           <div class="d-flex justify-content-center">
                             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                               <li class="nav-item">
-                                <a class="nav-link active" id="pills-manufacturer-tab" data-toggle="pill" href="#pills-manufacturer" role="tab" aria-controls="pills-manufacturer" aria-expanded="true">Descrizione</a>
+                                <a class="nav-link active" id="pills-manufacturer-tab" data-toggle="pill" href="#pills-manufacturer" role="tab" aria-controls="pills-manufacturer" aria-expanded="true">Descrizione Auto</a>
                               </li>
                             </ul>
                           </div>
@@ -194,7 +194,7 @@
                         <div class="tab-content" id="pills-tabContent">
 
                           <div class="tab-pane fade show active" id="pills-manufacturer" role="tabpanel" aria-labelledby="pills-manufacturer-tab">
-                            <p>{{$car->description}}</p>
+                            {!! $car->description !!}
                           </div>
 
                         </div>

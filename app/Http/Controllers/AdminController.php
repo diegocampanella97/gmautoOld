@@ -30,6 +30,8 @@ class AdminController extends Controller
     }
 
     public function submitAdd(Request $request){
+        
+        
 
         $preparation = Preparation::find($request->input("preparation"));
 

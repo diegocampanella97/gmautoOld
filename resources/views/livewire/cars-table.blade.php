@@ -1,23 +1,22 @@
 <div class="py-4">
     <div class="container mb-4">
         <div class="row">
-            <div class="col form-inline">
+            <div class="col-12 form-inline">
                 Per Pagina: &nbsp;
                 <select wire:model="perPage" class="form-control">
                     <option>10</option>
                     <option>15</option>
                     <option>25</option>
                 </select>
+
+                <input wire:model="search" class="my-4 mx-md-5 my-md-0 form-control" type="text" placeholder="Cerca Auto...">
             </div>
-    
-            <div class="col">
-                <input wire:model="search" class="form-control" type="text" placeholder="Cerca Auto...">
-            </div>
+
         </div>
     </div>
 
-    <div class="row">
-        <table class="table">
+    <div class="mx-1 row table-responsive">
+        <table class="table ">
             <thead>
                 <tr>
                     <th>

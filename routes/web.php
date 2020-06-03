@@ -46,3 +46,4 @@ Route::resource('customers', 'CustomerController');
 
 
 
+Route::view('/test', 'test.test');

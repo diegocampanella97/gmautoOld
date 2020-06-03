@@ -40,7 +40,7 @@
 
                         <div class="form-group">
                             <label for="testoAnnuncio" class="bmd-label-floating lead text-info">Descrizione dell'annuncio</label>
-                            <textarea class="form-control2" name="testoAnnuncio" rows="8"></textarea>
+                            <textarea id="summernote" class="form-control" name="testoAnnuncio" rows="8"></textarea>
                         </div>
 
                     </div>
