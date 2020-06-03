@@ -1,5 +1,5 @@
 
-<button type="button" class="py-4 mx-4 rounded-pill btn btn-info btn-lg w-100 mb-3 text-uppercase" data-toggle="modal" data-target=".bd-example-modal-xl">
+<button type="button" class="px-5 my-2 rounded-pill btn btn-info btn-lg text-uppercase" data-toggle="modal" data-target=".bd-example-modal-xl">
     <h4 class="text-white">
         <i class="fas fa-user-edit"></i> Modifica
     </h4>

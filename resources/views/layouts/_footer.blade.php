@@ -43,7 +43,7 @@
       </div>
       <div class="row">
         <div class="col-md-12 text-center">
-          <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> GM Automobili | <a target="_blank" href="https://www.iubenda.com/privacy-policy/13800230" class="iubenda-white iubenda-embed" title="Privacy Policy ">Privacy Policy</a></p>
+          <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> GM Automobili | P.iva 05829820728 | <a target="_blank" href="https://www.iubenda.com/privacy-policy/13800230" class="iubenda-white iubenda-embed" title="Privacy Policy ">Privacy Policy</a></p>
         </div>
       </div>
     </div>

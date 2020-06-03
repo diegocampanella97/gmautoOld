@@ -10,7 +10,7 @@
     @else
     <div class="container">
       <div class="row d-flex justify-content-center">
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 text-center">
           <x-model-customer-cars :car="$car"/>
         </div>
       </div>
@@ -29,18 +29,18 @@
         <div class="row d-flex justify-content-center">
             <div class="col-12">
               <div class="container">
-                <div class="row">
+                <div class="row text-center">
                     @if (is_null($car->customer_id))
                       <div class="col-12 col-md-4">
                         <x-model-approved-car :car="$car"/>
                       </div>
                     @endif
-                    <div class="col-12 col-md-4">
-                      <x-model-edit-car :car="$car"/>
-                    </div>
-                    <div class="col-12 col-md-4">
-                      <x-model-car-image :car="$car"/>
-                    </div>
+                      <div class="col-12 col-md-4">
+                        <x-model-edit-car :car="$car"/>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <x-model-car-image :car="$car"/>
+                      </div>
                 </div>
               </div>
             </div>
