@@ -1,4 +1,3 @@
-{{-- You can change this template using File > Settings > Editor > File and Code Templates > Code > Laravel Ideal View --}}
 @extends('layouts.app')
 
 @section('content')
@@ -84,7 +83,7 @@
                         <div class="form-group">
                             <label for="producer" class="bmd-label-floating lead text-info">Produttore Veicolo </label>
                             <select name="producer" id="producer" class="form-control2 input-lg">
-                                <option value="">Select Preparation</option>
+                                <option value="">Selezione Produttore</option>
                                 @foreach(\App\Producer::all()  as $producer)
                                     <option value="{{$producer->id}}">{{$producer->name}}</option>
                                 @endforeach
@@ -94,14 +93,14 @@
                         <div class="form-group">
                             <label for="exemplary" class="bmd-label-floating lead text-info">Modello Veicolo</label>
                             <select name="exemplary" id="exemplary" class="form-control2 input-lg">
-                                <option value="">Select exemplary</option>
+                                <option value="">Seleziona Modello Auto</option>
                             </select>
                         </div>
 
                         <div class="form-group">
                             <label for="preparation" class="bmd-label-floating lead text-info">Allestimento Veicolo</label>
                             <select name="preparation" id="preparation" class="form-control2 input-lg">
-                                <option value="">Select preparation</option>
+                                <option value="">Selezione Allestimento</option>
                             </select>
                         </div>
                     </div>
@@ -172,8 +171,8 @@
 
                     <div style="overflow:auto;">
                         <div style="float:right;">
-                            <button class="btn btn-xl btn-primary py-3 px-5 btn-success btn-lg" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                            <button class="btn btn-xl btn-primary py-3 px-5 btn-success btn-lg" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                            <button class="btn btn-xl btn-primary py-3 px-5 btn-success btn-lg" type="button" id="prevBtn" onclick="nextPrev(-1)">Indietro</button>
+                            <button class="btn btn-xl btn-primary py-3 px-5 btn-success btn-lg" type="button" id="nextBtn" onclick="nextPrev(1)">Avanti</button>
                         </div>
                     </div>
 
@@ -265,9 +264,9 @@
                 document.getElementById("prevBtn").style.display = "inline";
             }
             if (n == (x.length - 1)) {
-                document.getElementById("nextBtn").innerHTML = "Submit";
+                document.getElementById("nextBtn").innerHTML = "Invia Auto";
             } else {
-                document.getElementById("nextBtn").innerHTML = "Next";
+                document.getElementById("nextBtn").innerHTML = "Avanti";
             }
             // ... and run a function that displays the correct step indicator:
             fixStepIndicator(n)
