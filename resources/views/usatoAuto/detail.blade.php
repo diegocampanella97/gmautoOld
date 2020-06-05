@@ -81,7 +81,7 @@
                       <p>Anno Immatricolazione: {{$car->year}}</p>
                       <p class="d-flex mb-0 d-block">
 
-                          <a href="{{ route('contatti') }}" class="btn btn-secondary py-2 ml-1">Scopri </a>
+                          <a href="{{ route('contatti') }}" class="btn btn-primary py-3 px-5">Scopri </a>
                       </p>
                       {{-- <p class="offer">Offerta valida fino al <span class="data">25-02-2020</span></p>	 --}}
                   </div>
