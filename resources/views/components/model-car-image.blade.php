@@ -1,4 +1,4 @@
-<button type="button" class="px-5 my-2 rounded-pill btn btn-danger btn-lg text-uppercase" data-toggle="modal" data-target=".photogallery">
+<button type="button" class="btnMaxWidth px-5 my-2 rounded-pill btn btn-danger btn-lg text-uppercase" data-toggle="modal" data-target=".photogallery">
     <h4 class="text-white">
         <i class="far fa-images"></i> Immagini
     </h4>

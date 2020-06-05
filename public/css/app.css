@@ -471,3 +471,9 @@
   background: #fff;
 }
 
+.btnMaxWidth {
+  width: 100%;
+  min-height: 80px !important;
+  font-size: 24px !important;
+}
+

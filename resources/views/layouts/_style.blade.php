@@ -4,6 +4,6 @@
 <link rel="stylesheet" href="/css/full.css">
 <link rel="stylesheet" href="/css/summernote.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-@include("layouts._iconList")
+<livewire:styles>
 @livewireStyles
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">

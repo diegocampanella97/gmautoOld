@@ -1,4 +1,4 @@
-<button type="button" class="rounded-pill btn btn-info btn-lg mb-3 text-uppercase" data-toggle="modal" data-target=".modalCustomers">
+<button type="button" class="btnMaxWidth rounded-pill btn btn-info btn-lg mb-3 text-uppercase" data-toggle="modal" data-target=".modalCustomers">
     <h4 class="text-white">
         <i class="fas fa-user-edit"></i> Completa Vendita
     </h4>
