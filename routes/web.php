@@ -6,10 +6,9 @@ Auth::routes();
 Route::view('/contatti/grazie', 'contatti.thanks')->name('contatti.thanks');
 Route::view('/noleggio/trasporto-disabili-in-carrozzina', 'noleggio.disabile')->name('disabile');
 Route::view('/noleggio/grazie', 'noleggio.thanks')->name('noleggio.thanks');
-Route::group(['middleware' => ['auth']], function () {
-    Route::view('/home/listaClienti','customers.listCustomer')->name('admin.listaClienti');
-    Route::view('/home/listaAuto','cars.listCar')->name('admin.listaAuto');
-});
+Route::view('/terminiCondizioni','adminZone.termini')->name('termini');
+Route::get('/faq','FAQController@index')->name('faq.index');
+
 
 
 Route::get('/', 'HomeController@index')->name('home');
@@ -42,8 +41,18 @@ Route::post('/photo/{id}/delete', 'CarImageController@delete')->name('photo.dele
 Route::post('/photo/{id}/rating', 'CarImageController@rating')->name('photo.rating');
 Route::post('/photo/{id}/images', 'CarImageController@addImage')->name('photo.add');
 
-Route::resource('customers', 'CustomerController');
+// Route::view('/test', 'test.test');
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::resource('customers', 'CustomerController');
+    Route::view('/home/listaClienti','customers.listCustomer')->name('admin.listaClienti');
+    Route::view('/home/listaAuto','cars.listCar')->name('admin.listaAuto');
+    Route::post('/home/termini/modifica','AdminController@editTermini')->name('admin.editTermini');
+    Route::post('/faq/aggiungi','FAQController@store')->name('faq.store');
+    Route::post('/faq/modifica/{id}','FAQController@update')->name('faq.update');
+    Route::delete('/faq/cancella/{id}','FAQController@destroy')->name('faq.delete');
+});
 
 
+// Route::get('','')->name('');
 
-Route::view('/test', 'test.test');

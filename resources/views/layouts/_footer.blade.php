@@ -2,7 +2,7 @@
   {{-- <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div> --}}
   <footer class="ftco-footer ftco-bg-dark ftco-section">
     <div class="container">
-      <div class="row mb-5">
+      <div class="row mb-5 d-flex align-items-center">
         <div class="col-md">
           <div class="ftco-footer-widget mb-4">
             <div class="ftco-heading-2">
@@ -24,7 +24,6 @@
               <li><a href="#" class="py-2 d-block">Chi siamo</a></li>
               <li><a href="#" class="py-2 d-block">Servizi</a></li>
               <li><a href="#" class="py-2 d-block">Noleggio</a></li>
-              <li><a href="#" class="py-2 d-block">Soluzioni per le aziende</a></li>
             </ul>
           </div>
         </div>
@@ -32,11 +31,9 @@
            <div class="ftco-footer-widget mb-4">
             <h2 class="ftco-heading-2">Maggiori informazioni</h2>
             <ul class="list-unstyled">
-              <li><a href="#" class="py-2 d-block">FAQ</a></li>
-              <li><a href="#" class="py-2 d-block">Politica di gestione danni</a></li>
-              <li><a href="#" class="py-2 d-block">Politica di deposito</a></li>
-              <li><a href="#" class="py-2 d-block">Termini e Condizioni</a></li>
-              <li><a href="#" class="py-2 d-block">Contattaci</a></li>
+            <li><a href="{{route('faq.index')}}" class="py-2 d-block">FAQ</a></li>
+              <li><a href="{{route('termini')}}" class="py-2 d-block">Termini e Condizioni</a></li>
+              <li><a href="{{route('contatti')}}" class="py-2 d-block">Contattaci</a></li>
             </ul>
           </div>
         </div>

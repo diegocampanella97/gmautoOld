@@ -7,6 +7,7 @@ use App\CarImage;
 use App\Exemplary;
 use App\Preparation;
 use App\Jobs\ResizeImage;
+use App\Termini;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -30,9 +31,6 @@ class AdminController extends Controller
     }
 
     public function submitAdd(Request $request){
-        
-        
-
         $preparation = Preparation::find($request->input("preparation"));
 
         $car = new Car();
@@ -236,6 +234,11 @@ class AdminController extends Controller
 
     }
     
-
+    public function editTermini(Request $request){
+        $termini = Termini::find(1);
+        $termini->testoAnnuncio = $request->input('testoAnnuncio');
+        $termini->save();
+        return redirect()->back();
+    }
 
 }

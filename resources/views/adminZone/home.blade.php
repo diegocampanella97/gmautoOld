@@ -44,6 +44,28 @@
                     </a>
                 </div>
             </div>
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 text-center">
+                    <h3>
+                        Gestione Sito
+                    </h3>
+                </div>
+
+                <div class="col-12 col-md-3 text-center">
+                    <a href="{{route('termini')}}" class="btnMaxWidth py-4 mx-4 rounded-pill btn btn-info btn-lg mb-3 text-uppercase">
+                        <h4 class="text-white">
+                            <i class="fas fa-user-edit"></i> Termini
+                        </h4>
+                    </a>
+                </div>
+                <div class="col-12 col-md-3 text-center">
+                    <a href="{{route('faq.index')}}" class="btnMaxWidth py-4 mx-4 rounded-pill btn btn-info btn-lg mb-3 text-uppercase">
+                        <h4 class="text-white">
+                            <i class="fas fa-user-edit"></i> Faq
+                        </h4>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 @endsection
