@@ -30,14 +30,14 @@ class AppServiceProvider extends ServiceProvider
         Carbon::setLocale(env('LOCALE', 'it'));
 
 
-        if(DB::connection()->getDatabaseName())
-        {
-          if(DB::connection()->getDatabaseName()!="forge"){
-            if(Schema::hasTable('exemplars')) {
-                $exemplars = Exemplar::all();
-                View::share('exemplars',$exemplars);
-            }
-          }
-        }
+        // if(DB::connection()->getDatabaseName())
+        // {
+        //   if(DB::connection()->getDatabaseName()!="forge"){
+        //     if(Schema::hasTable('exemplars')) {
+        //         $exemplars = Exemplar::all();
+        //         View::share('exemplars',$exemplars);
+        //     }
+        //   }
+        // }
     }
 }
