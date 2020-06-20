@@ -16,7 +16,7 @@ class CreateTerminisTable extends Migration
     {
         Schema::create('terminis', function (Blueprint $table) {
             $table->id();
-	    $table->longText('testoAnnuncio');
+	    $table->longText('testoAnnuncio')->nullable();
             $table->timestamps();
         });
 
