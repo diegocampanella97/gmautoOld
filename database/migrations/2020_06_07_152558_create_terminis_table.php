@@ -16,11 +16,12 @@ class CreateTerminisTable extends Migration
     {
         Schema::create('terminis', function (Blueprint $table) {
             $table->id();
-	    $table->longText('testoAnnuncio')->nullable();
+	        $table->longText('testoAnnuncio')->nullable();
             $table->timestamps();
         });
 
         $termini = new Termini();
+        $termini->testoAnnuncio = "";
         $termini->save();
     }
 
