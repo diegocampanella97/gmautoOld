@@ -14,7 +14,7 @@ class AddSlugToCarsTable extends Migration
     public function up()
     {
         Schema::table('cars', function (Blueprint $table) {
-            $table->text('slug')->default();
+            $table->text('slug')->default("");
         });
     }
 
