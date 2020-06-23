@@ -1,6 +1,6 @@
 <?php
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 
 Route::view('/contatti/grazie', 'contatti.thanks')->name('contatti.thanks');
