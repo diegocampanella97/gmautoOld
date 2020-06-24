@@ -133,7 +133,7 @@ class HomeController extends Controller
 
             $bag = compact('name','email','dataRitiro','dataConsegna','messaggio');
 
-            $emailAdmin="diegocampanella97@gmail.com";
+            $emailAdmin="gmautomobili@gmail.com";
 
             $contactMail = new NoleggioMailed($bag);
             Mail::to($emailAdmin)->send($contactMail);
@@ -162,10 +162,11 @@ class HomeController extends Controller
 
         $bag = compact('name','email','oggetto','messaggio','idAuto');
 //        dd($bag);
-        $emailAdmin="diegocampanella97@gmail.com";
+        $emailAdmin="gmautomobili@gmail.com";
 
         $contactMail = new ContactGeneral($bag);
-        Mail::to($emailAdmin)->send($contactMail);
+        Mail::to($emailAdmin)
+        ->send($contactMail);
 
         return redirect()->route('contatti.thanks');
 
@@ -180,7 +181,7 @@ class HomeController extends Controller
 
         $bag = compact('name','email','oggetto','messaggio','car');
 //        dd($bag);
-        $emailAdmin="diegocampanella97@gmail.com";
+        $emailAdmin="gmautomobili@gmail.com";
 
         $contactMail = new ContattiMailed($bag);
         Mail::to($emailAdmin)->send($contactMail);
