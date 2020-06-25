@@ -30,6 +30,8 @@
         <div class="col-md">
            <div class="ftco-footer-widget mb-4">
             <h2 class="ftco-heading-2">Maggiori informazioni</h2>
+
+            
             <ul class="list-unstyled">
             <li><a href="{{route('faq.index')}}" class="py-2 d-block">FAQ</a></li>
               <li><a href="{{route('termini')}}" class="py-2 d-block">Termini e Condizioni</a></li>
@@ -41,6 +43,12 @@
       <div class="row">
         <div class="col-md-12 text-center">
           <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> GM Automobili | P.iva 05829820728 | <a target="_blank" href="https://www.iubenda.com/privacy-policy/13800230" class="iubenda-white iubenda-embed" title="Privacy Policy ">Privacy Policy</a></p>
+          <a href="https://www.instagram.com/gmautomobili/" target="_blank">
+            <i class="d-inline icon ion-logo-instagram ion-2x"></i>
+          </a>
+          <a href="https://www.facebook.com/gmautomobilinoleggio" target="_blank">
+            <i class="d-inline icon ion-logo-facebook ion-2x"></i>
+          </a>
         </div>
       </div>
     </div>
