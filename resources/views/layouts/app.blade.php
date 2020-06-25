@@ -9,7 +9,8 @@
     {!! SEO::generate() !!}
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link rel="canonical" href="{{ url(Request::url()) }}" />
-    <!-- Scripts -->
+    @include('layouts._iconList')
+        <!-- Scripts -->
     {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
 
 
