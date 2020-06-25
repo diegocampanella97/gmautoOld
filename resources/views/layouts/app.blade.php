@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     {!! SEO::generate() !!}
     <title>{{ config('app.name', 'Laravel') }}</title>
-
+    <link rel="canonical" href="{{ url(Request::url()) }}" />
     <!-- Scripts -->
     {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
 
