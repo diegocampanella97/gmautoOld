@@ -47,7 +47,7 @@
                             <div class="container py-4">
                                 <div class="row d-flex align-items-center">
                                     <div class="col-6">
-                                        <img width="500px" src="{{Storage::url($image->filePath)}}" alt="">
+                                        <img width="500px" src="{{Storage::url($image->filePath)}}" alt="auto usate {{$loop->index}}">
                                     </div>
                                     <div class="col-6 d-flex justify-content-center">
 

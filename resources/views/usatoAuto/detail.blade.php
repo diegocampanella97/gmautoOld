@@ -22,7 +22,7 @@
 
   
   @if(Auth::user())
-    @if(!$car->approved)
+    @if(!$car->approved) 
       <x-alerts flag="info" text="Attenzione! Questo annuncio è visibile solo agli amministratori"/>
     @endif
     <div class="container py-5">
@@ -57,14 +57,14 @@
                     @foreach ($car->images()->orderBy('order','desc')->get() as $item)
                     <div class="item">
                       <div class="car-wrap2 rounded ftco-animate">
-                          <img class="img-fluid rounded d-flex align-items-end" src="{{$item -> getUrl(800,570)}}" alt="">
+                          <img class="img-fluid rounded d-flex align-items-end" src="{{$item -> getUrl(800,570)}}" alt="auto usate {{$loop->index}}">
                       </div>
                     </div>
                     @endforeach
                   @else
                   <div class="item">
                     <div class="car-wrap2 rounded ftco-animate">
-                        <img class="img-fluid rounded d-flex align-items-end" src="/images/placeholder_gmautoveicoli.png" alt="">
+                        <img class="img-fluid rounded d-flex align-items-end" src="/images/placeholder_gmautoveicoli.png" alt="placeholder_gmautoveicoli">
                     </div>
                   </div>
                   @endif

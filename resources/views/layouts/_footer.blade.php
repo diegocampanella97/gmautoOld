@@ -6,7 +6,7 @@
         <div class="col-md">
           <div class="ftco-footer-widget mb-4">
             <div class="ftco-heading-2">
-              <img width="100px" class="img-responsive" src="/images/gm_logo_white.png" alt="" id="">
+              <img width="100px" class="img-responsive" src="/images/gm_logo_white.png" alt="logo_gmAutoveicoli" id="">
             </div>
             <div class="block-23 py-3">
               <ul>

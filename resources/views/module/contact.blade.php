@@ -67,7 +67,7 @@
             <span>
               <label>
                 <input class="cbx" type="checkbox" value="1" name="consent" aria-invalid="false">
-                <span class="item-label">Acconsento al <a style="color:#333" href="/privacy-policy" target="_blank">trattamento dei dati personali</a></span>
+                <span class="item-label">Acconsento al <a style="color:#333" href="https://www.iubenda.com/privacy-policy/13800230" target="_blank">trattamento dei dati personali</a></span>
               </label>
             </span>
             <div class="form-group">

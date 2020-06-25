@@ -59,69 +59,6 @@
       </div>
     </div>
 </section>
-
-{{-- <section>
-  <div class="container py-4">
-    <div class="row">
-      <div class="col-12 col-md-6">
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <div class="single-feature">
-                <img src="img/feature/f1.png" alt="">
-                <h4>Shipment Tracking</h4>
-                <p>
-                The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="single-feature">
-                <img src="img/feature/f1.png" alt="">
-                <h4>Shipment Tracking</h4>
-                <p>
-                The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="single-feature">
-                <img src="img/feature/f1.png" alt="">
-                <h4>Shipment Tracking</h4>
-                <p>
-                The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="single-feature">
-                <img src="img/feature/f1.png" alt="">
-                <h4>Shipment Tracking</h4>
-                <p>
-                The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
-                </p>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div class="col-12 col-md-6">
-        <div class="heading-section ftco-animate fadeInUp ftco-animated">
-          <div class="single-feature">
-            <img src="img/feature/f1.png" alt="">
-            <h2>Shipment Tracking</h2>
-            <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod modi tempore minus odio laboriosam exercitationem, possimus non? Nam error praesentium laudantium corporis tempore quidem, quos quasi ab, vel delectus minus.
-            </p>
-            <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod modi tempore minus odio laboriosam exercitationem, possimus non? Nam error praesentium laudantium corporis tempore quidem, quos quasi ab, vel delectus minus.
-            </p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> --}}
-
 <section class="ftco-section ftco-about py-4">
   <div class="container">
     <div class="row no-gutters">
