@@ -186,37 +186,37 @@
   </div>
 </section>
 
-<section class="ftco-counter ftco-section img bg-light" id="section-counter">
+<section class="ftco-counter ftco-section img bg-light">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+      <div class="col-md-6 col-lg-3 justify-content-center ftco-animate">
         <div class="block-18">
           <div class="text text-border d-flex align-items-center">
-            <strong class="number" data-number="20">0</strong>
+            <strong class="number">20</strong>
             <span>Anni di esperienza</span>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+      <div class="col-md-6 col-lg-3 justify-content-center ftco-animate">
         <div class="block-18">
           <div class="text text-border d-flex align-items-center">
-            <strong class="number" data-number="+1800">0</strong>
+            <strong class="number">1800</strong>
             <span>Auto vendute</span>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+      <div class="col-md-6 col-lg-3 justify-content-center ftco-animate">
         <div class="block-18">
           <div class="text text-border d-flex align-items-center">
-            <strong class="number" data-number="5200">0</strong>
-            <span>Riparazioni</span>
+            <strong class="number">5200</strong>
+            <span>Noleggi</span>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+      <div class="col-md-6 col-lg-3 justify-content-center ftco-animate">
         <div class="block-18">
           <div class="text d-flex align-items-center">
-            <strong class="number" data-number="100%">0</strong>
+            <strong class="number">1000</strong>
             <span>Clienti soddisfatti</span>
           </div>
         </div>

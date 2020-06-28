@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <livewire:styles>
 @livewireStyles
-<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+{{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170619759-1"></script>
 <script>
