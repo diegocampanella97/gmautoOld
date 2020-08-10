@@ -51,6 +51,11 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/faq/aggiungi','FAQController@store')->name('faq.store');
     Route::post('/faq/modifica/{id}','FAQController@update')->name('faq.update');
     Route::delete('/faq/cancella/{id}','FAQController@destroy')->name('faq.delete');
+
+    Route::get('/home/auto/notifica/{id}','SocialController@facebookSendPhoto')->name('facebook.post');
+
+
+
 });
 
 

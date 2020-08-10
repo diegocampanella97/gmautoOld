@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Customer;
+use Illuminate\Notifications\Notifiable;
 use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -78,6 +79,7 @@ class Car extends Model{
 
     use Searchable;
     use SoftDeletes;
+    use Notifiable;
 
     protected $casts = [
         'created_at' => 'datetime:Y-m-d H:00',
