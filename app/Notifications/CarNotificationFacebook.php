@@ -44,10 +44,11 @@ public function __construct($car)
 
     public function toFacebookPoster($notifiable) {
 //        dd($this->car);
-
+//        dd();
+//        dd($this->car->images->first() -> getUrl(800,570));
 
         return (new FacebookPosterPost($this->car->name))
-            ->withImage(url(Storage::url($this->car->images()->first()->filePath)));
+            ->withImage(url('https://gmautoveicoli.it'.$this->car->images->first() -> getUrl(800,570)));
     }
 
 
