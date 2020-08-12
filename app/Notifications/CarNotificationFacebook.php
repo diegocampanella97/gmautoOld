@@ -48,7 +48,8 @@ public function __construct($car)
 //        dd($this->car->images->first() -> getUrl(800,570));
 
         return (new FacebookPosterPost($this->car->name))
-            ->withImage(url('https://gmautoveicoli.it'.$this->car->images->first() -> getUrl(800,570)));
+//            ->withImage(url('https://gmautoveicoli.it'.$this->car->images->first() -> getUrl(800,570)));
+            ->withImage(url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'));
     }
 
 
