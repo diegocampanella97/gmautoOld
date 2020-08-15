@@ -52,7 +52,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/faq/modifica/{id}','FAQController@update')->name('faq.update');
     Route::delete('/faq/cancella/{id}','FAQController@destroy')->name('faq.delete');
 
-    Route::get('/auto/notifica/{id}','SocialController@facebookSendPhoto')->name('facebook.post');
+    Route::get('/auto/notifica','SocialController@facebookSendPhoto')->name('facebook.post');
 
 
 

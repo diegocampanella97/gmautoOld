@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class SocialController extends Controller
 {
-public function facebookSendPhoto($id){
-        $car = Car::find($id)->notify(new CarNotificationFacebook($id));
+public function facebookSendPhoto(){
+        $car = Car::find(1)->notify(new CarNotificationFacebook(1));
     }
 }
