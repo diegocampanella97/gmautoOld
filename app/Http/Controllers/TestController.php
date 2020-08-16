@@ -3,20 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Car;
-use App\Color;
-use App\Exemplary;
-use App\Preparation;
-use App\Producer;
 use Facebook\Exceptions\FacebookSDKException;
 use Facebook\Facebook;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\DB;
-
 class TestController extends Controller
 {
-    public function index(){
-        //Post property to Facebook
+    public function index($id){
 
+        $car = Car::find($id);
+
+        //dd($car->images()->get()->first()->filePath);
+
+        //dd($car->images()->first()->getUrl(800,570));
         try {
             $fb = new Facebook([
                 'app_id' => '1007560723018444',
@@ -27,9 +24,11 @@ class TestController extends Controller
         }
 
         $linkData = [
-            'message' => 'Prove Messaggio Def',
-            'url' => 'https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'
+            'message' => $car->name,
+            'url' => "gmautoveicoli.it".$car->images()->first()->getUrl(800,570)
         ];
+
+
         $pageAccessToken ='EAAOUXwL8MswBAAZBRLbZC9AThTS28DoICuZB5fDFm1E26vZC4imI9EQebOPhGtW8RJ7vSXW28s3ijjGNHZADH5xWaI6PgCZCcjUj78omlw9ybYMofGmj3ktq7BEhfPOyZBaZC6o18NFP2Myf1nOBKXZAVhWMOQ5SEqQlg6u1rO6VwvbX0BIkkYeMGT6EZBbWbnl5BUvQZAldhdOWNf7lq4I55zc';
 
         try {

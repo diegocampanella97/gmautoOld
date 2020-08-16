@@ -58,5 +58,5 @@ Route::group(['middleware' => ['auth']], function () {
 
 });
 
-Route::get('/test','TestController@index')->name('test');
+Route::get('/test/{id}','TestController@index')->name('test');
 
