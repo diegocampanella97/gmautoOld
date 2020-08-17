@@ -23,13 +23,15 @@ class TestController extends Controller
             echo $e;
         }
 
+        $message = "Scopri l’offerta sul sito: link in bio."."</br>"."Prova accapo";
+
         $linkData = [
-            'message' => $car->name,
+            'message' => $message,
             'url' => "gmautoveicoli.it".$car->images()->first()->getUrl(800,570)
         ];
 
 
-        $pageAccessToken ='EAAOUXwL8MswBAAZBRLbZC9AThTS28DoICuZB5fDFm1E26vZC4imI9EQebOPhGtW8RJ7vSXW28s3ijjGNHZADH5xWaI6PgCZCcjUj78omlw9ybYMofGmj3ktq7BEhfPOyZBaZC6o18NFP2Myf1nOBKXZAVhWMOQ5SEqQlg6u1rO6VwvbX0BIkkYeMGT6EZBbWbnl5BUvQZAldhdOWNf7lq4I55zc';
+        $pageAccessToken ='EAAOUXwL8MswBAJXR2ZCEhu7ZBEUIH5oCnQPV2DwPCJ28p8eXVdOT6aGZCT8HMwOvIbAJCPBquvZBZBCtP1rppfjXMWNSxMv3KNLzzt8LqLNHYhQzPauzx70oNEALSsJCGysP5g4tCKAgr4XcZCloYkYVJ69OUOS9xfSpU1azqoZCZAeqJE50pk159lAQpfAdq0VC4CIunkygBoWqvtPdaTmI';
 
         try {
             $response = $fb->post('2000966496847873/photos', $linkData, $pageAccessToken);
