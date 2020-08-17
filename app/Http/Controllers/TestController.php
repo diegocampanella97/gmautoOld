@@ -23,7 +23,13 @@ class TestController extends Controller
             echo $e;
         }
 
-        $message = "Scopri l’offerta sul sito: link in bio."."</br>"."Prova accapo";
+        $header = "Nuovi Arrivi!!! \n\n\nhttps://www.gmautoveicoli.it";
+
+        $footer = "La vettura è a disposizione per la visione e qualsiasi controllo in ogni momento tramite appuntamento preventivo presso la nostra sede.\n\n\nNON ESITATE A CONTATTARCI PER QUALSIASI INFORMAZIONE, SIAMO A VOSTRA COMPLETA DISPOSIZIONE!
+        \nACCETTIAMO LE VOSTRE VETTURE IN PERMUTA ALLE MIGLIORI QUOTAZIONI DI MERCATO \nPotete contattarci su whatsapp mandandoci foto e informazioni della vostra vettura per avere una quotazione indicativa.\n\n\nTelefono/Whatsapp: Gianluca : 3389807371";
+
+//        incorporamento header body footer
+        $message = $header."\n\n".$car->name."\n\nScopri l’offerta sul sito: "."\n".route('auto.dettaglio',['id' => $car->id, 'slug' => $car->slug ])."\n\n".$footer;
 
         $linkData = [
             'message' => $message,
@@ -31,7 +37,8 @@ class TestController extends Controller
         ];
 
 
-        $pageAccessToken ='EAAOUXwL8MswBAJXR2ZCEhu7ZBEUIH5oCnQPV2DwPCJ28p8eXVdOT6aGZCT8HMwOvIbAJCPBquvZBZBCtP1rppfjXMWNSxMv3KNLzzt8LqLNHYhQzPauzx70oNEALSsJCGysP5g4tCKAgr4XcZCloYkYVJ69OUOS9xfSpU1azqoZCZAeqJE50pk159lAQpfAdq0VC4CIunkygBoWqvtPdaTmI';
+
+        $pageAccessToken ='EAAOUXwL8MswBALcELMHgYhfztvqabrETpJMP2jfh1qJKU0y0y65F540MWD07fiuZCLaQewFcvfjluvGnT5Om3ZA5R4GiJnvFVeZADBwpeiAQZAmt6kw1LO2oQhrZCgh0THNNDTc1RQ1sHQg74mZAAIucb5X9gKuh5ZB73oZCcFGDRKzTHD79E53A6dhcvjZA2ZBM5KnqQ5ZBHaHZBZBMZBAUbDgZCKC';
 
         try {
             $response = $fb->post('2000966496847873/photos', $linkData, $pageAccessToken);
