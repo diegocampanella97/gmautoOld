@@ -18,9 +18,9 @@ class HeaderComponent extends Component
     public $car;
 
 
-    public function __construct($title ,$img,$id)
+    public function __construct($title ,$img,$id = null)
     {
-        $this->car = Car::find($id);
+        (($id !=null) ? $this->car = Car::find($id) : $this->car =null);
         $this->title = $title;
         (!($img)=="") ? $this->img = $img : $this->img ="/images/bg_2.jpg";
     }
