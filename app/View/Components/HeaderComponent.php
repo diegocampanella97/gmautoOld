@@ -2,6 +2,7 @@
 
 namespace App\View\Components;
 
+use App\Car;
 use Illuminate\View\Component;
 
 class HeaderComponent extends Component
@@ -14,9 +15,12 @@ class HeaderComponent extends Component
 
     public $title;
     public $img;
+    public $car;
 
-    public function __construct($title ,$img)
+
+    public function __construct($title ,$img,$id)
     {
+        $this->car = Car::find($id);
         $this->title = $title;
         (!($img)=="") ? $this->img = $img : $this->img ="/images/bg_2.jpg";
     }

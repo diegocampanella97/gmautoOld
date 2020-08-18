@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <x-headerComponent :title="$car->name" img=""/>
+  <x-headerComponent :title="$car->name" img="" :id="$car->id"/>
 
   @if(Auth::user())
   <hr>
@@ -18,12 +18,13 @@
     @endif
     <hr>
   @endif
-    
 
-  
+
+
   @if(Auth::user())
-    @if(!$car->approved) 
+    @if(!$car->approved)
       <x-alerts flag="info" text="Attenzione! Questo annuncio è visibile solo agli amministratori"/>
+
     @endif
     <div class="container py-5">
         <div class="row d-flex justify-content-center">
