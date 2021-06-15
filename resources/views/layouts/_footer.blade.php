@@ -11,7 +11,8 @@
             <div class="block-23 py-3">
               <ul>
                 <li><a href="#"><span class="icon icon-map-marker"></span><span class="text">S.p 215, 70010 - Turi (BA)</span></a></li>
-                <li><a href="#"><span class="icon icon-phone"></span><span class="text">808 891 6567</span></a></li>
+                <li><a href="#"><span class="icon icon-phone"></span><span class="text">080 891 6505</span></a></li>
+                <li><a href="#"><span class="icon icon-phone"></span><span class="text">338 980 7371</span></a></li>
                 <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@gmautomobili.com</span></a></li>
               </ul>
             </div>
