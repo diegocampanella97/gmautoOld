@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
             KilometersSeeder::class,
             DoorTableSeeder::class,
             SeatTableSeeder::class,
-            // CarsTableSeeder::class,
+            CarsTableSeeder::class,
         ]);
     }
 }

@@ -49,69 +49,7 @@
   </div>
 </section>
 
-<section class="ftco-section ftco-no-pt bg-light">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-12 heading-section text-center ftco-animate mb-5">
-        <span class="subheading">Le nostre offerte</span>
-        <h2 class="mb-2">Le ultime novità</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="carousel-car owl-carousel">
 
-          @foreach (\App\Car::getLastCar() as $item)
-            <div class="item">
-              <div class="car-wrap rounded ftco-animate">
-
-
-                      @if ($item->images->count()>0)
-                      <a href="{{ route('auto.dettaglio', ['id'=>$item->id,'slug' => $item->slug]) }}">
-                          <div class="img rounded d-flex align-items-end" style="background-image: url(
-                          {{
-                          Storage::url($item->images[0]->filePath)
-                          }});">
-                          </div>    
-                        </a>
-
-                      @else
-                      <a href="{{ route('auto.dettaglio', ['id'=>$item->id,'slug' => $item->slug]) }}">
-                        <div class="img rounded d-flex align-items-end" style="background-image: url('/images/placeholder_gmautoveicoli.png');">
-                        </div>
-                      </a>
-                      @endif
-                  </a>
-                <div class="text">
-                    <h2 class="mb-0">
-                        <a href="{{ route('auto.dettaglio', ['id'=>$item->id,'slug' => $item->slug]) }}">{{$item->name}}</a>
-                    </h2>
-                      <div class="d-flex mb-3">
-                        <span class="cat">{{$item->preparations -> exemplar->name}}<br>
-                            <a href="{{route('auto.cerca.produttore',$item ->preparations -> exemplar-> producer-> slug)}}">
-                            <img class="img-fluid logo-resize"
-                                 src="/images/logo_cars/{{$item ->preparations -> exemplar-> producer-> slug}}.svg"
-                                 alt="{{$item ->preparations -> exemplar-> producer-> name}}">
-                            </a>
-                        </span>
-                        <p class="price ml-auto">{{$item->price}} €</p>
-                      </div>
-                      <p class="d-flex justify-content-center mb-0 d-block">
-                        <a href="{{ route('auto.dettaglio', ['id'=>$item->id,'slug' => $item->slug]) }}" class="btn btn-xl btn-primary py-2 mr-1">Scopri di più</a>
-                      </p>
-                </div>
-              </div>
-
-              </div>
-          @endforeach
-
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="ftco-section ftco-about">
   <div class="container">
@@ -174,6 +112,69 @@
     </div>
   </div>
 </section>
+
+<section class="ftco-section ftco-no-pt bg-light py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+                <span class="subheading">Le nostre offerte</span>
+                <h2 class="mb-2">Le ultime novità</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="carousel-car owl-carousel">
+
+                    @foreach (\App\Car::getLastCar() as $item)
+                        <div class="item">
+                            <div class="car-wrap rounded ftco-animate">
+
+
+                                @if ($item->images->count()>0)
+                                    <a href="{{ route('auto.dettaglio', ['id'=>$item->id,'slug' => $item->slug]) }}">
+                                        <div class="img rounded d-flex align-items-end" style="background-image: url(
+                                        {{
+                                        Storage::url($item->images[0]->filePath)
+                                        }});">
+                                        </div>
+                                    </a>
+
+                                @else
+                                    <a href="{{ route('auto.dettaglio', ['id'=>$item->id,'slug' => $item->slug]) }}">
+                                        <div class="img rounded d-flex align-items-end" style="background-image: url('/images/placeholder_gmautoveicoli.png');">
+                                        </div>
+                                    </a>
+                                    @endif
+                                    </a>
+                                    <div class="text">
+                                        <h2 class="mb-0">
+                                            <a href="{{ route('auto.dettaglio', ['id'=>$item->id,'slug' => $item->slug]) }}">{{$item->name}}</a>
+                                        </h2>
+                                        <div class="d-flex mb-3">
+                        <span class="cat">{{$item->preparations -> exemplar->name}}<br>
+                            <a href="{{route('auto.cerca.produttore',$item ->preparations -> exemplar-> producer-> slug)}}">
+                            <img class="img-fluid logo-resize"
+                                 src="/images/logo_cars/{{$item ->preparations -> exemplar-> producer-> slug}}.svg"
+                                 alt="{{$item ->preparations -> exemplar-> producer-> name}}">
+                            </a>
+                        </span>
+                                            <p class="price ml-auto">{{$item->price}} €</p>
+                                        </div>
+                                        <p class="d-flex justify-content-center mb-0 d-block">
+                                            <a href="{{ route('auto.dettaglio', ['id'=>$item->id,'slug' => $item->slug]) }}" class="btn btn-xl btn-primary py-2 mr-1">Scopri di più</a>
+                                        </p>
+                                    </div>
+                            </div>
+
+                        </div>
+                    @endforeach
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <section class="ftco-section ftco-intro" style="background-image: url(images/bg_3.jpg);">
   <div class="container">
