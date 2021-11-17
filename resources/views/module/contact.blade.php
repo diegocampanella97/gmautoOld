@@ -22,7 +22,7 @@
                         <div class="icon mr-3">
                             <span class="icon icon-phone"></span>
                         </div>
-                        <p><span>Telefono:</span> <a href="tel://1234567920">808 891 6567</a></p>
+                        <p><span>Telefono:</span> <a href="tel://+390808916505">080 891 6505</a></p>
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -51,7 +51,7 @@
                     </ul>
                 </div>
             @endif
-            
+
             <div class="form-group">
               <input type="text" class="form-control" value="{{old('name')}}" name="name" placeholder="Nome">
             </div>
