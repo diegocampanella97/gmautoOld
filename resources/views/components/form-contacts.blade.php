@@ -22,7 +22,7 @@
                             <div class="icon mr-3">
                                 <span class="icon icon-phone"></span>
                             </div>
-                            <p><span>Telefono:</span> <a href="tel://1234567920">808 891 6567</a></p>
+                            <p><span>Telefono:</span> <a href="tel://+390808916505">080 891 6505</a></p>
                         </div>
                     </div>
                     <div class="col-md-12">

@@ -10,10 +10,10 @@
             </div>
             <div class="block-23 py-3">
               <ul>
-                <li><a href="#"><span class="icon icon-map-marker"></span><span class="text">S.p 215, 70010 - Turi (BA)</span></a></li>
-                <li><a href="#"><span class="icon icon-phone"></span><span class="text">080 891 6505</span></a></li>
-                <li><a href="#"><span class="icon icon-phone"></span><span class="text">338 980 7371</span></a></li>
-                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@gmautomobili.com</span></a></li>
+                <li><a href="https://goo.gl/maps/NrB4rJb2Cu7UY7c9A"><span class="icon icon-map-marker"></span><span class="text">S.p 215, 70010 - Turi (BA)</span></a></li>
+                <li><a href="tel://+390808916505"><span class="icon icon-phone"></span><span class="text">080 891 6505</span></a></li>
+                <li><a href="tel://+393389807371"><span class="icon icon-phone"></span><span class="text">338 980 7371</span></a></li>
+                <li><a href="mailto:info@gmautomobili.com"><span class="icon icon-envelope"></span><span class="text">info@gmautomobili.com</span></a></li>
               </ul>
             </div>
           </div>
@@ -32,7 +32,7 @@
            <div class="ftco-footer-widget mb-4">
             <h2 class="ftco-heading-2">Maggiori informazioni</h2>
 
-            
+
             <ul class="list-unstyled">
             <li><a href="{{route('faq.index')}}" class="py-2 d-block">FAQ</a></li>
               <li><a href="{{route('termini')}}" class="py-2 d-block">Termini e Condizioni</a></li>
